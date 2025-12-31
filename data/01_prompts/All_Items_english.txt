@@ -1,0 +1,2309 @@
+1. Impaired consciousness (quantitative) – **observer rating**
+
+**Definition**
+Disturbance of wakefulness.
+
+**Explanations and examples**
+This is a *quantitative* feature. The neurophysiological term *vigilance* is used in a similar way. Disturbances of wakefulness range from drowsiness via somnolence and sopor up to coma.
+
+**Examples: Impaired consciousness**
+Impairments of consciousness are recognized by the degree of sleepiness:
+
+* Patients are sleepy to varying degrees, slowed, and limited in their cognitive performance.
+* In severe cases, contact with reality is completely lost.
+
+**Notes on grading**
+
+* **“mild”** – The patient is drowsy or sleepy but still responds to being addressed.
+* **“severe”** – The patient can only be aroused by painful stimuli or no longer at all.
+
+**To be distinguished from**
+
+* 2 Clouding of consciousness
+* 3 Narrowing of consciousness
+
+---
+
+### 
+2. Clouding of consciousness – **observer rating**
+
+**Definition**
+Qualitative disturbance of clarity of consciousness. The ability to understand different aspects of one’s own person and environment, to connect them meaningfully, to communicate accordingly, and to act in a meaningful way is impaired.
+
+**Explanations and examples**
+Clouding of consciousness leads to an impairment of the whole subjective experience. Partial symptoms can be, for example, withdrawal from the outside world, poor comprehension, distractibility, or “heavy-mindedness.” Clouding of consciousness can occur, for example, in delirium, acute psychotic states, or intoxication.
+
+**Examples: Clouding of consciousness**
+
+* A patient reports separate episodes of their life story only vaguely and can bring them together into a coherent biography only with great difficulty.
+* A patient has trouble understanding what is happening in their current situation and deriving meaningful actions from it.
+* A patient is unable to act, because he does not understand the interaction with other people, his own role within it, and the circumstances of the environment.
+
+**Notes on grading**
+
+* **“mild”** – Clouding of consciousness leads to minor impairments.
+* **“severe”** – Clouding of consciousness leads to significant impairments.
+
+**To be distinguished from**
+
+* 1 Impaired consciousness (quantitative)
+* 3 Narrowing of consciousness
+
+---
+
+### 
+3. Narrowing of consciousness – **self- and observer rating**
+
+**Definition**
+Narrowing of the entire experience and behavior with reduced responsiveness to external stimuli.
+
+**Explanations and examples**
+For understanding this *qualitative* feature, the metaphor of the “spotlight of consciousness” is useful. It refers to a narrow and at the same time little-movable cone of light in which experienced events are perceived clearly or even overly clearly, whereas things at the edge or outside this light are not perceived or only vaguely perceived. The patient appears fixated on and fascinated by certain inner experiences or external circumstances (“tunnel vision,” “blinkers”). The feature is seen not only in mental disorders such as twilight states or acute stress reactions, but also under hypnosis or in extreme concentration on a particular topic (e.g. solving a difficult problem).
+
+**Examples: Narrowing of consciousness**
+
+* The whole experience and behavior are focused on one topic.
+* After a traffic accident, a patient appears dazed, but the police officers can quickly obtain detailed information about the events in conversation.
+* The patient listens to their voices. Attempts to redirect them to other topics are left unanswered or receive only a brief, hinted reaction before the patient turns back to their inner experience.
+
+**Notes on grading**
+
+* **“mild”** – The narrowing can be broken through easily. Communication with the patient is at most slightly impaired.
+* **“severe”** – The narrowing can only be influenced with difficulty. Communication with the patient is considerably restricted.
+
+**To be distinguished from**
+
+* 1 Impaired consciousness (quantitative)
+* 2 Clouding of consciousness
+* 18 Restricted / narrowed thinking
+
+---
+
+### 
+4. Shift of consciousness – **self-rating**
+
+**Definition**
+Patients report that their overall experience is more intense or clearer than usual.
+
+**Explanations and examples**
+Shift of consciousness, sometimes also called *expansion of consciousness*, can be characterized by a feeling of expansion of inner experience. Patients feel overall more awake, more alive, more open. Feelings or sensory perceptions (e.g. sounds, colors) are experienced as particularly intense. Shifts of consciousness may occur under drugs or within psychotic symptomatology. Meditative states can also lead to a shift of consciousness.
+
+**Examples: Shift of consciousness**
+
+* Patients report a subjective feeling of inner enrichment/expansion of their experience.
+* Patients report the experience of perceiving impressions from the environment more vividly and alertly.
+* Patients report a feeling of improved comprehension.
+* Other patients describe feeling completely overwhelmed by stimulus overload and by the intensity of these perceptions.
+
+**Notes on grading**
+
+* **“mild”** – A shift of consciousness should only cause minor distress or minor impairment.
+* **“severe”** – A shift of consciousness leads to considerable distress or significant impairments.
+
+**To be distinguished from**
+
+* 33 Delusional mood
+* 53 Derealization
+
+---
+
+### 
+5. Disorientation in time – **self-rating**
+
+**Definition**
+The date (day, month, year), day of the week, or season is not known or only vaguely known.
+
+**Explanations and examples**
+Before making a final assessment in the case of a slightly incorrect answer, the patient should be given the opportunity to correct themselves; that is, they should be told that the answer is wrong. If they then correct their answer without further help, the initial (wrong) answer is not counted as disorientation. A *time-grid disturbance* (Zeitgitterstörung), i.e. the inability to put memory contents into the correct temporal order, is not to be coded as disorientation in time but as a memory disorder.
+
+**Examples: Disorientation in time**
+
+* A patient cannot name the current day of the week.
+* A patient cannot state the current year even with help.
+
+**Notes on grading**
+
+* **“mild”** – The answer regarding calendar date or weekday deviates by at most one day from the correct answer (even after being told the first answer was incorrect); month, year, and season are still known.
+* **“severe”** – The month is not known correctly despite being told that the first answer was wrong, or the answer for the year deviates by more than one year from the correct year.
+
+**To be distinguished from**
+
+* 10 Disturbances of concentration
+* 12 Memory disorders
+
+---
+
+### 
+6. Disorientation in place – **self-rating**
+
+**Definition**
+The current place of stay is not known, or the patient gives only vague information about it.
+
+**Explanations and examples**
+If the patient does not know their current location (town name, district, etc.) only because they were not informed about it (e.g. during transfers in inpatient treatment), “no statement possible” should be marked rather than a disturbance. If a patient does not find their way around in the environment (for example cannot find their room on the ward), this should not be coded as disorientation in place but as a memory disorder. This is not a disturbance of orientation to place, but of orientation in *space*, which presupposes memory.
+
+**Examples: Disorientation in place**
+
+* There is uncertainty about the current place of stay.
+* The place is not known even with help.
+* A patient states that he is currently in a hotel instead of a hospital.
+* A patient knows that she is in Bavaria but cannot name the city.
+
+**Notes on grading**
+
+* **“mild”** – Disorientation in place should only cause minor distress or minor impairments.
+* **“severe”** – Disorientation in place leads to considerable distress or significant impairments.
+
+**To be distinguished from**
+
+* 7 Disorientation regarding situation
+* 12 Memory disorders
+
+---
+
+### 
+7. Disorientation regarding situation – **self-rating**
+
+**Definition**
+The current situation is captured only vaguely or not at all in its meaning and context.
+
+**Explanations and examples**
+Disorientation regarding situation means an impaired or absent grasp and interpretation of the patient’s current situation in its meaningful context. A deep understanding of the patient’s health status is not required. What is meant is an understanding of the immediate situation (e.g. that the patient is having a conversation with a therapist, or is in a hospital because of illness).
+
+**Examples: Disorientation regarding situation**
+
+* A person has difficulties stating that they are currently a patient undergoing an examination.
+* A patient does not know that he is in a hospital and speaking to a doctor.
+* A patient cannot, even with help, recognize that he is in a psychiatric evaluation.
+
+**Notes on grading**
+
+* **“mild”** – Disorientation regarding situation should only cause minor distress or minor impairments.
+* **“severe”** – Disorientation regarding situation leads to considerable distress or significant impairments.
+
+**To be distinguished from**
+
+* 6 Disorientation in place
+
+---
+
+### 
+8. Disorientation regarding own person – **self-rating**
+
+**Definition**
+The personal biographical situation is not known or only vaguely known.
+
+**Explanations and examples**
+Disorientation regarding one’s own person can affect all important autobiographical facts, referring to the present and past.
+
+**Examples: Disorientation regarding own person**
+
+* A patient does not know their role in terms of life stage and social context (e.g. occupation).
+* A patient does not know their home address.
+* A patient does not know how old they are.
+* A patient does not know how many children they have.
+* A patient does not know their birthday.
+* A patient does not know their own name.
+
+**Notes on grading**
+
+* **“mild”** – Disorientation regarding own person should only cause minor distress or minor impairments.
+* **“severe”** – Disorientation regarding own person leads to considerable distress or significant impairments.
+
+**To be distinguished from**
+
+* 12 Memory disorders
+
+---
+
+### 
+9. Disturbances of comprehension – **self- and observer rating**
+
+**Definition**
+Disturbance of the ability to understand utterances and texts in their meaning.
+
+**Explanations and examples**
+What is meant is the cognitive processing of received information. Comprehension may be more or less incorrect, “heavy-minded,” or absent. Disturbances of comprehension can become apparent in the conversation or in clinical testing. Testing can be done, for example, with word pairs (similarities, differences), common proverbs, picture stories, or fables, if the disturbance is not already apparent from the conversation. *Concrete thinking* (concretism) is also reflected here: an impairment of the ability for abstract-symbolic thinking. Examples include difficulties assigning elements to classes, problems with generalizations, and literal interpretations where metaphorical meaning is intended.
+
+**Examples: Disturbances of comprehension**
+
+* The patient does not understand questions and they must be additionally explained by the examiner.
+* Proverbs are interpreted inaccurately or incorrectly.
+* Fables are interpreted inaccurately or incorrectly.
+* A patient explains a proverb in a concrete, literal way.
+* Simple instructions cannot be carried out or are not understood.
+
+**Notes on grading**
+
+* **“mild”** – Disturbances of comprehension should only cause minor distress or minor impairments.
+* **“severe”** – Disturbances of comprehension lead to considerable distress or significant impairments.
+
+**To be distinguished from**
+
+* 10 Disturbances of concentration
+* 23 Talking past the point
+
+---
+
+###
+ 10. Disturbances of concentration – **self- and observer rating**
+
+**Definition**
+Reduced ability to direct attention persistently to an activity or topic.
+
+**Explanations and examples**
+Disturbances of concentration are often also called *attention disturbances* and are sometimes used synonymously in clinical practice. They may show themselves already in the conversation or in clinical testing. For testing, tasks such as “subtract 4 repeatedly starting from 81” or “name the months of the year backwards” can be used. It must be ensured that the patient is in principle able to perform simple subtraction tasks or to name the months in the correct order. Disturbances of concentration in examinations manifest less through the absolute number of mistakes and more through an increase in mistakes over time, or through slowing and eventually stopping a task already started. Disturbances of concentration may also be plausibly reported by the patient.
+
+**Examples: Disturbances of concentration**
+
+* The patient reports that when reading a book or newspaper, their thoughts wander off after a few minutes.
+* In conversation, the patient repeatedly asks what question was just asked.
+* The patient makes increasing errors when counting backwards or naming the months.
+* A patient reports that the voices always distract her when she tries to read a book.
+
+**Notes on grading**
+
+* **“mild”** – Disturbances of concentration should only cause minor distress or minor impairments.
+* **“severe”** – Disturbances of concentration lead to considerable distress or significant impairments.
+
+**To be distinguished from**
+
+* 9 Disturbances of comprehension
+* 11 Disturbances of immediate recall (Merkfähigkeit)
+* 12 Memory disorders
+
+---
+
+###
+ 11. Disturbances of immediate recall (Merkfähigkeit) – **self- and observer rating**
+
+**Definition**
+Reduction or loss of the ability to remember new information over a period of 10 minutes.
+
+**Explanations and examples**
+Disturbances of immediate recall can be plausibly reported by the patient, observed in conversation, or tested clinically. Immediate recall depends on the affective meaning of the material, so neutral terms should be used for testing, as far as possible. For comparability, the same material (e.g. the terms “34, Oslo, ashtray”) should always be used. If the patient does not recall the terms spontaneously, help may be given (e.g. “One of the terms was a number”). If the term is then recalled after help, this does *not* count as a disturbance.
+
+**Examples: Disturbances of immediate recall**
+
+* A patient reports that he forgets everything immediately and can give plausible examples.
+* A patient cannot remember the questions asked and repeatedly has to ask what the examiner wants to know, because she has forgotten the question.
+* Of three given terms, only two are spontaneously recalled after 10 minutes.
+* The three terms are not recalled after 10 minutes, even with help.
+
+**Notes on grading**
+
+* **“mild”** – Disturbances of immediate recall should only cause minor distress or minor impairments.
+* **“severe”** – Disturbances of immediate recall lead to considerable distress or significant impairments.
+
+**To be distinguished from**
+
+* 10 Disturbances of concentration
+* 12 Memory disorders
+
+---
+
+###
+ 12. Memory disorders – **self- and observer rating**
+
+**Definition**
+Reduction or loss of the ability to store information for longer than 10 minutes and/or to retrieve learned material from memory.
+
+**Explanations and examples**
+Memory disorders can be plausibly reported by the patient and/or tested clinically. They may relate to recent or more distant events. Memory disorders also include amnesias (content-limited or time-limited memory gaps) and time-grid disturbances (inability to place memory contents in the correct temporal order).
+
+**Examples: Memory disorders**
+
+* A patient can remember certain events or information but no longer knows some important details.
+* A patient cannot remember what he had for lunch yesterday.
+* A patient states that he watched a film yesterday but no longer knows what it was about.
+
+**Notes on grading**
+
+* **“mild”** – Memory disorders should only cause minor distress or minor impairments.
+* **“severe”** – Memory disorders lead to considerable distress or significant impairments.
+
+**To be distinguished from**
+
+* 8 Disorientation regarding own person
+* 11 Disturbances of immediate recall (Merkfähigkeit)
+
+---
+
+###
+ 13. Confabulations – **observer rating**
+
+**Definition**
+Memory gaps are filled with changing fabrications which are taken as real memories.
+
+**Explanations and examples**
+In confabulations, different answers are given to the same question at different times. Therefore, the same topic must be asked about repeatedly for assessment. The patient does not notice the inconsistency of their statements, because they have forgotten the actual facts and their previous answers. Confabulations always presuppose memory disorders, which must be coded in addition.
+
+**Examples: Confabulations**
+
+* Confabulations appear in conversation but do not substantially disturb the course of the interview.
+* Numerous memory gaps are consistently filled with confabulations, considerably impairing communication.
+* Asked what he lives on, a patient first answers “from my work,” later “from my pension,” and still later “from inherited money.”
+
+**Notes on grading**
+
+* **“mild”** – Confabulations cause minor impairments.
+* **“severe”** – Confabulations cause considerable impairments.
+
+**To be distinguished from**
+
+* 14 Paramnesias
+
+---
+
+###
+ 14. Paramnesias – **self-rating**
+
+**Definition**
+Distortions or deceptions of memory, intrusive memories, increased memory ability.
+
+**Explanations and examples**
+In contrast to most other AMDP features, paramnesias can appear in several different phenomena:
+
+* False recognition or apparent familiarity (already seen, heard, experienced although this should not be possible: *déjà vu*) and apparent unfamiliarity (never seen, although it should be familiar: *jamais vu*).
+* Ekmnesias (disturbances of the experience of time or temporal assignment, where the past is experienced as the present).
+* Hypermnesias (increased ability to remember, e.g. photographic memory or in near-death experiences).
+* Flashbacks and intrusions (intrusively recurring memories of a traumatic event).
+* False memories (pseudo-memories, memory distortions, e.g. in the sense of *false memory syndrome*).
+
+Delusional or delusionally reinterpreted memories are *not* coded here.
+
+**Examples: Paramnesias**
+
+* A patient states that he has the feeling he has already experienced a certain situation, although he is sure he has never been in it before (déjà vu).
+* A patient believes she is living in a past time period (ekmnesia).
+* A patient reports suddenly remembering in great detail events that he thought he had long forgotten (hypermnesia).
+* A patient suddenly remembers a previous event after a specific trigger (e.g. car accident) (flashback).
+* A patient reports memories of dramatic events that, in reality, cannot have occurred (e.g. false memory syndrome).
+* Patients are repeatedly overwhelmed by memories of details of earlier sexual abuse (intrusions).
+
+**Notes on grading**
+
+* **“mild”** – Paramnesias should only cause minor distress or minor impairments.
+* **“severe”** – Paramnesias lead to considerable distress or significant impairments.
+
+**To be distinguished from**
+
+* 13 Confabulations
+
+---
+
+###
+ 15. Inhibited thinking – **self-rating**
+
+**Definition**
+The patient subjectively experiences thinking as slowed down or blocked.
+
+**Explanations and examples**
+Patients report a subjectively perceived reduced speed of thinking. Many emphasize the peculiar quality of this reduced speed: thinking is experienced as moving against an inner resistance, as peculiarly viscous or blocked.
+
+**Examples: Inhibited thinking**
+
+* The patient reports that it is difficult to follow a coherent train of thought; he feels blocked in his thinking.
+* A patient mentions that her thinking has become more sluggish recently.
+* Patients state that this inhibition of thinking can only be overcome with effort and strain.
+* Thought inhibition can extend to the subjective experience of no longer being able to think at all, of being blocked.
+
+**Notes on grading**
+
+* **“mild”** – Inhibited thinking should only cause minor distress or minor impairments.
+* **“severe”** – Inhibited thinking leads to considerable distress or significant impairments.
+
+**To be distinguished from**
+
+* 16 Slowed thinking
+* 20 Brooding / ruminations
+
+---
+
+###
+ 16. Slowed thinking – **observer rating**
+
+**Definition**
+Thinking is slowed in tempo and dragging.
+
+**Explanations and examples**
+This feature refers to the externally observable reduction in the speed of thinking. It is sometimes difficult to assess, because the judgement depends in part on the examiner’s own notion of “normal.” It is advisable to take into account the “culturally usual” temperament of the patient.
+
+**Examples: Slowed thinking**
+
+* The conversation is sluggish.
+* Throughout the conversation, response latencies are prolonged.
+* There are long pauses that go beyond normal time needed for reflection.
+
+**Notes on grading**
+
+* **“mild”** – Slowed thinking causes minor impairments.
+* **“severe”** – Slowed thinking causes considerable impairments.
+
+**To be distinguished from**
+
+* 15 Inhibited thinking
+* 87 Mutism
+
+---
+
+###
+ 17. Circumstantial thinking – **observer rating**
+
+**Definition**
+Thinking that, in relation to the topic of conversation, does not distinguish the incidental from the essential, while the content-related connection is still maintained.
+
+**Explanations and examples**
+In circumstantial (sometimes also called “over-inclusive” or “over-elaborate”) thinking, the patient gets lost in unimportant details and sticks to them without losing the goal completely. They “go from one thing to another” but do not totally lose sight of the question. This often evokes impatience in the examiner.
+
+**Examples: Circumstantial thinking**
+
+* When asked how he came to the hospital, the patient describes in detail the route from home to the clinic.
+* When explaining a fable, the patient never gets to the core of the story but gets bogged down in details that are not essential.
+* Asked a simple question about the mother’s illnesses, the patient starts to recount, in detail, diseases of the entire family.
+
+**Notes on grading**
+
+* **“mild”** – Circumstantial thinking causes only minor impairments.
+* **“severe”** – Circumstantial thinking causes considerable impairments.
+
+**To be distinguished from**
+
+* 9 Disturbances of comprehension
+* 22 Flight of ideas
+
+---
+
+###
+ 18. Restricted / narrowed thinking – **observer rating**
+
+**Definition**
+Restriction of the range of thought content; being stuck on a topic or a few topics.
+
+**Explanations and examples**
+In conversation, the patient has difficulty moving from one topic to another or repeatedly returns to “their” topic. In the interview, various topics must be offered. This is important because the topic of illness will always be part of a clinical interview, but that alone does not indicate restricted thinking. Only within the topic of illness, if the patient is fixated on individual aspects and cannot be shifted despite other topics being offered, does this constitute restricted thinking.
+
+**Examples: Restricted / narrowed thinking**
+
+* A depressed patient repeatedly returns to his bowel problems, although the examiner wants to discuss other issues.
+* A patient with grandiose delusions cannot disengage from them and does not respond to other topics offered.
+
+**Notes on grading**
+
+* **“mild”** – Restricted thinking causes only minor impairments.
+* **“severe”** – Restricted thinking causes considerable impairments.
+
+**To be distinguished from**
+
+* 3 Narrowing of consciousness
+* 20 Brooding / ruminations
+* 30 Obsessive thoughts
+* 19 Perseveration
+
+---
+
+###
+ 19. Perseveration – **observer rating**
+
+**Definition**
+Persistence in previously used words or statements that are no longer meaningful in the current context.
+
+**Explanations and examples**
+For evaluating this feature, the overall impression of the examiner is decisive: is the repetition of words still meaningful in the conversation context or not?
+
+**Examples: Perseveration**
+
+* A patient correctly labels a key as a “key.” Afterwards, however, he repeatedly says “key” mechanically when asked to state his name or to name other objects.
+* A patient correctly answers the question about his date of birth but then gives the same date of birth as an answer to various unrelated questions.
+
+**Notes on grading**
+
+* **“mild”** – Perseveration causes minor impairments.
+* **“severe”** – Perseveration causes considerable impairments.
+
+**To be distinguished from**
+
+* 84 Parakinesias
+
+---
+
+###
+ 20. Brooding / ruminations – **self-rating**
+
+**Definition**
+Patients are repeatedly preoccupied with certain thoughts (circling thoughts), usually about unpleasant topics.
+
+**Explanations and examples**
+The patient reports that their thoughts circle again and again, without result, around the same (usually unpleasant) contents and can be interrupted only with difficulty. Rumination is experienced as unpleasant, bothersome, even tormenting. Often worries are the origin of these recurring, circling thoughts.
+
+**Examples: Statements that may indicate brooding / ruminations**
+
+* “I keep having to think about how things will go on for me.”
+* “I have to think all day about whether I will get well again.”
+* “My thoughts keep circling around whether anything bad might happen to my children.”
+* “I can’t get rid of the thought that I may have done something wrong.”
+* “I worry all day, and the thought that won’t let me go is how things are going to continue.”
+
+**Notes on grading**
+
+* **“mild”** – Rumination should only cause minor distress or minor impairments.
+* **“severe”** – Rumination leads to considerable distress or significant impairments.
+
+**To be distinguished from**
+
+* 18 Restricted / narrowed thinking
+* 21 Pressure of thought
+* 30 Obsessive thoughts
+
+---
+
+###
+ 21. Pressure of thought – **self-rating**
+
+**Definition**
+The patient feels overwhelmed by a pressure of many different ideas or thoughts.
+
+**Explanations and examples**
+The patient cannot organize or control the multitude of intrusive ideas and thoughts. The thoughts can be meaningful or meaningless, racing or automatic. Thinking is usually experienced by the patient as accelerated, although it does not necessarily appear accelerated to the observer.
+
+**Examples: Statements that may indicate pressure of thought**
+
+* “So many thoughts go through my head that I can’t think clearly anymore.”
+* “The many constantly new thoughts completely confuse me.”
+* “I’m flooded by thoughts that I can’t defend myself against at all.”
+* “The many thoughts create chaos in my head.”
+
+**Notes on grading**
+
+* **“mild”** – Pressure of thought should only cause minor distress or minor impairments.
+* **“severe”** – Pressure of thought leads to considerable distress or significant impairments.
+
+**To be distinguished from**
+
+* 20 Brooding / ruminations
+* 30 Obsessive thoughts
+* 57 Thought insertion
+
+---
+
+###
+ 22. Flight of ideas – **observer rating**
+
+**Definition**
+Increase in ideas that are no longer tightly guided by a goal. The goal of thinking can frequently shift or be lost due to associations.
+
+**Explanations and examples**
+The person with flight of ideas jumps from one thing to another and often does not finish a thought because their thinking is constantly diverted by intervening associations. The distraction from a coherent train of thought can be triggered by external stimuli (e.g. noises) or internal associations. Thinking does *not* have to be accelerated. Flight of ideas generally does not appear only at isolated points, but rather over longer phases in the conversation.
+
+**Examples: Flight of ideas**
+
+* A patient answers a question correctly but then adds further associations that move away from the original topic.
+* A patient talks about UFOs, then associates to the painter Raphael, who also built flying machines, and continues that due to climate change she actually does not want to travel by plane anymore …
+
+**Notes on grading**
+
+* **“mild”** – Flight of ideas causes minor impairments.
+* **“severe”** – Flight of ideas causes considerable impairments.
+
+**To be distinguished from**
+
+* 17 *Circumstantial thinking*
+* 25 *Incoherent / disorganized thinking*
+* 88 *Logorrhea*
+* *Accelerated thinking* / *Speeded thinking*.
+
+
+
+###
+23. Talking past the point (Fremdeinschätzung)
+
+**Definition**
+The patient’s answers have no connection to the question asked, although follow-up questioning shows that the patient did understand the question.
+
+**Explanations and examples**
+Talking past the point (also called “derailment” in some systems) is not simply an incorrect answer. The decisive factor is that the patient *talks past* the content of the question. When suspected, the clinician must ensure the patient understood the question, e.g., by having them repeat it. Willfully evasive answers (e.g., “beating around the bush”), or mutual misunderstanding in everyday conversation, should not be coded here.
+
+**Examples**
+• Examiner: “Why did you come to the clinic yesterday?”
+Patient: “The Chinese wall is over 5,000 km long.”
+Examiner: “Do you recall what I asked?”
+Patient: “Yes, you want to know why I came to the clinic yesterday.”
+
+• Examiner: “Do you know something like an inner pressure?”
+Patient: “Yes, I have high blood pressure.”
+Examiner: “Do you recall my question?”
+Patient: “Yes, you want to know whether I feel inner pressure.”
+
+**Severity**
+*Light:* causes only minor impairment.
+*Severe:* causes significant impairment.
+
+**Differential symptoms**
+Disturbances of comprehension, concentration disturbances, restricted/narrowed thinking, incoherent/disorganized thinking.
+
+---
+
+###
+24. Blocking / thought derailment (Self- and hetero-assessment)
+
+**Definition**
+Sudden interruption of an otherwise coherent train of thought or speech without an identifiable reason.
+
+**Explanations and examples**
+Observed externally as *blocking* or described by the patient as *thoughts suddenly stopping*. Minor everyday “losing the thread” does not qualify unless pronounced.
+
+**Examples**
+• The patient abruptly stops mid-sentence, becomes silent, and may resume with a completely different topic or ask for the previous question again.
+• A patient reports that thoughts sometimes suddenly “disappear.”
+
+**Severity**
+*Light:* minor distress or impairment.
+*Severe:* significant distress or impairment.
+
+**Differential symptoms**
+Concentration disturbances.
+
+---
+
+###
+25. Incoherent / disorganized thinking (Fremdeinschätzung)
+
+**Definition**
+The patient’s thinking and speech lose logical and comprehensible structure for the examiner.
+
+**Explanations**
+Connections between thoughts become unrecognizable. Disturbances may range from paralogic thinking (logic distorted but syntax intact) to paragrammatism (disrupted syntax) to schizophasia (incomprehensible word/syllable salad). Typically persists over phases, not just isolated moments.
+
+**Examples**
+• “Yesterday afternoon I came to the clinic because there will be elections next year and the bakery opens at 8:00.” (Paralogic)
+• “Earlier people were made of blue-eyed humans and how the brains accomplish.”
+• Schizophasic utterances as in the German examples.
+
+**Severity**
+*Light:* mild impairment.
+*Severe:* significant impairment.
+
+**Differential symptoms**
+Circumstantial thinking, flight of ideas.
+
+---
+
+###
+26. Neologisms (Fremdeinschätzung)
+
+**Definition**
+Word creations or idiosyncratic word usages that do not follow linguistic norms and are often not immediately comprehensible.
+
+**Explanations**
+Includes not only invented words but also unusual semantic usage. In severe forms, the patient may create an entire artificial language. Slang or subcultural vocabulary is *not* coded here.
+
+**Examples**
+• “Yesterday I had a diagraf and my head was demachronized.”
+• “My girlfriend is ‘the animal of number 7.’”
+
+**Severity**
+*Light:* mild impairment.
+*Severe:* significant impairment.
+
+**Differential symptoms**
+Parakinesias, mannered/bizarre behavior, incoherent thinking.
+
+---
+
+###
+27. Suspiciousness (Self- and hetero-assessment)
+
+**Definition**
+The behavior of others is perceived as directed negatively or hostilely toward oneself.
+
+**Explanations**
+Suspiciousness involves negatively tinted interpersonal interpretations, often inferred from interaction. Suspiciousness can appear within delusions and should then be coded in both places.
+
+**Examples**
+• “I have been disappointed so often; I trust no one anymore.”
+• Patient repeatedly asks whether the recorder is *really* switched off.
+• Doubts whether the examiner is truly a doctor.
+
+**Severity**
+Light vs. severe as above.
+
+**Differential symptoms**
+Dysphoria, irritability.
+
+---
+
+###
+28. Hypochondria (Self-assessment)
+
+**Definition**
+Anxious preoccupation with bodily functions, accompanied by the unfounded belief of being ill or becoming ill.
+
+**Explanations**
+Normal bodily sensations become catastrophically interpreted. Content may change over time. Hypochondriacal *delusions* are coded under symptom 44.
+
+**Examples**
+• “I feel my heart pounding, that cannot be normal.”
+• “I constantly fear I might get AIDS.”
+• Persistent fear of illness despite reassurance.
+
+**Severity**
+Light vs. severe.
+
+**Differential symptoms**
+Phobias, anxiety.
+
+---
+
+###
+29. Phobias (Self-assessment)
+
+**Definition**
+Fear of specific situations or objects, often leading to avoidance.
+
+**Explanations**
+Patients typically recognize the fear as irrational. Includes agoraphobia, social phobia, specific phobias.
+*Not* included: bodily fears (coded under hypochondria).
+
+**Examples**
+• Fear in enclosed spaces.
+• Avoiding dogs despite knowing the fear is exaggerated.
+• Avoidance of social situations.
+
+**Severity**
+Light vs. severe.
+
+**Differential symptoms**
+Hypochondria, anxiety.
+
+---
+
+###
+30. Obsessive thoughts (Self-assessment)
+
+**Definition**
+Repetitive intrusive thoughts recognized as senseless or exaggerated but uncontrollable.
+
+**Explanations**
+Experienced as one’s own thoughts (not externally inserted). Distinct from compulsive impulses (which involve mental images of actions).
+
+**Examples**
+• Repeatedly thinking about whether the door is locked.
+• Rechecking whether the mailbox was emptied.
+• Needing to count from 1 to 100 repeatedly.
+
+**Severity**
+Light vs. severe.
+
+**Differential symptoms**
+Brooding/rumination, thought insertion.
+
+---
+
+###
+31. Obsessive impulses (Self-assessment)
+
+**Definition**
+Intrusive impulses to perform certain actions, recognized as senseless and resisted.
+
+**Explanations**
+Aggressive or sexual themes common; impulses are rarely acted upon.
+
+**Examples**
+• Impulse to insult others.
+• Impulse to harm someone despite knowing it is wrong.
+• Repeated image of shouting obscene words in public.
+
+**Severity**
+Light vs. severe.
+
+**Differential symptoms**
+Obsessive thoughts, compulsive acts, external influence experiences.
+
+---
+
+###
+32. Compulsive acts (Self-assessment)
+
+**Definition**
+Repetitive actions performed despite being recognized as senseless or excessive.
+
+**Explanations**
+Includes washing, checking, ordering rituals. Different from acts done due to hallucinated commands or delusions.
+
+**Examples**
+• Repeated table disinfection.
+• Washing hands multiple times even after they are clean.
+• Ordering objects in exact angles for hours.
+
+**Severity**
+Light vs. severe.
+
+**Differential symptoms**
+Parakinesias.
+
+---
+
+###
+33. Delusional mood
+
+**Definition**
+A diffuse, anticipatory sense that something significant, often threatening, is happening — a precursor state to delusion.
+
+**Explanations**
+Characterized by heightened significance, expectation, or tension, often accompanied by feelings of strangeness, mistrust, or euphoria.
+
+**Examples**
+• “Something has changed; people look at me strangely.”
+• “Something is going on, but I don’t know what.”
+
+**Severity**
+Light vs. severe.
+
+**Differential symptoms**
+Delusional dynamics, derealization, perplexity.
+
+---
+
+###
+34. Delusional perception
+
+**Definition**
+A correct sensory perception is given a delusional meaning.
+
+**Examples**
+• A dog lifting its paw = proof of divine ancestry.
+• A raised eyebrow = certain sign of being fired.
+• Media contain hidden messages directed at the patient.
+
+**Severity**
+Light vs. severe.
+
+**Differential symptoms**
+Delusional intuitions, delusional thoughts, illusions.
+
+---
+
+###
+35. Delusional intuition / idea
+
+**Definition**
+A delusional conviction arising spontaneously without perceptual trigger.
+
+**Examples**
+• Belief of receiving the Nobel Peace Prize.
+• Sudden belief that one’s son is not biologically one’s own.
+
+**Severity**
+Light vs. severe.
+
+**Differential symptoms**
+Delusional perception, delusional thoughts.
+
+---
+
+###
+36. Delusional thoughts
+
+**Definition**
+Persistent, consolidated delusional beliefs.
+
+**Examples**
+• Being monitored by foreign cars for months.
+• Being of extraterrestrial origin.
+
+**Severity**
+Light vs. severe.
+
+**Differential symptoms**
+Delusional perception, delusional intuition.
+
+---
+
+###
+37. Systematized delusion
+
+**Definition**
+Degree of logical or paralogical interconnectedness of delusional elements.
+
+**Examples**
+Complex, coherent delusional systems with causal chains (e.g., surveillance + mission + influence phenomena forming a connected narrative).
+
+**Severity**
+Light vs. severe.
+
+---
+
+###
+38. Delusional dynamics
+
+**Definition**
+Intensity of emotional involvement in delusional experiences.
+
+**Examples**
+• Calm recitation of delusions.
+• Severe fear and agitation related to persecutory delusions.
+
+**Severity**
+Light vs. severe.
+
+**Differential symptoms**
+Delusional mood.
+
+---
+
+###
+39. Ideas of reference
+
+**Definition**
+Delusional attribution of external events to oneself.
+
+**Examples**
+• Being “looked at strangely” by neighbors as a meaningful sign.
+• Car plates “changed” to refer to oneself.
+• Radio or TV sending personal messages.
+
+**Severity**
+Light vs. severe.
+
+**Differential symptoms**
+Suspiciousness.
+
+---
+
+###
+40. Delusions of threat / persecution
+
+**Definition**
+Delusional belief of being threatened, harmed, or conspired against.
+
+**Examples**
+• Being followed by a spy ring.
+• Being observed by psychologists via radio telescopes.
+
+**Severity**
+Light vs. severe.
+
+**Differential symptoms**
+Suspiciousness.
+
+---
+
+###
+41. Delusional jealousy
+
+**Definition**
+Delusional belief that one’s partner is unfaithful.
+
+**Examples**
+As in German text.
+
+**Severity**
+Light vs. severe.
+
+---
+
+###
+42. Delusions of guilt
+
+**Definition**
+Delusional conviction of having committed grave wrongdoing.
+
+**Examples**
+• Belief one will go to hell.
+• Excessive guilt over trivial past events.
+
+**Severity**
+Light vs. severe.
+
+**Differential symptoms**
+Feelings of guilt.
+
+---
+
+###
+43. Delusions of impoverishment
+
+**Definition**
+Delusional belief of financial ruin despite clear evidence to the contrary.
+
+**Examples**
+• Belief that one cannot afford treatment or living costs.
+• Extreme saving behavior despite adequate resources.
+
+**Severity**
+Light vs. severe.
+
+**Differential symptoms**
+Feelings of impoverishment.
+
+---
+
+###
+44. Hypochondriacal delusion
+
+**Definition**
+Delusional conviction of having a severe illness.
+
+**Examples**
+• Belief of having cancer despite normal evaluations.
+• Delusional fear of dementia leading to repeated examinations.
+
+**Severity**
+Light vs. severe.
+
+**Differential symptoms**
+Hypochondria, somatic hallucinations.
+
+---
+
+###
+45. Grandiose delusion
+
+**Definition**
+Delusional self-overestimation or self-exaltation.
+
+**Examples**
+• “I am God.”
+• Belief of possessing supernatural abilities.
+
+**Severity**
+Light vs. severe.
+
+**Differential symptoms**
+Increased self-esteem.
+
+---
+
+###
+46. Other delusional contents
+
+**Definition**
+Delusional themes not covered elsewhere.
+
+**Examples**
+• Pregnant delusion
+• Nihilistic delusion
+• Bizarre delusions
+• Love delusion
+• Alien body or cosmic themes
+
+**Severity**
+Light vs. severe.
+
+**Differential symptoms**
+Depersonalization, thought insertion, thought withdrawal, etc.
+
+---
+
+###
+47. Illusions
+
+**Definition**
+Misinterpretation of real stimuli.
+
+**Examples**
+• Faces seen in wallpaper patterns.
+• Bushes misperceived as people.
+• Cars sounding like tanks.
+
+**Severity**
+Light vs. severe.
+
+**Differential symptoms**
+Delusional perception, hallucinations.
+
+---
+
+###
+48. Voices heard (auditory hallucinations: voices)
+
+**Definition**
+Hearing articulated voices without external stimulus.
+
+**Examples**
+• Voices commenting
+• Commands
+• Dialoguing voices
+• Hearing one’s own thoughts loudly
+
+**Severity**
+Light vs. severe.
+
+**Differential symptoms**
+Illusions, other acoustic hallucinations, thought broadcasting.
+
+---
+
+###
+49. Other acoustic hallucinations (Self-assessment)
+
+**Definition**
+Hearing sounds without a corresponding external stimulus.
+
+**Explanation and examples**
+These are acoustic hallucinations *not perceived as voices* (e.g., clinking, ringing, hissing, sighing, groaning), also referred to as **akoasms**.
+
+**Examples**
+• “Last night I heard an orchestra playing in the clinic garden, as if from far away.”
+• “I clearly heard sighing and moaning coming from the wall.”
+• “I always hear a clicking in my head, and every time it happens, I get smarter.”
+
+**Severity**
+*Light:* causes only mild distress or functional impairment.
+*Severe:* causes significant distress or impairment.
+
+**Differential symptoms**
+47 Illusions
+48 Voices heard
+
+---
+
+###
+50. Visual hallucinations (Self-assessment)
+
+**Definition**
+Visual perception without a corresponding external stimulus.
+
+**Explanation and examples**
+Patients may see flashes of light, patterns, objects, people, or entire scenes that are not present.
+This includes **autoscopy / heautoscopy** (seeing one’s double).
+
+**Examples**
+• “Yesterday I briefly saw the face of the Madonna, indistinctly.”
+• “Suddenly — in the middle of Zurich — I saw an entire army of soldiers with golden helmets marching toward me.”
+• “The whole room was filled with flashes of light and colorful squares.”
+• “There were insects crawling all over my room; I was frozen with disgust and couldn’t stay.”
+
+**Severity**
+Light vs. severe as above.
+
+**Differential symptoms**
+47 Illusions
+
+---
+
+###
+51. Somatic (body) hallucinations (Self-assessment)
+
+
+
+**Definition**
+Tactile perceptions or disturbances of bodily sensations without an external stimulus.
+
+**Explanation**
+Two types may occur:
+a) **Tactile hallucinations** involving skin sensations.
+b) **Coenesthesias** — qualitative abnormalities of bodily experience, often bizarre or difficult to describe.
+
+If experienced as externally caused → also mark **58 Other external influence phenomena**.
+
+**Examples – tactile hallucinations**
+• “I felt a cold, hairy hand on my body; I felt all five fingers clearly.”
+• “Ice-cold water suddenly ran down my back, but when I checked, my skin was dry.”
+• “I could feel tiny crystals between my fingers, some round, some long.”
+
+**Examples – coenesthesias**
+• “Sometimes there is a strange pulling in my head, as if my brain were splitting.”
+• “Electric current flows through my abdomen; my heart and intestines contract; my brain sloshes around.”
+• “There is a strange pulling in my testicle, as if a metal ball were attached.”
+
+**Severity**
+Light vs. severe as above.
+
+**Differential symptoms**
+44 Hypochondriacal delusion
+47 Illusions
+
+---
+
+###
+52. Olfactory and gustatory hallucinations (Self-assessment)
+
+**Definition**
+Smell or taste perceptions without external stimuli.
+
+**Explanation and examples**
+Often occur together or blend into each other. Frequently unpleasant tastes or smells.
+
+**Examples**
+• “Last week it smelled slightly of decay; I briefly wondered where it came from.”
+• “Suddenly I had a rotten taste in my mouth.”
+• “It suddenly smelled strange; odd, because no one else noticed.”
+• “I blocked all cracks around windows and doors so the gas I smelled couldn’t enter — nothing helped.”
+
+**Severity**
+Light vs. severe.
+
+**Differential symptoms**
+34 Delusional perception
+47 Illusions
+
+---
+
+###
+53. Derealization (Self-assessment)
+
+**Definition**
+The environment or experience of time is perceived as unreal or altered; sense of familiarity is lost.
+
+**Explanation and examples**
+People, objects, and surroundings feel unreal, strange, or spatially distorted. Sensory impressions may be dulled or intensified. May occur within delusional mood.
+
+**Examples**
+• “Sounds seem muffled, like cotton in my ears; or I see things as though through fogged glasses.”
+• “At the party everything felt like slow motion, and tastes were flat, like cardboard.”
+• “I felt like I was in a movie — everything was eerie and artificial.”
+• “I repeatedly feel as though I’m not really in this world; everything feels foreign.”
+
+**Severity**
+Light vs. severe.
+
+**Differential symptoms**
+4 Shift of consciousness
+33 Delusional mood
+36 Delusional thoughts
+47 Illusions
+
+---
+
+###
+54. Depersonalization (Self-assessment)
+
+**Definition**
+The person experiences themselves as foreign, unreal, altered, or like another person.
+
+**Explanation**
+May be transient or persistent. Involves estrangement from one's own emotions, body, or identity. Also includes:
+• **Transitivism** (attributing one’s own experiences to others)
+• **Appersonation** (experiences observed in others felt as occurring in oneself)
+
+Not included: understandable feelings of being “changed” due to illness, or philosophical reflections.
+
+---
+
+###
+55. Thought broadcasting (Self-assessment)
+
+**Definition**
+Individuals feel their thoughts extend beyond their body boundaries, others share them, and others know what they are thinking.
+
+**Explanation**
+Thoughts escape the head and become accessible to others (“mind reading”).
+“Thought echo” (hearing one’s own thoughts aloud) is coded separately under ZP6.
+
+**Examples**
+• “Sometimes I feel a thought slip out of my head and others immediately know it.”
+• “It must be telepathy, because I get appropriate answers even without speaking.”
+• “Everyone in the city reads my thoughts. I can’t keep anything secret anymore.”
+
+**Severity**
+Light vs. severe.
+
+**Differential symptoms**
+27 Suspiciousness
+40 Persecutory delusion
+56 Thought withdrawal
+
+---
+
+###
+56. Thought withdrawal (Self-assessment)
+
+**Definition**
+Thoughts are experienced as being taken away or removed.
+
+**Explanation**
+Unlike broadcasting, thoughts do not spread outward but are *removed* by others, leaving emptiness or lack of mental content.
+
+**Examples**
+• “While praying I suddenly felt the devil take a thought away from me.”
+• “Where my thoughts used to be is now a large black hole.”
+• “It feels like a vacuum cleaner is held to my head and sucks the thoughts out.”
+
+**Severity**
+Light vs. severe.
+
+**Differential symptoms**
+24 Blocking / thought derailment
+
+---
+
+###
+57. Thought insertion (Self-assessment)
+
+**Definition**
+Thoughts or ideas are experienced as influenced, made, steered, or inserted by external forces.
+
+**Explanation**
+Thoughts are no longer experienced as one’s own. Patients describe foreign influence (e.g., by external powers, telepathy, devices). Not to be confused with everyday metaphorical “having an inspiration.”
+
+**Examples**
+• “They hypnotize thoughts into my head that aren’t mine.”
+• “They synchronize my thoughts with theirs — like being part of a bigger brain.”
+• “Their devices make bad thoughts come into my head.”
+
+**Severity**
+Light vs. severe.
+
+**Differential symptoms**
+30 Obsessive thoughts
+48 Voices heard
+
+---
+
+###
+58. Other external influence phenomena (Self-assessment)
+
+**Definition**
+Feelings, intentions, behaviors, or bodily functions are experienced as not one’s own but externally controlled.
+
+**Explanation**
+Distinct from normal influence (parents, society, media). Covers direct, experiential external control over actions, emotions, or bodily functions.
+Influence *related to thoughts* is coded under 55, 56, 57.
+
+**Examples**
+• “Sometimes I feel them move my arm like a puppet.”
+• “They can make my heart beat faster or slower.”
+• “Demons create sexual arousal in church; I can’t help it.”
+• “They make me turn in bed.”
+• “They make my shoulder twitch.”
+
+**Severity**
+Light vs. severe.
+
+**Differential symptoms**
+51 Somatic hallucinations
+55 Thought broadcasting
+56 Thought withdrawal
+57 Thought insertion
+
+---
+
+###
+59. Perplexity (Hetero-assessment)
+
+**Definition**
+The patient does not correctly understand their situation; the affect of perplexity is visibly present.
+
+**Explanation**
+Patients appear astonished, confused, helpless. This is **the affect**, not the cognitive deficit itself.
+
+**Examples**
+• “What is happening?”
+• “Where am I?”
+• “I don’t understand…”
+
+**Severity**
+Light vs. severe.
+
+**Differential symptoms**
+75 Ambivalence
+
+---
+
+###
+60. Feeling of emotional numbness (Self-assessment)
+
+**Definition**
+Reduction or loss of emotional experience or affective resonance.
+
+**Explanation**
+Patients feel empty, cold, emotionally blunted. May involve loss of joy, sadness, empathy, or other emotions.
+
+**Examples**
+• “I can’t feel joy the way I used to.”
+• “I know something is nice, but I don’t feel it in my heart.”
+• “I can’t even feel properly sad anymore.”
+• “Inside I feel cold and empty.”
+• “I am dead inside.”
+
+**Severity**
+Light vs. severe.
+
+**Differential symptoms**
+61 Restricted affect
+79 Rigid affect
+
+---
+
+###
+61. Restricted affect (Hetero-assessment)
+
+**Definition**
+The spectrum of observable affects is reduced.
+
+**Explanation**
+Few affective expressions in facial expression and gesture.
+Present in depression, schizophrenia, personality disorders.
+
+**Examples**
+• Manic patient mostly giggles, rarely shows reflective seriousness.
+• Depressed patient remains downcast even when discussing positive topics.
+
+**Severity**
+Light vs. severe.
+
+**Differential symptoms**
+60 Emotional numbness
+79 Rigid affect
+
+---
+
+###
+62. Disturbance of vital feelings (Self-assessment)
+
+**Definition**
+Reduction of general feelings of vitality and aliveness.
+
+**Explanation**
+Experienced fatigue, exhaustion, weakened life energy.
+
+**Examples**
+• “I feel less lively than usual.”
+• “It feels like I suddenly became old.”
+• “Everything has become so heavy.”
+• “I feel drained.”
+• “I am completely exhausted.”
+
+**Severity**
+Light vs. severe.
+
+**Differential symptoms**
+71 Feelings of insufficiency
+80 Low drive
+81 Inhibited drive
+
+---
+
+###
+63. Depressed mood (Self- and hetero-assessment)
+
+**Definition**
+Negatively toned mood.
+
+**Explanation**
+Ranges from visible sadness to psychomotor immobility. May include worry, grief, inner torment.
+
+**Examples**
+• “I am sad.”
+• “I feel down and uneasy.”
+• “My mood is in the basement.”
+
+**Severity**
+Light vs. severe.
+
+**Differential symptoms**
+61 Restricted affect
+79 Rigid affect
+
+---
+
+###
+64. Hopelessness (Self-assessment)
+
+**Definition**
+Reduced or absent hope; pessimistic expectation of the future.
+
+**Examples**
+• “I don’t believe things will improve.”
+• “Everything looks black to me.”
+• “I have given up all hope.”
+
+**Severity**
+Light vs. severe.
+
+**Differential symptoms**
+59 Perplexity
+63 Depressed mood
+
+---
+
+###
+65. Anxiety (Self- and hetero-assessment)
+
+**Definition**
+Anxious mood or generalized anxiety.
+
+**Explanation**
+Includes appropriate fear and pathological anxiety. Cause does not matter for coding. Often accompanied by physical symptoms (e.g., sweating, trembling).
+
+**Examples**
+• “Everything scares me.”
+• “I trembled with fear.”
+• “I fear something terrible will happen.”
+
+**Severity**
+Light vs. severe.
+
+**Differential symptoms**
+29 Phobias
+
+---
+
+###
+66. Euphoria (Self- and hetero-assessment)
+
+**Definition**
+Excessive well-being, elevated mood, unrealistic optimism, heightened vitality.
+
+**Examples**
+• “I feel extraordinarily good, unusually so.”
+• “I feel great, like never before.”
+• “Everything seemed rosy.”
+
+**Severity**
+Light: pleasant but noticeable; no harmful behavior.
+Severe: leads to negative consequences (e.g., reckless spending).
+
+**Differential symptoms**
+72 Increased self-esteem
+
+---
+
+###
+67. Dysphoria (Self- and hetero-assessment)
+
+**Definition**
+Irritable, bad-tempered, or disgruntled mood.
+
+**Examples**
+• “Everything gets on my nerves.”
+• “I can’t find anything good in my situation.”
+• “I complained about everything.”
+
+**Severity**
+Light vs. severe.
+
+**Differential symptoms**
+27 Suspiciousness
+68 Irritability
+
+---
+
+###
+68. Irritability (Self- and hetero-assessment)
+
+**Definition**
+Inappropriately rapid or intense emotional reaction expressed as anger or aggressive feelings.
+
+**Examples**
+• “A fly on the wall enraged me.”
+• “I could explode at the slightest thing.”
+• “I felt overwhelming anger.”
+
+**Severity**
+Light vs. severe.
+
+**Differential symptoms**
+67 Dysphoria
+94 Aggressiveness
+
+---
+
+###
+69. Inner restlessness (Self-assessment)
+
+**Definition**
+Internal agitation or tension.
+
+**Examples**
+• “I feel like I’ve had 10 cups of coffee.”
+• “There is a vibration inside me.”
+• “The inner tension blocks me.”
+• “I tremble inside.”
+
+**Severity**
+Light vs. severe.
+
+**Differential symptoms**
+82 Increased drive
+83 Motor restlessness
+
+---
+
+###
+70. Complaining / whining (Hetero-assessment)
+
+**Definition**
+Emotional expression of pain, distress, or anxiety in an exaggerated manner.
+
+**Explanation**
+Excessive complaining, lamenting, weeping, sighing.
+Not mere reporting of symptoms but *overly expressive lamentation*.
+
+**Severity**
+Light vs. severe.
+
+**Differential symptoms**
+86 Theatrical behavior
+
+---
+
+###
+71. Feelings of insufficiency (Self-assessment)
+
+**Definition**
+Reduced confidence in one's abilities or self-worth.
+
+**Examples**
+• “I am useless.”
+• “What used to be easy is now like a mountain.”
+• “I can’t accomplish anything anymore.”
+
+**Severity**
+Light vs. severe.
+
+**Differential symptoms**
+63 Depressed mood
+
+---
+
+###
+72. Increased self-esteem (Self-assessment)
+
+**Definition**
+Positively experienced sense of increased self-worth, power, or ability.
+
+**Examples**
+• “Everything is going unusually well for me.”
+• “I feel destined for success.”
+• “I felt superior to everyone.”
+
+**Severity**
+Light vs. severe.
+
+**Differential symptoms**
+66 Euphoria
+
+---
+
+###
+73. Feelings of guilt (Self-assessment)
+
+**Definition**
+Feeling guilt over thoughts, wishes, or actions perceived as wrong or immoral.
+
+**Examples**
+• “I always feel guilty when something goes wrong.”
+• “My past misdeeds haunt me.”
+• “I feel responsible for all the world’s misery.”
+
+**Severity**
+Light vs. severe.
+
+**Differential symptoms**
+None
+
+---
+
+###
+74. Feelings of impoverishment (Self-assessment)
+
+**Definition**
+Feeling of lacking sufficient means or being unable to sustain oneself; subjective sense of poverty.
+
+**Examples**
+• “I can afford almost nothing.”
+• “I don't know how I'll feed my family.”
+• “I’ve lost everything; I’m as poor as a church mouse.”
+
+**Severity**
+Light vs. severe.
+
+**Differential symptoms**
+None
+
+---
+
+###
+75. Ambivalence (Self- and hetero-assessment)
+
+**Definition**
+Coexistence of contradictory feelings or impulses.
+
+**Explanation**
+Not cognitive indecision or doubt.
+Also includes **ambitendency** (simultaneous opposing impulses).
+
+**Examples**
+• “I wanted to be discharged but also feared leaving.”
+• “I hate my father for the abuse but love him because he’s my father.”
+• “I was frozen — wanting to move forward and backward at the same time.”
+
+**Severity**
+Light vs. severe.
+
+**Differential symptoms**
+59 Perplexity
+
+###
+76. Parathymia (incongruent affect) (Hetero-assessment)
+
+Definition
+The affect displayed does not match the content of the reported experience.
+
+Explanation and examples
+Affect appears inappropriate to the topic of conversation.
+Embarrassed or polite smiling (e.g., out of insecurity or to maintain composure) is not coded here.
+If affect is restricted (affect poverty), parathymia can only be coded when the appropriate affective tone is potentially available. Example: A constantly laughing manic patient reporting a sad event while lacking the capacity for sadness is not parathymic.
+Stereotyped laughing (not true affect) is coded under 84 Parakinesias.
+Lack of affective expression in depressed patients is not coded here.
+
+Examples
+• A patient laughs while reporting having been horribly tortured the previous night.
+• A patient expresses joy about a gift but complains and whimpers while doing so.
+
+Severity
+Light: minor impairment.
+Severe: substantial impairment.
+
+Differential symptoms
+61 Restricted affect
+84 Parakinesias
+
+###
+77. Affect lability (Self- and hetero-assessment)
+
+Definition
+Rapid shifts between different affects.
+
+Explanation and examples
+Affects switch rapidly, either spontaneously or triggered by external events.
+Affects are short-lived; key is the rapid back-and-forth change.
+Rapidly triggered but uncontrollable affects belong under 78 Affect incontinence.
+Long-term mood fluctuations (e.g., bipolar) or day-to-day variation (“one day euphoric, next day depressed”) are not included here.
+Circadian mood variations are coded separately.
+
+Examples
+• In movies, the patient cries quickly, then laughs in the next scene, then cries again.
+• In conversation, they become irritated quickly, regain control, then are irritated again at the next topic.
+• Patient briefly bursts into tears whenever a specific topic is mentioned.
+
+Severity
+Light vs. severe impairment.
+
+Differential symptoms
+78 Affect incontinence
+
+###
+78. Affect incontinence (Self- and hetero-assessment)
+
+Definition
+Affects are triggered by minimal stimuli and cannot be controlled.
+
+Explanation and examples
+Once triggered, the affect cannot be adequately suppressed or modulated.
+Unlike affect lability, here the problem is loss of control of a single affect, not switching between affects. The term “affect permeability” is sometimes used.
+
+Examples
+• “I always cry when sad news comes on the radio, even though I don’t want to.”
+• “Someone told a joke today and I couldn't stop laughing — it became embarrassing.”
+• “My neighbor irritated me, and I couldn’t stop my anger; I eventually exploded.”
+• “Whenever my wife’s death is mentioned, I fall into uncontrollable tears.”
+
+Severity
+Light vs. severe impairment.
+
+Differential symptoms
+77 Affect lability
+
+###
+79. Rigid / fixed affect (Hetero-assessment)
+
+Definition
+Reduced ability to modulate affective expression.
+
+Explanation
+Affects may occur, but each shows little to no modulation (flattened affect, reduced affective variability).
+If no spontaneous modulation is observed, the clinician should apply emotional stimuli.
+Distinct from affect poverty: here, the range of modulation, not the number of affects, is reduced.
+
+Examples
+• Patient appears emotionally static and lacks emotional dynamism.
+• The range of affective expression is limited.
+
+Severity
+Light: modulation possible with external cues.
+Severe: modulation does not increase even with strong stimuli.
+
+Differential symptoms
+61 Restricted affect
+
+###
+80. Low drive (Self- and hetero-assessment)
+
+Definition
+Lack of energy, initiative, and interest.
+
+Explanation
+Reduced spontaneous activity, minimal initiative, visible psychomotor slowing.
+Severe forms include stupor.
+Related to 62 Disturbance of vital feelings, but:
+• Vital feelings = bodily sense of vitality
+• Drive = capacity to initiate intended action
+
+Examples
+• Neglect of hobbies, spending long periods lying on the sofa, difficult to motivate.
+• Little movement, minimal spontaneous speech.
+• “I do much less than before.”
+• “I have less energy.”
+• “Nothing interests me anymore.”
+• “I am completely inactive.”
+• “I feel paralyzed; I can’t do anything.”
+
+Severity
+Light vs. severe impairment.
+
+Differential symptoms
+62 Disturbance of vital feelings
+81 Inhibited drive
+87 Mutism
+92 Social withdrawal
+136 Hypokinesia
+
+###
+81. Inhibited drive (Self-assessment)
+
+Definition
+Energy and initiative are experienced as blocked or restrained.
+
+Explanation
+Different from low drive: here, intentions exist, but execution feels difficult or impossible.
+Patients struggle, attempt, fail, try again — strong internal effort.
+
+Examples
+• “Everything is harder than usual.”
+• “It’s like I’m held back by a rubber band.”
+• “I plan to get up and get dressed, but it’s too exhausting.”
+• “I want to do things, but I can’t.”
+
+Severity
+Light vs. severe impairment.
+
+Differential symptoms
+80 Low drive
+87 Mutism
+92 Social withdrawal
+136 Hypokinesia
+
+###
+82. Increased drive (Self- and hetero-assessment)
+
+Definition
+Increase in energy, initiative, and interest.
+
+Explanation
+Patients engage in more activity than usual, often pursuing many plans simultaneously.
+
+Examples
+• Attempts to control the conversation; lively motor activity.
+• “Everything feels easier than usual.”
+• “I've had an energy boost the last three days.”
+• “People say I’m very wound up lately.”
+• “I have so many ideas I’m bursting.”
+• “My wife and coworkers say I'm restless and unfocused.”
+
+Severity
+Light vs. severe impairment.
+
+Differential symptoms
+93 Increased social activity
+
+###
+83. Motor restlessness (Self- and hetero-assessment)
+
+Definition
+Increased undirected motor activity.
+
+Explanation
+Visible agitation, unlike inner restlessness.
+Unlike increased drive, activity is not goal-directed.
+
+Examples
+• Foot tapping, finger drumming.
+• Pacing back and forth without purpose.
+• “I walked nervously around the apartment yesterday.”
+• “For days I keep moving from room to room.”
+• “I just have to move; I can't sit still.”
+
+Severity
+Light vs. severe impairment.
+
+Differential symptoms
+69 Inner restlessness
+82 Increased drive
+84 Parakinesias
+135 Dyskinesias
+137 Akathisia
+
+###
+84. Parakinesias (Hetero-assessment)
+
+Definition
+Qualitatively abnormal, often complex movements involving gestures, facial expression, or speech.
+
+Explanation
+Includes:
+• Stereotypies (repetitive speech or motor patterns)
+• Verbigeration (verbal stereotypy)
+• Echolalia (echoing speech)
+• Echopraxia (echoing actions)
+• Catalepsy / flexibilitas cerea
+• Automatism (command automatism)
+• Active/passive negativism
+• Tic-like movements
+
+Examples
+• Repetitive phrase: “not so, isn’t it… isn’t it…”
+• Mechanical repetition of the clinician’s words (echolalia).
+• Mimicking the clinician’s movements (echopraxia).
+• Repetitive shoulder jerking or blinking (tics).
+
+Severity
+Light vs. severe impairment.
+
+Differential symptoms
+19 Perseveration
+32 Compulsive acts
+83 Motor restlessness
+85 Mannered/bizarre behavior
+135 Dyskinesias
+
+###
+85. Mannered / bizarre behavior (Hetero-assessment)
+
+Definition
+Everyday movements, gestures, or speech appear exaggerated, stylized, odd, or artificial.
+
+Explanation
+Includes pretentious, pompous, affected, or unnatural behavior.
+Bizarre poses can also be included.
+
+Examples
+• Repeatedly brushing hair in an exaggerated fashion.
+• Speech filled with stylized clichés (“isn’t it?”).
+• Using unnatural, archaic, overly formal language.
+
+Severity
+Light vs. severe impairment.
+
+Differential symptoms
+26 Neologisms
+84 Parakinesias
+86 Theatrical behavior
+
+###
+86. Theatrical behavior (Hetero-assessment)
+
+Definition
+Exaggerated dramatic behavior.
+
+Explanation
+Overly expressive, acting-like presentation; may include exaggeration of symptoms (aggravation).
+
+Examples
+• Wild gesturing to dramatize statements.
+• Overly expressive descriptions of complaints.
+• Speaking as if addressing a large audience.
+• Acting as though performing a role in a play.
+
+Severity
+Light vs. severe impairment.
+
+Differential symptoms
+85 Mannered/bizarre behavior
+
+###
+87. Mutism (Hetero-assessment)
+
+Definition
+Markedly reduced speech up to complete absence of speech.
+
+Explanation
+Patient speaks little, only in monosyllables, or not at all.
+May occur with drive reduction, inhibition, blocking, or negativism.
+Alogia is also included here.
+Mutism due to language barriers or hearing impairment is not coded here.
+
+Examples
+• Only answers direct questions, no spontaneous speech.
+• States at beginning that they do not trust anyone and then remains silent.
+• Severe drive reduction leads to reduced speech.
+
+Severity
+Light vs. severe impairment.
+
+Differential symptoms
+16 Slowed thinking
+
+###
+88. Logorrhea (Hetero-assessment)
+
+Definition
+Excessive speech output.
+
+Explanation
+Speech may be coherent and logical; does not need to be accelerated.
+
+Examples
+• Patient repeatedly takes over the conversation, interrupts the clinician.
+• The clinician cannot structure the interview because the patient speaks continuously.
+
+Severity
+Light vs. severe impairment.
+
+Differential symptoms
+17 Circumstantial
+22 Flight of ideas
+82 Increased drive
+
+###
+89. Worse in the morning (Self- and hetero-assessment)
+
+Definition
+Systematic worsening of symptoms in the morning.
+
+Examples
+• “I can’t get going in the morning.”
+• “Every morning I feel worse.”
+• “My mood is always at its lowest in the morning.”
+
+Severity
+Light vs. severe impairment.
+
+###
+90. Worse in the evening (Self- and hetero-assessment)
+
+Definition
+Systematic worsening of symptoms in the evening.
+
+Examples
+• “Evenings are always the worst.”
+• “My restlessness is especially bad in the evening.”
+• “In the evening I can’t do anything.”
+
+Severity
+Light vs. severe impairment.
+
+Differential symptoms
+91 Better in the evening
+
+###
+91. Better in the evening (Self- and hetero-assessment)
+
+Definition
+Systematic improvement of symptoms in the evening.
+
+Examples
+• “Evenings are always a bit easier.”
+• “I feel much better in the evening.”
+• “I come alive in the evening.”
+
+Severity
+Light vs. severe improvement.
+
+Differential symptoms
+90 Worse in the evening
+
+###
+92. Social withdrawal (Self- and hetero-assessment)
+
+Definition
+Withdrawal from other people.
+
+Explanation
+Reduction in social contact due to lack of desire for interaction.
+Not coded when isolation occurs despite a preserved desire for contact.
+
+Examples
+• Patient reports no need for social contact, avoids interactions.
+• Rejects offers of contact.
+• Avoids relatives, friends, or fellow patients.
+
+Severity
+Light vs. severe impairment.
+
+Differential symptoms
+80 Low drive
+81 Inhibited drive
+87 Mutism
+
+###
+93. Increased social activity / sociability (Self- and hetero-assessment)
+
+Definition
+Increase in social interactions.
+
+Explanation
+Frequent, often superficial and changeable contacts.
+May be experienced as intrusive or inappropriate by others.
+
+Examples
+• “I’ve been much more socially active than usual.”
+• Going from bar to bar to meet new people.
+• Approaching strangers randomly.
+
+Severity
+Light vs. severe impairment.
+
+Differential symptoms
+82 Increased drive
+88 Logorrhea
+ZP5 Lack of distance
+
+###
+94. Aggressiveness (Self- and hetero-assessment)
+
+Definition
+Hostile or attack-oriented behavior.
+
+Explanation
+Includes verbal aggression and physical aggression against people or objects.
+Self-aggressive behavior is coded under 95–96.
+
+Examples
+• Insulting nursing staff.
+• Pushing or shoving others.
+• Threatening other patients.
+• Throwing objects.
+
+Severity
+Light vs. severe impairment.
+
+Differential symptoms
+67 Dysphoric
+68 Irritable
+95 Suicidality
+96 Self-harm
+ZP5 Lack of distance
+
+###
+95. Suicidality (Self- and hetero-assessment)
+
+Definition
+Thoughts, plans, or actions involving not wanting to live, wanting to die, or suicide.
+
+Explanation
+Includes death wishes, suicidal thoughts, preparatory actions, and attempts.
+Imperative voices instructing suicide require coding both here and 48 Voices heard.
+
+Examples
+• “I don’t want to live anymore.”
+• Collecting pills following command hallucinations.
+• Suicidal thoughts with ambivalence or strong pressure.
+• Suicide planning or attempts.
+
+Severity
+Light vs. severe impairment.
+
+Differential symptoms
+96 Self-harm
+
+###
+96. Self-harm (Self- and hetero-assessment)
+
+Definition
+Self-injury without intent to die.
+
+Explanation
+Intentional behaviors with the aim of harming oneself.
+Includes self-injury for tension reduction.
+
+Examples
+• Swallowing objects.
+• Cutting, scratching, burning.
+• Repeatedly hitting one’s head.
+
+Severity
+Light vs. severe impairment (any injury requiring medical attention = always severe).
+
+Differential symptoms
+94 Aggressiveness
+95 Suicidality
+
+###
+97. Lack of feeling ill (Self-assessment)
+
+Definition
+Patient does not feel ill, or feels less ill than they objectively are.
+
+Explanation
+Refers to lack of subjective illness experience.
+A hypochondriacal patient who feels physically ill is not coded here.
+
+Examples
+• Dementia patient unaware of impairments.
+• Manic patient who feels completely healthy despite dysfunction.
+• Schizophrenic patient believing they are fine despite negative symptoms.
+
+Severity
+Light vs. severe discrepancy with objective illness.
+
+Differential symptoms
+98 Lack of insight
+99 Refusal of treatment
+
+###
+98. Lack of insight into illness (Self-assessment)
+
+Definition
+Patient does not acknowledge that their symptoms stem from a mental disorder.
+
+Explanation
+Refers to discrepancy between clinical and patient’s own illness model.
+Insight and illness feeling are independent.
+
+Examples
+• Hypochondriacal patient insists on somatic illness despite negative findings.
+• Schizophrenic patient attributes hallucinations to external sources.
+• Depressed patient attributes severe symptoms only to “stress.”
+
+Severity
+Light: only some symptoms misattributed.
+Severe: almost all symptoms misattributed.
+
+Differential symptoms
+97 Lack of feeling ill
+99 Refusal of treatment
+
+###
+99. Refusal of treatment (Self- and hetero-assessment)
+
+Definition
+Patient rejects or resists treatment.
+
+Explanation
+Range from partial noncompliance to complete refusal.
+
+Examples
+• Taking medication unwillingly.
+• Rejecting or inconsistently taking medication.
+• Refusing necessary inpatient treatment.
+• Frequently missing appointments.
+• Refusing indicated diagnostics.
+
+Severity
+Light: refusal of non-essential interventions.
+Severe: refusal of essential medical treatment.
+
+Differential symptoms
+97 Lack of feeling ill
+98 Lack of insight
+
+###
+100. Need for care (Self- and hetero-assessment)
+
+Definition
+Patient requires external assistance for activities of daily living.
+
+Explanation
+Represents inability to meet basic daily needs due to physical or psychiatric illness.
+
+Examples
+• Needs help with eating or dressing.
+• Requires assistance with personal hygiene.
+• Bedridden; needs to be fed.
+
+Severity
+Light vs. severe impairment.
+

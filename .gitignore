@@ -1,0 +1,9 @@
+.Rproj.user
+.Rhistory
+.RData
+.Ruserdata
+*.env
+**/*.env
+src/raw_responses/
+*__pycache__/
+**/__pycache__/

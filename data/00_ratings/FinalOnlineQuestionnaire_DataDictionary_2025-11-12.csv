@@ -1,0 +1,356 @@
+Variable / Field Name,Form Name,Section Header,Field Type,Field Label,"Choices, Calculations, OR Slider Labels",Field Note,Text Validation Type OR Show Slider Number,Text Validation Min,Text Validation Max,Identifier?,Branching Logic (Show field only if...),Required Field?,Custom Alignment,Question Number (surveys only),Matrix Group Name,Matrix Ranking?,Field Annotation
+ids,combined_questionnaire_2,,text,Teilnehmer_ID,"1, Männlich | 2, Weiblich | 3, Divers",,,,,,,,,,,,
+zustimmung_v2,combined_questionnaire_2,Einverständnis,radio,"Bitte geben Sie an, ob Sie damit einverstanden sind, dass Ihre Antworten für Forschungszwecke verwendet werden dürfen. Ihre Teilnahme ist freiwillig, und alle Informationen werden vertraulich behandelt.","1, Ja, ich stimme zu | 0, Nein, ich stimme nicht zu",,,,,,,y,,,,,
+id_code_v2,combined_questionnaire_2,Demographische Daten,text,"Um Ihre Angaben eindeutig, aber anonym zuordnen zu können auch wenn Sie an weiteren Ratings teilnehmen, erstellen Sie bitte einen persönlichen Code anhand folgender Informationen. Der Code enthält nur einzelne Buchstaben und Zahlen - keine vollständigen Namen oder sensiblen Daten.",,,,,,y,,y,,,,,
+alter_v2,combined_questionnaire_2,,text,Alter,,,number,0.0,100.0,,,,,,,,
+geschlecht_v2,combined_questionnaire_2,,radio,Geschlecht,"1, männlich | 2, weiblich | 3, divers",,,,,,,,,,,,
+demo_muttersprache,combined_questionnaire_2,,radio,Sind Sie mit Deutsch als Muttersprache aufgewachsen?,"1, Ja | 0, Nein",,,,,,,,,,,,
+haupttätigkeit_v2,combined_questionnaire_2,"Erfahrungen, Einschätzungen und Qualifikationen",radio,Welcher Berufsgruppe gehören Sie an?,"1, Arzt / Ärztin in Weiterbildung | 2, Facharzt / Fachärztin für Psychiatrie und Psychotherapie | 3, Oberarzt / Oberärztin | 5, Chefarzt / Chefärztin | 6, Psychologe / Psychologin (PT1/PT2) | 7, Psychologischer Psychotherapeut / Psychologische Psychotherapeutin | 8, Leitender Psychologe / Leitende Psychologin | 9, Facharzt / Fachärztin eines anderen Fachgebiets | 10, Sonstige",,,,,,,y,,,,,
+demo_area_v2,combined_questionnaire_2,,radio,In welchem Tätigkeitsbereich der Psychiatrie sind Sie überwiegend tätig?,"0, Allgemeinpsychiatrie - Erwachsene | 1, Gerontopsychiatrie | 2, Kinder- und Jugendpsychiatrie, Psychosomatik und Psychotherapie | 3, Suchtmedizin / Abhängigkeitserkrankungen | 4, Psychosomatik - Erwachsene | 5, Forensische Psychiatrie | 6, Psychiatrische Forschung / Lehre | 7, Sonstige",,,,,,,,,,,,
+demo_bereich_v2,combined_questionnaire_2,,radio,In welchem Stationsbereich der psychiatrischen Versorgung sind Sie derzeit hauptsächlich tätig?,"0, Akutpsychiatrische Station (geschützt) | 1, Psychiatrische Normalstation (offen) | 2, Psychiatrische Normalstation (teilgeschützt) | 3, Tagesklinik / teilstationäre Einrichtung | 4, Psychiatrische Institutsambulanz (PIA) | 5, Konsiliar- / Liaisondienst | 6, Forschung / Wissenschaft | 7, Sonstige",,,,,,,,,,,,
+psy_tätigkeit_jahre_v2,combined_questionnaire_2,,text,Wie lange sind Sie in der Psychiatrie tätig? (in Jahren),,,number,0.0,100.0,,,y,,,,,
+ppb_count_per_week_v2,combined_questionnaire_2,,text,"Wie viele psychopathologische Befunde erheben Sie im Durchschnitt pro Monat? (z.B. 3 PBBs pro Tag bei Vollzeit:
+3 * 5 * 4 = 60)
+",,,number,,,,,y,,,,,
+ppb_confidence_v2,combined_questionnaire_2,,radio,Wie sicher fühlen Sie sich in der psychopathologischen Befunderhebung?,"4, Sehr sicher | 3, Eher sicher | 2, Weder sicher noch unsicher | 1, Eher unsicher | 0, Sehr unsicher | -99, Keine Angabe",,,,,,,y,,,,,
+amdp_zert_time_v2,combined_questionnaire_2,,radio,"Falls Sie über eine AMDP-Zertifizierung verfügen: Wie lange liegt diese zurück?
+(Nach einem gesondertem 1,5 tägigem AMDP-Seminar durch den AMDP e.V. gelten Sie als zertifiziert.)","0, Keine Zertifizierung | 1, Weniger als 1 Jahr | 2, 1-2 Jahre | 3, 2-3 Jahre | 4, 3-4 Jahre | 5, 4-5 Jahre | 6, Mehr als 5 Jahre",,,,,,,,,,,,
+count_intern_seminars,combined_questionnaire_2,,radio,"Wie viele klinikinterne AMDP-Fallseminare haben Sie (auch in anderen Kliniken) bisher ungefähr besucht?
+(Wichtig: Gemeint sind interne Fallseminare zur Anwendung des AMDP-Systems - nicht die offizielle Zertifizierungsschulung.)","0, 0 | 1, 1-5 | 2, 5-10 | 3, 10-20 | 4, 20-50 | 5, mehr als 50 | -99, Kann ich nicht einschätzen",,,,,,,,,,,,
+amdp_usage_v2,combined_questionnaire_2,Stellenwert des AMDP-Systems im klinischen Alltag,checkbox,In welchen Kontexten verwenden Sie das AMDP-System hauptsächlich? (Mehrfachauswahl möglich),"0, Aufnahmegespräche | 1, Verlaufskontrollen | 2, Entlassgespräch | 3, Supervision / Ausbildung | 4, Dokumentation / Berichte | 5, Forschung | 6, Sonstige | -99, Nie",,,,,,,,,,,,
+amdp_importance_v2,combined_questionnaire_2,,radio,Wie wichtig ist Ihnen das AMDP-System für die strukturierte Erfassung psychopathologischer Befunde?,"4, Sehr wichtig | 3, Eher wichtig | 2, Neutral | 1, Eher unwichtig | 0, Überhaupt nicht wichtig | -99, Keine Aussage",,,,,,,,,,,,
+amdp_clinicalaspects_v2,combined_questionnaire_2,,radio,Deckt das AMDP-System Ihrer Einschätzung nach alle klinisch relevanten Aspekte der psychopathologischen Befunderhebung ausreichend ab?,"4, Ja, vollständig | 3, Größtenteils | 2, Teilweise | 1, Eher nicht | 0, Nein, es fehlen viele relevante Aspekte | -99, Keine Aussage",,,,,,,,,,,,
+amdp_betterinstrument_v2,combined_questionnaire_2,,checkbox,"Welches Instrument zur Erhebung psychopathologischer Befunde würden Sie persönlich im klinischen Alltag bevorzugt einsetzen, wenn Sie frei wählen könnten?
+(Bitte wählen Sie eines oder mehrere aus. Gerne können Sie auch ein Instrument ergänzen.)
+","1, AMDP-System | 2, Freie Exploration ohne strukturiertes Instrument | 3, ICD-10/ICD-11 Kriterien | 4, DSM-5 | 5, OPD (Operationalisierte Psychodynamische Diagnostik) | 6, MINI (Mini International Neuropsychiatric Interview) | 7, CGI (Clinical Global Impression) | 8, SCL-90 | 9, Andere",,,,,,,,,,,,
+amdp_betterinst_other,combined_questionnaire_2,,text,Welche anderen/anderes Instrument/e würden Sie nutzen? (Bitte Instrumente mit Komma trennen.),,,,,,,[amdp_betterinstrument_v2(9)] = '1',,,,,,
+ki_nutzen_v2,combined_questionnaire_2,,checkbox,In welchen Bereichen der psychiatrischen Versorgung empfinden Sie den Einsatz von Künstlicher Intelligenz (KI) als eine sinnvolle Ergänzung? (Mehrfachauswahl möglich.),"0, Erhebung psychopathologischer Befunde | 1, Automatische Erstellung von Arztbriefen / Dokumentation | 2, Unterstützung bei der somatischen Befundung (z. B. KI als Helfersystem außerhalb ärztlicher Fachkompetenz) | 3, Entscheidungsunterstützung bei Diagnosestellung (z. B. Screening auf Depressivität, Suizidalität) | 4, Verlaufskontrolle (z. B. Analyse von Sprache, Mimik, Bewegungsmustern über Zeit) | 5, Patientenscreening / Triage in Ambulanzen oder Notaufnahmen | 6, Unterstützung in der Medikationsempfehlung (z. B. auf Basis von bisherigen Daten, Genetik) | 7, Risikoabschätzung (z. B. Rückfallrisiken, Suizid, Gewaltpotenzial) | 8, Planung und Individualisierung von Therapieplänen | 9, Keine sinnvolle Anwendung erkennbar | 10, Sonstige | -99, Keine Angabe",,,,,,,,,,,,
+ki_nutzen_other_v2,combined_questionnaire_2,,text,In welchen anderen Bereichen der psychiatrischen Versorgung empfinden Sie den Einsatz von KI als eine sinnvolle Ergänzung? ,,,,,,,[ki_nutzen_v2(10)] = '1',,,,,,
+amdp_ki_v2,combined_questionnaire_2,,radio,"Wären Sie grundsätzlich offen für die digitale, KI-gestützte AMDP-Befunderhebung?","1, Ja | 2, Unter bestimmten Bedingungen | 3, Nein | -99, keine Aussage",,,,,,,,,,,,
+sp_id_final,combined_questionnaire_final,,text,"Geben Sie die Simulationspatienten-ID, welche zu Beginn des Videos eingeblendet wird an.
+(Bitte die Zahl angeben, z. B. 10.)",,,integer,0.0,90.0,y,,y,,,,,
+on_off_bewusstsein,combined_questionnaire_final,Bewusstseinsstörungen,radio,Bewusstseinsstörungen,"1, ausklappen",,,,,,,,,,,,
+p1_bewusstseinsverminderung_final,combined_questionnaire_final,,radio,1. Bewusstseinsverminderung,"0, nicht vorhanden | 1, leicht | 2, mittelgradig | 3, schwer | -99, keine Aussage",,,,,,[on_off_bewusstsein] = 1,,,,mg_b12548_final,,
+p2_bewusstseinstrübung_final,combined_questionnaire_final,,radio,2. Bewusstseinstrübung,"0, nicht vorhanden | 1, leicht | 2, mittelgradig | 3, schwer | -99, keine Aussage",,,,,,[on_off_bewusstsein] = 1,,,,mg_b12548_final,,
+p3_bewusstseinseinengung_final,combined_questionnaire_final,,radio,3. Bewusstseinseinengung,"0, nicht vorhanden | 1, leicht | 2, mittelgradig | 3, schwer | -99, keine Aussage",,,,,,[on_off_bewusstsein] = 1,,,,mg_b12548_final,,
+p4_bewusstseinsverschiebung_final,combined_questionnaire_final,,radio,4. Bewusstseinsverschiebung,"0, nicht vorhanden | 1, leicht | 2, mittelgradig | 3, schwer | -99, keine Aussage",,,,,,[on_off_bewusstsein] = 1,,,,mg_b12548_final,,
+on_off_orientierung_2,combined_questionnaire_final,Orientierungsstörungen,radio,Orientierungsstörungen,"1, ausklappen",,,,,,,,,,,,
+p5_zeitliche_orientierungsstörung_final,combined_questionnaire_final,,radio,5. zeitliche Orientierungsstörung,"0, nicht vorhanden | 1, leicht | 2, mittelgradig | 3, schwer | -99, keine Aussage",,,,,,[on_off_orientierung_2] = 1,,,,mg_709e42_final,,
+p6_örtliche_orientierungsstörung_final,combined_questionnaire_final,,radio,6. örtliche Orientierungsstörung,"0, nicht vorhanden | 1, leicht | 2, mittelgradig | 3, schwer | -99, keine Aussage",,,,,,[on_off_orientierung_2] = 1,,,,mg_709e42_final,,
+p7_situative_orientierungsstörung_final,combined_questionnaire_final,,radio,7. situative Orientierungsstörung,"0, nicht vorhanden | 1, leicht | 2, mittelgradig | 3, schwer | -99, keine Aussage",,,,,,[on_off_orientierung_2] = 1,,,,mg_709e42_final,,
+p8_orientierungsstörung_eigene_person_final,combined_questionnaire_final,,radio,8. Orientierungsstörung über die eigene Person,"0, nicht vorhanden | 1, leicht | 2, mittelgradig | 3, schwer | -99, keine Aussage",,,,,,[on_off_orientierung_2] = 1,,,,mg_709e42_final,,
+on_off_auf_3,combined_questionnaire_final,Aufmerksamkeits- und Gedächtnisstörungen,radio,Aufmerksamkeits- und Gedächtnisstörungen,"1, ausklappen",,,,,,,,,,,,
+p9_auffassungsstörungen_final,combined_questionnaire_final,,radio,9. Auffassungsstörungen,"0, nicht vorhanden | 1, leicht | 2, mittelgradig | 3, schwer | -99, keine Aussage",,,,,,[on_off_auf_3] = 1,,,,mg_ff547d_final,,
+p10_konzentrationsstörungen_final,combined_questionnaire_final,,radio,10. Konzentrationsstörungen,"0, nicht vorhanden | 1, leicht | 2, mittelgradig | 3, schwer | -99, keine Aussage",,,,,,[on_off_auf_3] = 1,,,,mg_ff547d_final,,
+p11_merkfähigkeitsstörungen_final,combined_questionnaire_final,,radio,11. Merkfähigkeitsstörungen,"0, nicht vorhanden | 1, leicht | 2, mittelgradig | 3, schwer | -99, keine Aussage",,,,,,[on_off_auf_3] = 1,,,,mg_ff547d_final,,
+p12_gedächtnisstörungen_final,combined_questionnaire_final,,radio,12. Gedächtnisstörungen,"0, nicht vorhanden | 1, leicht | 2, mittelgradig | 3, schwer | -99, keine Aussage",,,,,,[on_off_auf_3] = 1,,,,mg_ff547d_final,,
+p13_konfabulationen_final,combined_questionnaire_final,,radio,13. Konfabulationen,"0, nicht vorhanden | 1, leicht | 2, mittelgradig | 3, schwer | -99, keine Aussage",,,,,,[on_off_auf_3] = 1,,,,mg_ff547d_final,,
+p14_paramnesien_final,combined_questionnaire_final,,radio,14. Paramnesien,"0, nicht vorhanden | 1, leicht | 2, mittelgradig | 3, schwer | -99, keine Aussage",,,,,,[on_off_auf_3] = 1,,,,mg_ff547d_final,,
+on_off_denk_4,combined_questionnaire_final,Formale Denkstörungen,radio,Formale Denkstörungen,"1, ausklappen",,,,,,,,,,,,
+p15_gehemmt_final,combined_questionnaire_final,,radio,15. gehemmt,"0, nicht vorhanden | 1, leicht | 2, mittelgradig | 3, schwer | -99, keine Aussage",,,,,,[on_off_denk_4] = 1,,,,mg_55c49f_final,,
+p16_verlangsamt_final,combined_questionnaire_final,,radio,16. verlangsamt,"0, nicht vorhanden | 1, leicht | 2, mittelgradig | 3, schwer | -99, keine Aussage",,,,,,[on_off_denk_4] = 1,,,,mg_55c49f_final,,
+p17_umständlich_final,combined_questionnaire_final,,radio,17. umständlich,"0, nicht vorhanden | 1, leicht | 2, mittelgradig | 3, schwer | -99, keine Aussage",,,,,,[on_off_denk_4] = 1,,,,mg_55c49f_final,,
+p18_eingeengt_final,combined_questionnaire_final,,radio,18. eingeengt,"0, nicht vorhanden | 1, leicht | 2, mittelgradig | 3, schwer | -99, keine Aussage",,,,,,[on_off_denk_4] = 1,,,,mg_55c49f_final,,
+p19_perseverierend_final,combined_questionnaire_final,,radio,19. perseverierend,"0, nicht vorhanden | 1, leicht | 2, mittelgradig | 3, schwer | -99, keine Aussage",,,,,,[on_off_denk_4] = 1,,,,mg_55c49f_final,,
+p20_grüblen_final,combined_questionnaire_final,,radio,20. grübeln,"0, nicht vorhanden | 1, leicht | 2, mittelgradig | 3, schwer | -99, keine Aussage",,,,,,[on_off_denk_4] = 1,,,,mg_55c49f_final,,
+p21_gedankendrängen_final,combined_questionnaire_final,,radio,21. Gedankendrängen,"0, nicht vorhanden | 1, leicht | 2, mittelgradig | 3, schwer | -99, keine Aussage",,,,,,[on_off_denk_4] = 1,,,,mg_55c49f_final,,
+p22_ideenflüchtig_final,combined_questionnaire_final,,radio,22. ideenflüchtig,"0, nicht vorhanden | 1, leicht | 2, mittelgradig | 3, schwer | -99, keine Aussage",,,,,,[on_off_denk_4] = 1,,,,mg_55c49f_final,,
+p23_vorbeireden_final,combined_questionnaire_final,,radio,23. vorbeireden,"0, nicht vorhanden | 1, leicht | 2, mittelgradig | 3, schwer | -99, keine Aussage",,,,,,[on_off_denk_4] = 1,,,,mg_55c49f_final,,
+p24_gesperrt_gedankenabreissen_final,combined_questionnaire_final,,radio,24. gesperrt/Gedankenabreißen,"0, nicht vorhanden | 1, leicht | 2, mittelgradig | 3, schwer | -99, keine Aussage",,,,,,[on_off_denk_4] = 1,,,,mg_55c49f_final,,
+p25_inkohärent_zerfahren_final,combined_questionnaire_final,,radio,25. inkohärent/zerfahren,"0, nicht vorhanden | 1, leicht | 2, mittelgradig | 3, schwer | -99, keine Aussage",,,,,,[on_off_denk_4] = 1,,,,mg_55c49f_final,,
+p26_neologismen_final,combined_questionnaire_final,,radio,26. Neologismen,"0, nicht vorhanden | 1, leicht | 2, mittelgradig | 3, schwer | -99, keine Aussage",,,,,,[on_off_denk_4] = 1,,,,mg_55c49f_final,,
+on_zwang_denk_5,combined_questionnaire_final,Befürchtungen und Zwänge,radio,Befürchtungen und Zwänge,"1, ausklappen",,,,,,,,,,,,
+p27_misstraün_final,combined_questionnaire_final,,radio,27. Misstrauen,"0, nicht vorhanden | 1, leicht | 2, mittelgradig | 3, schwer | -99, keine Aussage",,,,,,[on_zwang_denk_5] = 1,,,,mg_b31aae_final,,
+p28_hypochondrie_final,combined_questionnaire_final,,radio,28. Hypochondrie,"0, nicht vorhanden | 1, leicht | 2, mittelgradig | 3, schwer | -99, keine Aussage",,,,,,[on_zwang_denk_5] = 1,,,,mg_b31aae_final,,
+p29_phobien_final,combined_questionnaire_final,,radio,29. Phobien,"0, nicht vorhanden | 1, leicht | 2, mittelgradig | 3, schwer | -99, keine Aussage",,,,,,[on_zwang_denk_5] = 1,,,,mg_b31aae_final,,
+p30_zwangsdenken_final,combined_questionnaire_final,,radio,30. Zwangsdenken,"0, nicht vorhanden | 1, leicht | 2, mittelgradig | 3, schwer | -99, keine Aussage",,,,,,[on_zwang_denk_5] = 1,,,,mg_b31aae_final,,
+p31_zwangsimpulse_final,combined_questionnaire_final,,radio,31. Zwangsimpulse,"0, nicht vorhanden | 1, leicht | 2, mittelgradig | 3, schwer | -99, keine Aussage",,,,,,[on_zwang_denk_5] = 1,,,,mg_b31aae_final,,
+p32_zwangshandlungen_final,combined_questionnaire_final,,radio,32. Zwangshandlungen,"0, nicht vorhanden | 1, leicht | 2, mittelgradig | 3, schwer | -99, keine Aussage",,,,,,[on_zwang_denk_5] = 1,,,,mg_b31aae_final,,
+on_wahn_denk_6,combined_questionnaire_final,Wahn,radio,Wahn,"1, ausklappen",,,,,,,,,,,,
+p33_wahnstimmung_final,combined_questionnaire_final,,radio,33. Wahnstimmung,"0, nicht vorhanden | 1, leicht | 2, mittelgradig | 3, schwer | -99, keine Aussage",,,,,,[on_wahn_denk_6] = 1,,,,mg_52d47e_final,,
+p34_wahnwahrnehmung_final,combined_questionnaire_final,,radio,34. Wahnwahrnehmung,"0, nicht vorhanden | 1, leicht | 2, mittelgradig | 3, schwer | -99, keine Aussage",,,,,,[on_wahn_denk_6] = 1,,,,mg_52d47e_final,,
+p35_wahneinfall_final,combined_questionnaire_final,,radio,35. Wahneinfall,"0, nicht vorhanden | 1, leicht | 2, mittelgradig | 3, schwer | -99, keine Aussage",,,,,,[on_wahn_denk_6] = 1,,,,mg_52d47e_final,,
+p36_wahngedanken_final,combined_questionnaire_final,,radio,36. Wahngedanken,"0, nicht vorhanden | 1, leicht | 2, mittelgradig | 3, schwer | -99, keine Aussage",,,,,,[on_wahn_denk_6] = 1,,,,mg_52d47e_final,,
+p37_systematisierter_wahn_final,combined_questionnaire_final,,radio,37. systematisierter Wahn,"0, nicht vorhanden | 1, leicht | 2, mittelgradig | 3, schwer | -99, keine Aussage",,,,,,[on_wahn_denk_6] = 1,,,,mg_52d47e_final,,
+p38_wahndynamik_final,combined_questionnaire_final,,radio,38. Wahndynamik,"0, nicht vorhanden | 1, leicht | 2, mittelgradig | 3, schwer | -99, keine Aussage",,,,,,[on_wahn_denk_6] = 1,,,,mg_52d47e_final,,
+p39_beziehungswahn_final,combined_questionnaire_final,,radio,39. Beziehungswahn,"0, nicht vorhanden | 1, leicht | 2, mittelgradig | 3, schwer | -99, keine Aussage",,,,,,[on_wahn_denk_6] = 1,,,,mg_52d47e_final,,
+p40_beeinträchtigungs_verfolgungswahn_final,combined_questionnaire_final,,radio,40. Beeinträchtigungs-/Verfolgungswahn,"0, nicht vorhanden | 1, leicht | 2, mittelgradig | 3, schwer | -99, keine Aussage",,,,,,[on_wahn_denk_6] = 1,,,,mg_52d47e_final,,
+p41_eifersuchtswahn_final,combined_questionnaire_final,,radio,41. Eifersuchtswahn,"0, nicht vorhanden | 1, leicht | 2, mittelgradig | 3, schwer | -99, keine Aussage",,,,,,[on_wahn_denk_6] = 1,,,,mg_52d47e_final,,
+p42_schuldwahn_final,combined_questionnaire_final,,radio,42. Schuldwahn,"0, nicht vorhanden | 1, leicht | 2, mittelgradig | 3, schwer | -99, keine Aussage",,,,,,[on_wahn_denk_6] = 1,,,,mg_52d47e_final,,
+p43_verarmungswahn_final,combined_questionnaire_final,,radio,43. Verarmungswahn,"0, nicht vorhanden | 1, leicht | 2, mittelgradig | 3, schwer | -99, keine Aussage",,,,,,[on_wahn_denk_6] = 1,,,,mg_52d47e_final,,
+p44_hypochondrischer_wahn_final,combined_questionnaire_final,,radio,44. Hypochondrischer Wahn,"0, nicht vorhanden | 1, leicht | 2, mittelgradig | 3, schwer | -99, keine Aussage",,,,,,[on_wahn_denk_6] = 1,,,,mg_52d47e_final,,
+p45_grössenwahn_final,combined_questionnaire_final,,radio,45. Größenwahn,"0, nicht vorhanden | 1, leicht | 2, mittelgradig | 3, schwer | -99, keine Aussage",,,,,,[on_wahn_denk_6] = 1,,,,mg_52d47e_final,,
+p46_andere_wahninhalte_final,combined_questionnaire_final,,radio,46. andere Wahninhalte,"0, nicht vorhanden | 1, leicht | 2, mittelgradig | 3, schwer | -99, keine Aussage",,,,,,[on_wahn_denk_6] = 1,,,,mg_52d47e_final,,
+on_off_täusch_7,combined_questionnaire_final,Sinnestäuschungen,radio,Sinnestäuschungen,"1, ausklappen",,,,,,,,,,,,
+p47_illusionen_final,combined_questionnaire_final,,radio,47. Illusionen,"0, nicht vorhanden | 1, leicht | 2, mittelgradig | 3, schwer | -99, keine Aussage",,,,,,[on_off_taeusch_7] = 1,,,,mg_3409a0_final,,
+p48_stimmenhören_final,combined_questionnaire_final,,radio,48. Stimmenhören,"0, nicht vorhanden | 1, leicht | 2, mittelgradig | 3, schwer | -99, keine Aussage",,,,,,[on_off_taeusch_7] = 1,,,,mg_3409a0_final,,
+p49_andere_akustische_halluzinationen_final,combined_questionnaire_final,,radio,49. andere akustische Halluzinationen,"0, nicht vorhanden | 1, leicht | 2, mittelgradig | 3, schwer | -99, keine Aussage",,,,,,[on_off_taeusch_7] = 1,,,,mg_3409a0_final,,
+p50_optische_halluzinationen_final,combined_questionnaire_final,,radio,50. Optische Halluzinationen,"0, nicht vorhanden | 1, leicht | 2, mittelgradig | 3, schwer | -99, keine Aussage",,,,,,[on_off_taeusch_7] = 1,,,,mg_3409a0_final,,
+p51_körperhalluzinationen_final,combined_questionnaire_final,,radio,51. Körperhalluzinationen,"0, nicht vorhanden | 1, leicht | 2, mittelgradig | 3, schwer | -99, keine Aussage",,,,,,[on_off_taeusch_7] = 1,,,,mg_3409a0_final,,
+p52_geruchs_geschmackshalluzinationen_final,combined_questionnaire_final,,radio,52. Geruchs-/Geschmackshalluzinationen,"0, nicht vorhanden | 1, leicht | 2, mittelgradig | 3, schwer | -99, keine Aussage",,,,,,[on_off_taeusch_7] = 1,,,,mg_3409a0_final,,
+on_off_ich_8,combined_questionnaire_final,Ich - Störungen,radio,Ich - Störungen,"1, ausklappen",,,,,,,,,,,,
+p53_derealisation_final,combined_questionnaire_final,,radio,53. Derealisation,"0, nicht vorhanden | 1, leicht | 2, mittelgradig | 3, schwer | -99, keine Aussage",,,,,,[on_off_ich_8] = 1,,,,mg_1d2cc9_final,,
+p54_depersonalisation_final,combined_questionnaire_final,,radio,54. Depersonalisation,"0, nicht vorhanden | 1, leicht | 2, mittelgradig | 3, schwer | -99, keine Aussage",,,,,,[on_off_ich_8] = 1,,,,mg_1d2cc9_final,,
+p55_gedankenausbreitung_final,combined_questionnaire_final,,radio,55. Gedankenausbreitung,"0, nicht vorhanden | 1, leicht | 2, mittelgradig | 3, schwer | -99, keine Aussage",,,,,,[on_off_ich_8] = 1,,,,mg_1d2cc9_final,,
+p56_gedankenentzug_final,combined_questionnaire_final,,radio,56. Gedankenentzug,"0, nicht vorhanden | 1, leicht | 2, mittelgradig | 3, schwer | -99, keine Aussage",,,,,,[on_off_ich_8] = 1,,,,mg_1d2cc9_final,,
+p57_gedankeneingebung_final,combined_questionnaire_final,,radio,57. Gedankeneingebung,"0, nicht vorhanden | 1, leicht | 2, mittelgradig | 3, schwer | -99, keine Aussage",,,,,,[on_off_ich_8] = 1,,,,mg_1d2cc9_final,,
+p58_andere_fremdbeeinflussungserlebnisse_final,combined_questionnaire_final,,radio,58. andere Fremdbeeinflussungserlebnisse,"0, nicht vorhanden | 1, leicht | 2, mittelgradig | 3, schwer | -99, keine Aussage",,,,,,[on_off_ich_8] = 1,,,,mg_1d2cc9_final,,
+on_off_affekt_9,combined_questionnaire_final,Störungen der Affektivität,radio,Störungen der Affektivität,"1, ausklappen",,,,,,,,,,,,
+p59_ratlos_final,combined_questionnaire_final,,radio,59. ratlos,"0, nicht vorhanden | 1, leicht | 2, mittelgradig | 3, schwer | -99, keine Aussage",,,,,,[on_off_affekt_9] = 1,,,,mg_862092_final,,
+p60_gefühl_der_gefühllosigkeit_final,combined_questionnaire_final,,radio,60. Gefühl der Gefühllosigkeit,"0, nicht vorhanden | 1, leicht | 2, mittelgradig | 3, schwer | -99, keine Aussage",,,,,,[on_off_affekt_9] = 1,,,,mg_862092_final,,
+p61_affektarm_final,combined_questionnaire_final,,radio,61. affektarm,"0, nicht vorhanden | 1, leicht | 2, mittelgradig | 3, schwer | -99, keine Aussage",,,,,,[on_off_affekt_9] = 1,,,,mg_862092_final,,
+p62_störung_der_vitalgefühle_final,combined_questionnaire_final,,radio,62. Störung der Vitalgefühle,"0, nicht vorhanden | 1, leicht | 2, mittelgradig | 3, schwer | -99, keine Aussage",,,,,,[on_off_affekt_9] = 1,,,,mg_862092_final,,
+p63_deprimiert_final,combined_questionnaire_final,,radio,63. deprimiert,"0, nicht vorhanden | 1, leicht | 2, mittelgradig | 3, schwer | -99, keine Aussage",,,,,,[on_off_affekt_9] = 1,,,,mg_862092_final,,
+p64_hoffnungslos_final,combined_questionnaire_final,,radio,64. hoffnungslos,"0, nicht vorhanden | 1, leicht | 2, mittelgradig | 3, schwer | -99, keine Aussage",,,,,,[on_off_affekt_9] = 1,,,,mg_862092_final,,
+p65_ängstlich_final,combined_questionnaire_final,,radio,65. ängstlich,"0, nicht vorhanden | 1, leicht | 2, mittelgradig | 3, schwer | -99, keine Aussage",,,,,,[on_off_affekt_9] = 1,,,,mg_862092_final,,
+p66_euphorisch_final,combined_questionnaire_final,,radio,66. euphorisch,"0, nicht vorhanden | 1, leicht | 2, mittelgradig | 3, schwer | -99, keine Aussage",,,,,,[on_off_affekt_9] = 1,,,,mg_862092_final,,
+p67_dysphorisch_final,combined_questionnaire_final,,radio,67. dysphorisch,"0, nicht vorhanden | 1, leicht | 2, mittelgradig | 3, schwer | -99, keine Aussage",,,,,,[on_off_affekt_9] = 1,,,,mg_862092_final,,
+p68_gereizt_final,combined_questionnaire_final,,radio,68. gereizt,"0, nicht vorhanden | 1, leicht | 2, mittelgradig | 3, schwer | -99, keine Aussage",,,,,,[on_off_affekt_9] = 1,,,,mg_862092_final,,
+p69_innerlich_unruhig_final,combined_questionnaire_final,,radio,69. innerlich unruhig,"0, nicht vorhanden | 1, leicht | 2, mittelgradig | 3, schwer | -99, keine Aussage",,,,,,[on_off_affekt_9] = 1,,,,mg_862092_final,,
+p70_klagsam_jammerig_final,combined_questionnaire_final,,radio,70. klagsam/jammerig,"0, nicht vorhanden | 1, leicht | 2, mittelgradig | 3, schwer | -99, keine Aussage",,,,,,[on_off_affekt_9] = 1,,,,mg_862092_final,,
+p71_insuffizienzgefühle_final,combined_questionnaire_final,,radio,71. Insuffizienzgefühle,"0, nicht vorhanden | 1, leicht | 2, mittelgradig | 3, schwer | -99, keine Aussage",,,,,,[on_off_affekt_9] = 1,,,,mg_862092_final,,
+p72_gesteigertes_selbstwertgefühl_final,combined_questionnaire_final,,radio,72. gesteigertes Selbstwertgefühl,"0, nicht vorhanden | 1, leicht | 2, mittelgradig | 3, schwer | -99, keine Aussage",,,,,,[on_off_affekt_9] = 1,,,,mg_862092_final,,
+p73_schuldgefühle_final,combined_questionnaire_final,,radio,73. Schuldgefühle,"0, nicht vorhanden | 1, leicht | 2, mittelgradig | 3, schwer | -99, keine Aussage",,,,,,[on_off_affekt_9] = 1,,,,mg_862092_final,,
+p74_verarmungsgefühle_final,combined_questionnaire_final,,radio,74. Verarmungsgefühle,"0, nicht vorhanden | 1, leicht | 2, mittelgradig | 3, schwer | -99, keine Aussage",,,,,,[on_off_affekt_9] = 1,,,,mg_862092_final,,
+p75_ambivalent_final,combined_questionnaire_final,,radio,75. ambivalent,"0, nicht vorhanden | 1, leicht | 2, mittelgradig | 3, schwer | -99, keine Aussage",,,,,,[on_off_affekt_9] = 1,,,,mg_862092_final,,
+p76_parathymie_final,combined_questionnaire_final,,radio,76. Parathymie,"0, nicht vorhanden | 1, leicht | 2, mittelgradig | 3, schwer | -99, keine Aussage",,,,,,[on_off_affekt_9] = 1,,,,mg_862092_final,,
+p77_affektlabil_final,combined_questionnaire_final,,radio,77. affektlabil,"0, nicht vorhanden | 1, leicht | 2, mittelgradig | 3, schwer | -99, keine Aussage",,,,,,[on_off_affekt_9] = 1,,,,mg_862092_final,,
+p78_affektinkontinent_final,combined_questionnaire_final,,radio,78. affektinkontinent,"0, nicht vorhanden | 1, leicht | 2, mittelgradig | 3, schwer | -99, keine Aussage",,,,,,[on_off_affekt_9] = 1,,,,mg_862092_final,,
+p79_affektstarr_final,combined_questionnaire_final,,radio,79. affektstarr,"0, nicht vorhanden | 1, leicht | 2, mittelgradig | 3, schwer | -99, keine Aussage",,,,,,[on_off_affekt_9] = 1,,,,mg_862092_final,,
+on_off_antrieb_10,combined_questionnaire_final,Antriebs- und psychomotorische Störungen,radio,Antriebs- und psychomotorische Störungen,"1, ausklappen",,,,,,,,,,,,
+p80_antriebsarm_final,combined_questionnaire_final,,radio,80. antriebsarm,"0, nicht vorhanden | 1, leicht | 2, mittelgradig | 3, schwer | -99, keine Aussage",,,,,,[on_off_antrieb_10] = 1,,,,mg_1ab2c1_final,,
+p81_antriebsgehemmt_final,combined_questionnaire_final,,radio,81. antriebsgehemmt,"0, nicht vorhanden | 1, leicht | 2, mittelgradig | 3, schwer | -99, keine Aussage",,,,,,[on_off_antrieb_10] = 1,,,,mg_1ab2c1_final,,
+p82_antriebsgesteigert_final,combined_questionnaire_final,,radio,82. antriebsgesteigert,"0, nicht vorhanden | 1, leicht | 2, mittelgradig | 3, schwer | -99, keine Aussage",,,,,,[on_off_antrieb_10] = 1,,,,mg_1ab2c1_final,,
+p83_motorisch_unruhig_final,combined_questionnaire_final,,radio,83. motorisch unruhig,"0, nicht vorhanden | 1, leicht | 2, mittelgradig | 3, schwer | -99, keine Aussage",,,,,,[on_off_antrieb_10] = 1,,,,mg_1ab2c1_final,,
+p84_parakinesen_final,combined_questionnaire_final,,radio,84. Parakinesen,"0, nicht vorhanden | 1, leicht | 2, mittelgradig | 3, schwer | -99, keine Aussage",,,,,,[on_off_antrieb_10] = 1,,,,mg_1ab2c1_final,,
+p85_maniriert_bizarr_final,combined_questionnaire_final,,radio,85. maniriert/bizarr,"0, nicht vorhanden | 1, leicht | 2, mittelgradig | 3, schwer | -99, keine Aussage",,,,,,[on_off_antrieb_10] = 1,,,,mg_1ab2c1_final,,
+p86_theatralisch_final,combined_questionnaire_final,,radio,86. theatralisch,"0, nicht vorhanden | 1, leicht | 2, mittelgradig | 3, schwer | -99, keine Aussage",,,,,,[on_off_antrieb_10] = 1,,,,mg_1ab2c1_final,,
+p87_mutistisch_final,combined_questionnaire_final,,radio,87. mutistisch,"0, nicht vorhanden | 1, leicht | 2, mittelgradig | 3, schwer | -99, keine Aussage",,,,,,[on_off_antrieb_10] = 1,,,,mg_1ab2c1_final,,
+p88_logorrhoisch_final,combined_questionnaire_final,,radio,88. logorrhoisch,"0, nicht vorhanden | 1, leicht | 2, mittelgradig | 3, schwer | -99, keine Aussage",,,,,,[on_off_antrieb_10] = 1,,,,mg_1ab2c1_final,,
+on_off_circ_11,combined_questionnaire_final,Circadiane Besonderheiten,radio,Circadiane Besonderheiten,"1, ausklappen",,,,,,,,,,,,
+p89_morgens_schlechter_final,combined_questionnaire_final,,radio,89. morgens schlechter,"0, nicht vorhanden | 1, leicht | 2, mittelgradig | 3, schwer | -99, keine Aussage",,,,,,[on_off_circ_11] = 1,,,,mg_8161aa_final,,
+p90_abends_schlechter_final,combined_questionnaire_final,,radio,90. abends schlechter,"0, nicht vorhanden | 1, leicht | 2, mittelgradig | 3, schwer | -99, keine Aussage",,,,,,[on_off_circ_11] = 1,,,,mg_8161aa_final,,
+p91_abends_besser_final,combined_questionnaire_final,,radio,91. abends besser,"0, nicht vorhanden | 1, leicht | 2, mittelgradig | 3, schwer | -99, keine Aussage",,,,,,[on_off_circ_11] = 1,,,,mg_8161aa_final,,
+on_off_andere_12,combined_questionnaire_final,Andere Störungen,radio,Andere Störungen,"1, ausklappen",,,,,,,,,,,,
+p92_sozialer_rückzug_final,combined_questionnaire_final,,radio,92. sozialer Rückzug,"0, nicht vorhanden | 1, leicht | 2, mittelgradig | 3, schwer | -99, keine Aussage",,,,,,[on_off_andere_12] = 1,,,,mg_6b2a58_final,,
+p93_soziale_umtriebigkeit_final,combined_questionnaire_final,,radio,93. soziale Umtriebigkeit,"0, nicht vorhanden | 1, leicht | 2, mittelgradig | 3, schwer | -99, keine Aussage",,,,,,[on_off_andere_12] = 1,,,,mg_6b2a58_final,,
+p94_aggressivität_final,combined_questionnaire_final,,radio,94. Aggressivität,"0, nicht vorhanden | 1, leicht | 2, mittelgradig | 3, schwer | -99, keine Aussage",,,,,,[on_off_andere_12] = 1,,,,mg_6b2a58_final,,
+p95_suizidalität_final,combined_questionnaire_final,,radio,95. Suizidalität,"0, nicht vorhanden | 1, leicht | 2, mittelgradig | 3, schwer | -99, keine Aussage",,,,,,[on_off_andere_12] = 1,,,,mg_6b2a58_final,,
+p96_selbstbeschädigung_final,combined_questionnaire_final,,radio,96. Selbstbeschädigung,"0, nicht vorhanden | 1, leicht | 2, mittelgradig | 3, schwer | -99, keine Aussage",,,,,,[on_off_andere_12] = 1,,,,mg_6b2a58_final,,
+p97_mangel_an_krankheitsgefühl_final,combined_questionnaire_final,,radio,97. Mangel an Krankheitsgefühl,"0, nicht vorhanden | 1, leicht | 2, mittelgradig | 3, schwer | -99, keine Aussage",,,,,,[on_off_andere_12] = 1,,,,mg_6b2a58_final,,
+p98_mangel_an_krankheitseinsicht_final,combined_questionnaire_final,,radio,98. Mangel an Krankheitseinsicht,"0, nicht vorhanden | 1, leicht | 2, mittelgradig | 3, schwer | -99, keine Aussage",,,,,,[on_off_andere_12] = 1,,,,mg_6b2a58_final,,
+p99_ablehnung_der_behandlung_final,combined_questionnaire_final,,radio,99. Ablehnung der Behandlung,"0, nicht vorhanden | 1, leicht | 2, mittelgradig | 3, schwer | -99, keine Aussage",,,,,,[on_off_andere_12] = 1,,,,mg_6b2a58_final,,
+p100_pflegebedürftig_final,combined_questionnaire_final,,radio,100. pflegebedürftig,"0, nicht vorhanden | 1, leicht | 2, mittelgradig | 3, schwer | -99, keine Aussage",,,,,,[on_off_andere_12] = 1,,,,mg_6b2a58_final,,
+amdp_nutzung,combined_questionnaire_final,Kontrolle,radio,In welchem Umfang haben Sie das AMDP-Manual zur Unterstützung der Auswertung herangezogen?,"0, bei 0 Items | 1, bei 1-5 Items | 2, bei 6-10 Items | 3, bei 11-15 Items | 4, bei mehr als 15 Items",,,,,,,,,,,,
+kontrolle_final,combined_questionnaire_final,,radio,"Haben Sie alle PPB-Felder ausgefüllt? Beachten Sie den Hinweis und antworten Sie bitte entsprechend. 
+Diese Antwort dient als Qualitätskriterium für die Auswertung.","1, Ja | 0, Nein",,,,,,,y,,,,,
+kontroll_text_final,combined_questionnaire_final,,descriptive,"Sie haben NICHT alle Felder ausgefüllt. Bitte überprüfen! Nicht ausgefüllte Psychopathologien gelten automatisch als ""Keine Aussage"". Fahren Sie nur fort, wenn das Ihrer Intention entspricht!",,,,,,,"[p1_bewusstseinsverminderung_final] = """" or
+[p2_bewusstseinstruebung_final] = """" or
+[p3_bewusstseinseinengung_final] = """" or
+[p4_bewusstseinsverschiebung_final] = """" or
+[p5_zeitliche_orientierungsstoerung_final] = """" or
+[p6_oertliche_orientierungsstoerung_final] = """" or
+[p7_situative_orientierungsstoerung_final] = """" or
+[p8_orientierungsstoerung_eigene_person_final] = """" or
+[p9_auffassungsstoerungen_final] = """" or
+[p10_konzentrationsstoerungen_final] = """" or
+[p11_merkfaehigkeitsstoerungen_final] = """" or
+[p12_gedaechtnisstoerungen_final] = """" or
+[p13_konfabulationen_final] = """" or
+[p14_paramnesien_final] = """" or
+[p15_gehemmt_final] = """" or
+[p16_verlangsamt_final] = """" or
+[p17_umstaendlich_final] = """" or
+[p18_eingeengt_final] = """" or
+[p19_perseverierend_final] = """" or
+[p20_grueblen_final] = """" or
+[p21_gedankendraengen_final] = """" or
+[p22_ideenfluechtig_final] = """" or
+[p23_vorbeireden_final] = """" or
+[p24_gesperrt_gedankenabreissen_final] = """" or
+[p25_inkohaerent_zerfahren_final] = """" or
+[p26_neologismen_final] = """" or
+[p27_misstrauen_final] = """" or
+[p28_hypochondrie_final] = """" or
+[p29_phobien_final] = """" or
+[p30_zwangsdenken_final] = """" or
+[p31_zwangsimpulse_final] = """" or
+[p32_zwangshandlungen_final] = """" or
+[p33_wahnstimmung_final] = """" or
+[p34_wahnwahrnehmung_final] = """" or
+[p35_wahneinfall_final] = """" or
+[p36_wahngedanken_final] = """" or
+[p37_systematisierter_wahn_final] = """" or
+[p38_wahndynamik_final] = """" or
+[p39_beziehungswahn_final] = """" or
+[p40_beeintraechtigungs_verfolgungswahn_final] = """" or
+[p41_eifersuchtswahn_final] = """" or
+[p42_schuldwahn_final] = """" or
+[p43_verarmungswahn_final] = """" or
+[p44_hypochondrischer_wahn_final] = """" or
+[p45_groessenwahn_final] = """" or
+[p46_andere_wahninhalte_final] = """" or
+[p47_illusionen_final] = """" or
+[p48_stimmenhoeren_final] = """" or
+[p49_andere_akustische_halluzinationen_final] = """" or
+[p50_optische_halluzinationen_final] = """" or
+[p51_koerperhalluzinationen_final] = """" or
+[p52_geruchs_geschmackshalluzinationen_final] = """" or
+[p53_derealisation_final] = """" or
+[p54_depersonalisation_final] = """" or
+[p55_gedankenausbreitung_final] = """" or
+[p56_gedankenentzug_final] = """" or
+[p57_gedankeneingebung_final] = """" or
+[p58_andere_fremdbeeinflussungserlebnisse_final] = """" or
+[p59_ratlos_final] = """" or
+[p60_gefuehl_der_gefuehllosigkeit_final] = """" or
+[p61_affektarm_final] = """" or
+[p62_stoerung_der_vitalgefuehle_final] = """" or
+[p63_deprimiert_final] = """" or
+[p64_hoffnungslos_final] = """" or
+[p65_aengstlich_final] = """" or
+[p66_euphorisch_final] = """" or
+[p67_dysphorisch_final] = """" or
+[p68_gereizt_final] = """" or
+[p69_innerlich_unruhig_final] = """" or
+[p70_klagsam_jammerig_final] = """" or
+[p71_insuffizienzgefuehle_final] = """" or
+[p72_gesteigertes_selbstwertgefuehl_final] = """" or
+[p73_schuldgefuehle_final] = """" or
+[p74_verarmungsgefuehle_final] = """" or
+[p75_ambivalent_final] = """" or
+[p76_parathymie_final] = """" or
+[p77_affektlabil_final] = """" or
+[p78_affektinkontinent_final] = """" or
+[p79_affektstarr_final] = """" or
+[p80_antriebsarm_final] = """" or
+[p81_antriebsgehemmt_final] = """" or
+[p82_antriebsgesteigert_final] = """" or
+[p83_motorisch_unruhig_final] = """" or
+[p84_parakinesen_final] = """" or
+[p85_maniriert_bizarr_final] = """" or
+[p86_theatralisch_final] = """" or
+[p87_mutistisch_final] = """" or
+[p88_logorrhoisch_final] = """" or
+[p89_morgens_schlechter_final] = """" or
+[p90_abends_schlechter_final] = """" or
+[p91_abends_besser_final] = """" or
+[p92_sozialer_rueckzug_final] = """" or
+[p93_soziale_umtriebigkeit_final] = """" or
+[p94_aggressivitaet_final] = """" or
+[p95_suizidalitaet_final] = """" or
+[p96_selbstbeschaedigung_final] = """" or
+[p97_mangel_an_krankheitsgefuehl_final] = """" or
+[p98_mangel_an_krankheitseinsicht_final] = """" or
+[p99_ablehnung_der_behandlung_final] = """" or
+[p100_pflegebeduerftig_final] = """"",,,,,,
+kontroll_text_2_final,combined_questionnaire_final,,descriptive,Sie haben ALLE Felder ausgefüllt! Bitte antworten Sie oben entsprechend. Diese Frage wird als Qualitätskriterium herangezogen.,,,,,,,"[p1_bewusstseinsverminderung_final] <> """" and
+[p2_bewusstseinstruebung_final] <> """" and
+[p3_bewusstseinseinengung_final] <> """" and
+[p4_bewusstseinsverschiebung_final] <> """" and
+[p5_zeitliche_orientierungsstoerung_final] <> """" and
+[p6_oertliche_orientierungsstoerung_final] <> """" and
+[p7_situative_orientierungsstoerung_final] <> """" and
+[p8_orientierungsstoerung_eigene_person_final] <> """" and
+[p9_auffassungsstoerungen_final] <> """" and
+[p10_konzentrationsstoerungen_final] <> """" and
+[p11_merkfaehigkeitsstoerungen_final] <> """" and
+[p12_gedaechtnisstoerungen_final] <> """" and
+[p13_konfabulationen_final] <> """" and
+[p14_paramnesien_final] <> """" and
+[p15_gehemmt_final] <> """" and
+[p16_verlangsamt_final] <> """" and
+[p17_umstaendlich_final] <> """" and
+[p18_eingeengt_final] <> """" and
+[p19_perseverierend_final] <> """" and
+[p20_grueblen_final] <> """" and
+[p21_gedankendraengen_final] <> """" and
+[p22_ideenfluechtig_final] <> """" and
+[p23_vorbeireden_final] <> """" and
+[p24_gesperrt_gedankenabreissen_final] <> """" and
+[p25_inkohaerent_zerfahren_final] <> """" and
+[p26_neologismen_final] <> """" and
+[p27_misstrauen_final] <> """" and
+[p28_hypochondrie_final] <> """" and
+[p29_phobien_final] <> """" and
+[p30_zwangsdenken_final] <> """" and
+[p31_zwangsimpulse_final] <> """" and
+[p32_zwangshandlungen_final] <> """" and
+[p33_wahnstimmung_final] <> """" and
+[p34_wahnwahrnehmung_final] <> """" and
+[p35_wahneinfall_final] <> """" and
+[p36_wahngedanken_final] <> """" and
+[p37_systematisierter_wahn_final] <> """" and
+[p38_wahndynamik_final] <> """" and
+[p39_beziehungswahn_final] <> """" and
+[p40_beeintraechtigungs_verfolgungswahn_final] <> """" and
+[p41_eifersuchtswahn_final] <> """" and
+[p42_schuldwahn_final] <> """" and
+[p43_verarmungswahn_final] <> """" and
+[p44_hypochondrischer_wahn_final] <> """" and
+[p45_groessenwahn_final] <> """" and
+[p46_andere_wahninhalte_final] <> """" and
+[p47_illusionen_final] <> """" and
+[p48_stimmenhoeren_final] <> """" and
+[p49_andere_akustische_halluzinationen_final] <> """" and
+[p50_optische_halluzinationen_final] <> """" and
+[p51_koerperhalluzinationen_final] <> """" and
+[p52_geruchs_geschmackshalluzinationen_final] <> """" and
+[p53_derealisation_final] <> """" and
+[p54_depersonalisation_final] <> """" and
+[p55_gedankenausbreitung_final] <> """" and
+[p56_gedankenentzug_final] <> """" and
+[p57_gedankeneingebung_final] <> """" and
+[p58_andere_fremdbeeinflussungserlebnisse_final] <> """" and
+[p59_ratlos_final] <> """" and
+[p60_gefuehl_der_gefuehllosigkeit_final] <> """" and
+[p61_affektarm_final] <> """" and
+[p62_stoerung_der_vitalgefuehle_final] <> """" and
+[p63_deprimiert_final] <> """" and
+[p64_hoffnungslos_final] <> """" and
+[p65_aengstlich_final] <> """" and
+[p66_euphorisch_final] <> """" and
+[p67_dysphorisch_final] <> """" and
+[p68_gereizt_final] <> """" and
+[p69_innerlich_unruhig_final] <> """" and
+[p70_klagsam_jammerig_final] <> """" and
+[p71_insuffizienzgefuehle_final] <> """" and
+[p72_gesteigertes_selbstwertgefuehl_final] <> """" and
+[p73_schuldgefuehle_final] <> """" and
+[p74_verarmungsgefuehle_final] <> """" and
+[p75_ambivalent_final] <> """" and
+[p76_parathymie_final] <> """" and
+[p77_affektlabil_final] <> """" and
+[p78_affektinkontinent_final] <> """" and
+[p79_affektstarr_final] <> """" and
+[p80_antriebsarm_final] <> """" and
+[p81_antriebsgehemmt_final] <> """" and
+[p82_antriebsgesteigert_final] <> """" and
+[p83_motorisch_unruhig_final] <> """" and
+[p84_parakinesen_final] <> """" and
+[p85_maniriert_bizarr_final] <> """" and
+[p86_theatralisch_final] <> """" and
+[p87_mutistisch_final] <> """" and
+[p88_logorrhoisch_final] <> """" and
+[p89_morgens_schlechter_final] <> """" and
+[p90_abends_schlechter_final] <> """" and
+[p91_abends_besser_final] <> """" and
+[p92_sozialer_rueckzug_final] <> """" and
+[p93_soziale_umtriebigkeit_final] <> """" and
+[p94_aggressivitaet_final] <> """" and
+[p95_suizidalitaet_final] <> """" and
+[p96_selbstbeschaedigung_final] <> """" and
+[p97_mangel_an_krankheitsgefuehl_final] <> """" and
+[p98_mangel_an_krankheitseinsicht_final] <> """" and
+[p99_ablehnung_der_behandlung_final] <> """" and
+[p100_pflegebeduerftig_final] <> """"",,,,,,
+realismus_sp,combined_questionnaire,Bewertung der Simulationspatienten:innen (im folgenden SP) auf einer Skala von 1 (sehr schlecht) bis 10 (sehr gut).,radio,"Wie realistisch empfanden Sie den/die SP in Bezug auf Verhalten, Symptome und emotionale Reaktionen?","1, 1 | 2, 2 | 3, 3 | 4, 4 | 5, 5 | 6, 6 | 7, 7 | 8, 8 | 9, 9 | 10, 10",,,,,,,y,,,mg_2284d6,,
+konsistenz_sp,combined_questionnaire,,radio,Wie bewerten Sie die Konsistenz der Darstellung der SP?,"1, 1 | 2, 2 | 3, 3 | 4, 4 | 5, 5 | 6, 6 | 7, 7 | 8, 8 | 9, 9 | 10, 10",,,,,,,,,,mg_2284d6,,
+ausdrucksfhigkeit_sp,combined_questionnaire,,radio,Wie bewerten Sie die emotionale Ausdrucksfähigkeit der SP?,"1, 1 | 2, 2 | 3, 3 | 4, 4 | 5, 5 | 6, 6 | 7, 7 | 8, 8 | 9, 9 | 10, 10",,,,,,,,,,mg_2284d6,,
+reaktionsfähigkeit_sp,combined_questionnaire,,radio,Wie gut konnte der SP auf unerwartete Fragen reagieren?,"1, 1 | 2, 2 | 3, 3 | 4, 4 | 5, 5 | 6, 6 | 7, 7 | 8, 8 | 9, 9 | 10, 10",,,,,,,,,,mg_2284d6,,
+authentisch_sp,combined_questionnaire,,radio,Wie authentisch wirkte das gezeigte Video aus Ihrer Sicht im Hinblick auf eine reale psychiatrische Interaktion?,"1, 1 | 2, 2 | 3, 3 | 4, 4 | 5, 5 | 6, 6 | 7, 7 | 8, 8 | 9, 9 | 10, 10",,,,,,,y,,,mg_2284d6,,
+gesamteindruck_sp,combined_questionnaire,,radio,Wie ist ihr Gesamteindruck,"1, 1 | 2, 2 | 3, 3 | 4, 4 | 5, 5 | 6, 6 | 7, 7 | 8, 8 | 9, 9 | 10, 10",,,,,,,y,,,mg_2284d6,,
+simulationspatient,combined_questionnaire,,radio,Haben Sie bereits mit Simulationspatient/innen gearbeitet?,"1, Ja | 0, Nein",,,,,,,,,,,,
+verbesserungsbedarf_sp,combined_questionnaire,,notes,In welchen Aspekten besteht Verbesserungsbedarf?,,,,,,,,,,,,,
+aspekte_besonders_gut,combined_questionnaire,,notes,Welche Aspekte der Darstellung empfanden Sie als besonders gut?,,,,,,,,,,,,,
+quality,combined_questionnaire,Video-Qualität,radio,"Wie bewerten Sie die Bild- und Tonqualität der Videos im Hinblick auf Ihre Fähigkeit, die dargestellte Szene angemessen zu beurteilen?","4, Sehr gut - Bild und Ton waren klar und problemlos beurteilbar | 3, Gut - kleinere Einschränkungen, aber gut beurteilbar | 2, Ausreichend - deutliche Einschränkungen, aber noch beurteilbar | 1, Schlecht - Bild oder Ton stark eingeschränkt, Beurteilung nur schwer möglich | 0, Unzureichend - keine sinnvolle Beurteilung möglich | -99, Keine Angabe",,,,,,,,,,,,
