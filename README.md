@@ -30,7 +30,7 @@ These interactive plots show:
 ## Setup Instructions
 
 ### 1. Environment Setup
-Install the necessary packages via pip. The necassary requirement.txt can be found in the root. Install via
+Install the necessary packages via pip. The necassary requirement.txt can be found in the src/ directory. Install via
 `pip install -r requirement.txt`
 
 ### 2. API Keys Configuration
