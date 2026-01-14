@@ -1,3 +1,4 @@
+import os
 import pandas as pd
 import re
 import numpy as np
@@ -1546,7 +1547,8 @@ def create_interactive_error_scatter_with_begruendung(
     groups_dict_reduced: dict = None,
     video_ids: list = [7, 8, 9],
     jitter_amount: float = 30,
-    base_title = "Error Rate Comparision: LLM vs. Humans"
+    base_title = "Error Rate Comparision: LLM vs. Humans",
+    path_html: str = "../outputs/figs/"
 ):
     """
     Create interactive scatter plots showing LLM vs Human error rates with LLM justifications.
@@ -1804,7 +1806,9 @@ def create_interactive_error_scatter_with_begruendung(
             ),
             plot_bgcolor='#FAFAFA'
         )
-
+        #save the interactive plot as html
+        path_html_save = os.path.join(path_html, f"error_rate_scatter_video_{vid}.html")
+        fig.write_html(path_html_save)
         fig.show()
 
         print(f"\n{'='*60}")
@@ -2933,7 +2937,8 @@ def create_publication_error_scatter_with_extreme_cases(
     groups_dict_reduced: dict = None,
     video_ids: list = [7, 8, 9],
     jitter_amount: float = 30,
-    base_title: str = "Error Rate Comparison: LLM vs. Humans"
+    base_title: str = "Error Rate Comparison: LLM vs. Humans",
+    save: bool = False,
 ):
     """
     Create publication-ready scatter plots with extreme disagreement analysis.
@@ -3256,7 +3261,9 @@ def create_publication_error_scatter_with_extreme_cases(
             title='Bar Plot Markers',
             title_fontsize=10
         )
-        
+        #set resolution really high for publication and show
+        if save:
+            plt.savefig(f"figure_{vid}.png", dpi=600, bbox_inches='tight')
         plt.show()
         
         # Print summary
