@@ -1,4 +1,4 @@
-# Comparing Large Language Models with Practicing Clinicians in Psychopathology Assessment: A Pilot Study Using Expert-Validated Rating of Typical Patient Interviews
+# LLM Performance in Psychopathological Assessment of Simulated Clinical Interviews
 
 This repository contains the code and data for our paper evaluating large language models on psychopathology rating tasks and comparing their performance with practicing clinicians.
 
