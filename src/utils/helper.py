@@ -2411,6 +2411,7 @@ def simulate_all_human_pairs_with_ai(
         master_df = master_df[master_df[vid_col].isin(videos_to_use)]
         ref_long = ref_long[ref_long[vid_col].isin(videos_to_use)]
     
+    disagreement_log = []
     results = {
         'ai_always': [],
         'human_only': [],
@@ -2425,7 +2426,7 @@ def simulate_all_human_pairs_with_ai(
         ref_rows = ref_long[ref_long[vid_col] == vid]
         if ref_rows.empty:
             continue
-            
+
         df_vid = master_df[master_df[vid_col] == vid]
         
         # Get AI ratings
@@ -2513,6 +2514,7 @@ def simulate_all_human_pairs_with_ai(
                 sim_items += 1
                 sim_correct["ai_only"] += int(ai_val == ref_val)
                 
+
                 # Check if humans agree
                 if h1_val == h2_val:
                     # All strategies use same value when humans agree
@@ -2520,16 +2522,19 @@ def simulate_all_human_pairs_with_ai(
                     sim_correct['ai_always'] += int(final_val == ref_val)
                     sim_correct['human_only'] += int(final_val == ref_val)
                     sim_correct['human_only_supervision'] += int(final_val == ref_val)
+
                 else:
                     # Humans disagree
                     sim_disagreements += 1
                     
                     # Strategy 1: Always use AI
+                    ai_is_correct = (ai_val == ref_val)
                     sim_correct['ai_always'] += int(ai_val == ref_val)
                     sim_ai_used += 1
                     
                     # Strategy 2: Random human choice
                     random_human_val = np.random.choice([h1_val, h2_val])
+                    human_is_correct = (random_human_val == ref_val)
                     sim_correct['human_only'] += int(random_human_val == ref_val)
                     
                     # Strategy 3: Consult random trained psychiatrist
@@ -2550,8 +2555,40 @@ def simulate_all_human_pairs_with_ai(
                         # Fallback: no psychiatrist available, random choice between h1 and h2
                         final_val = np.random.choice([h1_val, h2_val])
                     
+                    supervision_is_correct = (final_val == ref_val)
                     sim_correct['human_only_supervision'] += int(final_val == ref_val)
-            
+
+                    disagreement_log.append({
+                        'video_id': vid,
+                        'pair_id': pair_idx,
+                        'item_id': itm,
+                        'strategy_chosen': 'ai_always',
+                        'final_value': ai_val,
+                        'correct_reference': ref_val,
+                        'is_correct': ai_is_correct
+                    })
+                    
+                    # Log Human Random Strategy
+                    disagreement_log.append({
+                        'video_id': vid,
+                        'pair_id': pair_idx,
+                        'item_id': itm,
+                        'strategy_chosen': 'human_only',
+                        'final_value': random_human_val,
+                        'correct_reference': ref_val,
+                        'is_correct': human_is_correct
+                    })
+                    
+                    # Log Supervision Strategy
+                    disagreement_log.append({
+                        'video_id': vid,
+                        'pair_id': pair_idx,
+                        'item_id': itm,
+                        'strategy_chosen': 'human_only_supervision',
+                        'final_value': final_val,
+                        'correct_reference': ref_val,
+                        'is_correct': supervision_is_correct
+                    })
             if sim_items > 0:
                 simulation_details.append({
                     'video_id': vid,
@@ -2585,14 +2622,16 @@ def simulate_all_human_pairs_with_ai(
     comparison_pairs =[ ('ai_always', 'human_only'),
             ('human_only_supervision', 'human_only'),
             ('ai_always', 'human_only_supervision')]
+
     # Statistical comparisons
     comparisons = compute_all_pairwise_comparisons(results, summary, comparison_pairs)
-    
+    df_disagreements = pd.DataFrame(disagreement_log)
     return {
         'summary': summary,
         'comparisons': comparisons,
         'raw_results': results,
-        'simulation_details': pd.DataFrame(simulation_details)
+        'simulation_details': pd.DataFrame(simulation_details),
+        'disagreement_data': df_disagreements
     }
 
 def print_comparison_results(comparisons: dict, alpha: float = 0.05):

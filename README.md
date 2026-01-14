@@ -15,7 +15,7 @@ Interactive visualizations comparing model performance with human ratings:
 - **Schizophrenia**: https://42elenz.github.io/LLM_psychopathologies/error_scatter_high_performers_video_9_Schizophrenia.html
 
 These interactive plots show:
-- Model vs. reference rating errors
+- Model vs. reference vs.  Clinician rating errors
 - Reasoning of the model (Hover to investigate!) 
 
 ## Repository Structure
