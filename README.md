@@ -120,6 +120,7 @@ The notebook contains:
 - **Transcripts** (`data/02_transcripts/`): Patient interview transcripts for Mania, Depression, and Schizophrenia cases
 - **Reference Ratings** (`data/00_ratings/reference.csv`): Expert consensus ratings used as ground truth
 - **Human Ratings** (`data/00_ratings/human_master.csv`): Individual clinician ratings for comparison
+- **R-Analyses** The R-Models and their code can be found in src/R_analyses
 
 ## Notes for Reviewers
 
