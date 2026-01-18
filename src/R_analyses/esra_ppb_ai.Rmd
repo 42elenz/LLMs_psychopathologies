@@ -1,0 +1,198 @@
+---
+title: "LLM PPB analysis for paper"
+output:
+  word_document: default
+  html_notebook: default
+---
+```{r packages, echo=FALSE, warning=FALSE, message=FALSE}
+library(tidyverse)
+library(lme4)
+library(dplyr)
+library(furrr)
+```
+
+
+```{r Loading data, echo=FALSE}
+df <- read_csv("data/r_export_mixed_model_data_simple.csv")
+
+df <- df %>% mutate(across(everything(), as.factor)) %>%
+  mutate(Correct = as.integer(as.character(Correct))) %>% 
+  #rbind(.,df_aug) %>% 
+  select(-c("Model_name", "ausbildung_fertig"))
+
+df2 <- read_csv("data/disagreement_data.csv") %>% 
+  select(-c("final_value", "correct_reference")) %>% 
+  mutate(strategy = as.factor(strategy_chosen), item_id = as.factor(item_id), video_id = as.factor(video_id), pair_id=as.factor(pair_id)) %>% 
+  select(-strategy_chosen)
+```
+
+```{r Data overview, eval=FALSE, echo=FALSE}
+df %>% filter(Ratertype=="human") %>% 
+  group_by(ID) %>% 
+  summarise(percent_correct = mean(as.numeric(as.character(Correct)))) %>% 
+  pull(percent_correct) %>% 
+  hist()
+
+df %>% filter(Ratertype=="human") %>% 
+  group_by(ID) %>% 
+  summarise(sumscore = sum(as.numeric(as.character(Correct)))) %>% 
+  pull(sumscore) %>% 
+  hist()
+```
+
+Overall comparison AI vs human based on simulation
+
+```{r simulation, echo=FALSE}
+df <- df %>% mutate(Correct = as.numeric(as.character(Correct)))
+
+df_train <- df %>% filter(Ratertype == "human")
+
+m <- glmer(
+  Correct ~ 1 + Video_id +
+    (1 | ID) +
+    (1 | Item) +
+    (1 | Video_id:Item),
+  data = df_train,
+  family = binomial,
+  control = glmerControl(optimizer="bobyqa", optCtrl = list(maxfun = 2e5))
+)
+
+df_target <- df %>% filter(Ratertype == "AI")
+
+df_target <- df_target %>%
+  mutate(pred = predict(m, newdata = ., re.form = ~(1 | Item) + (1 | Video_id:Item), type = "response"))
+
+observed_sum <- sum(df_target$Correct)
+set.seed(1)
+n_sim <- 10000
+
+sim_scores <- replicate(n_sim, {
+  sum(rbinom(n = nrow(df_target), size = 1, prob = df_target$pred))
+})
+
+model_based_p_one_sided <- mean(sim_scores >= observed_sum)
+model_based_p_two_sided_approx <- 2 * min(mean(sim_scores >= observed_sum), mean(sim_scores <= observed_sum))
+
+expected_mean <- mean(sim_scores/300)
+expected_sd   <- sd(sim_scores/300)
+ci            <- quantile((sim_scores/300), c(.025, .975))
+
+summary(m)
+```
+
+```{r model check, echo=FALSE}
+overdisp_fun <- function(model) {
+  rdf <- df.residual(model)
+  rp <- residuals(model, type="pearson")
+  sum(rp^2)/rdf
+}
+overdisp_fun(m)
+```
+
+Quasi experiment synergistic strategies
+
+```{r accuracy as test statistic, echo=FALSE}
+obs_stat <- df2 %>%
+  group_by(strategy) %>%
+  summarise(acc = mean(as.numeric(is_correct))) %>%
+  pivot_wider(names_from = strategy, values_from = acc) %>%
+  mutate(
+    llm_vs_random   = ai_always - human_only,
+    third_vs_random = human_only_supervision - human_only
+  ) %>%
+  select(llm_vs_random, third_vs_random)
+
+```
+
+```{r permutation function, echo=FALSE}
+permute_once <- function(df) {
+  df %>%
+    group_by(video_id, item_id, pair_id) %>%
+    mutate(strategy = sample(strategy)) %>%
+    ungroup()
+}
+```
+
+```{r conditional permutation simulation, eval=FALSE, echo=FALSE}
+set.seed(1)
+
+B <- 5000
+
+plan(multisession)
+
+perm_stats <- future_map_dfr(seq_len(B), function(b) {
+  df_perm <- permute_once(df2)
+
+  df_perm %>%
+    group_by(strategy) %>%
+    summarise(acc = mean(is_correct), .groups = "drop") %>%
+    pivot_wider(names_from = strategy, values_from = acc) %>%
+    mutate(
+      llm_vs_random   = ai_always - human_only,
+      third_vs_random = human_only_supervision - human_only,
+      iter = b
+    )
+}, .options = furrr_options(seed = TRUE))
+
+readr::write_csv(perm_stats, "data/perm_stats.csv.gz")
+
+```
+
+```{r pvalue calculation, echo=FALSE}
+perm_stats <- read_csv("data/perm_stats.csv.gz")
+
+p_llm <- round((sum(abs(perm_stats$llm_vs_random) >= abs(obs_stat$llm_vs_random)) + 1) /
+         (nrow(perm_stats) + 1),4)
+
+p_third <- round((sum(abs(perm_stats$third_vs_random) >= abs(obs_stat$third_vs_random)) + 1) /
+         (nrow(perm_stats) + 1),4)
+```
+
+## Methods
+### Overall comparison LLM vs human
+Most participants rated only one of the videos, while the AI rated all three. The videos and the items, as well as the items depending on the video, had varying difficulties. Thus in order to compare the performance of the AI to the human performance over all three videos, we fitted a generalized linear mixed-effects model with a binomial link function to predict trial-level response accuracy. The model included a fixed intercept and a fixed effect of video, as well as random intercepts for participants, items, and item–video combinations.
+
+Correct∼Video+(1∣ID)+(1∣Item)+(1∣Video:Item),logit link
+
+We used the fitted model to generate a reference distribution for the total score under the assumption that responses follow the human performance distribution (simulated n = 10000. The AI score was then compared against this model-based reference distribution.
+
+### Comparison of disagreement-resolution strategies
+To compare disagreement-resolution strategies, we conducted a conditional permutation test with stratification by video. For each unique combination of video, item, and rater pairing, three adjudicated responses were available, corresponding to the three strategies (random selection, third rater, LLM).
+Under the null hypothesis of no strategy effect, strategy labels are exchangeable within each video–item–pairing unit. We therefore generated the null distribution by randomly permuting strategy labels within each such unit, while keeping the observed responses, item identity, video, and pairing fixed. This permutation scheme preserves video-specific item difficulty, pairing-related dependencies, and the unbalanced rating structure arising from incomplete video coverage.
+The test statistic was the difference in mean accuracy between strategies (LLM vs random selection; third rater vs random selection). Two-sided p-values were obtained as the proportion of permutations yielding an absolute test statistic at least as large as the observed value. Results are based on 5,000 permutations.
+
+## Results
+### Overall comparison LLM vs human
+```{r create plot data, echo=FALSE}
+plot_df <- tibble(
+  sim_score = sim_scores
+)
+```
+
+```{r fig-density, echo=FALSE}
+ggplot(plot_df, aes(x = sim_score / 300)) +
+  geom_density(adjust = 1.2) +
+  geom_vline(
+    xintercept = observed_sum / 300,
+    linetype = "dashed",
+    linewidth = 1
+  ) +
+  geom_vline(
+    xintercept = ci,
+    linetype = "dotted"
+  ) +
+  labs(
+    x = "Proportion correct (human reference model)",
+    y = "Density"
+  ) +
+  theme_minimal()
+
+
+```
+
+The AI achieved a total accuracy of `r observed_sum/300` (dashed line). Under the fitted human model the expected total accuracy was `r round(mean(sim_scores/300), 2)` (SD = `r round(sd(sim_scores), 2)`;
+95% simulation interval (dotted lines): `r round(quantile(sim_scores / 300, .025), 3)`–`r round(quantile(sim_scores / 300, .975), 3)`).
+Only `r round(100 * mean(sim_scores >= observed_sum), 1)`% of simulated scores were equal to or larger than the observed AI score.
+
+### Comparison of disagreement-resolution strategies 
+Using this permutation test, adjudication via the LLM yielded higher accuracy than random selection (Δ accuracy = `r round(obs_stat$llm_vs_random,2)`; permutation p = `r p_llm`). Adjudication via a third rater also outperformed random selection (Δ accuracy = `r round(obs_stat$third_vs_random,2)`; permutation p = `r p_third`), though with a slightly smaller effect size.
