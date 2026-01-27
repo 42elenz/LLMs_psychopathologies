@@ -1547,8 +1547,13 @@ def create_interactive_error_scatter_with_begruendung(
     groups_dict_reduced: dict = None,
     video_ids: list = [7, 8, 9],
     jitter_amount: float = 30,
-    base_title = "Error Rate Comparision: LLM vs. Humans",
-    path_html: str = "../outputs/figs/"
+    base_title: str = "Error Rate Comparison: LLM vs. Humans",
+    path_html: str = "../outputs/figs/",
+    prefix: str = "",
+    color_by_rating: bool = True,  # NEW: color by reference rating type
+    show_threshold_lines: bool = True,  # NEW: show difficulty threshold lines
+    low_error_threshold: float = 20.0,  # NEW: threshold for low difficulty
+    high_error_threshold: float = 80.0,  # NEW: threshold for high difficulty
 ):
     """
     Create interactive scatter plots showing LLM vs Human error rates with LLM justifications.
@@ -1557,23 +1562,48 @@ def create_interactive_error_scatter_with_begruendung(
     - X-axis: Human error rate (0-100%)
     - Y-axis: LLM error rate (0-100%)
     - Hover: Shows item name, error rates, reference rating, and LLM justification
+    
+    Parameters:
+    -----------
+    color_by_rating : bool
+        If True, color points by reference rating type (0, 1, -99)
+        If False, color by LLM correct/wrong (original behavior)
+    show_threshold_lines : bool
+        If True, show vertical threshold lines at low_error_threshold and high_error_threshold
+    low_error_threshold : float
+        Threshold below which items are considered "low difficulty" for humans
+    high_error_threshold : float
+        Threshold above which items are considered "high difficulty" for humans
     """
     if groups_dict_reduced is None:
         groups_dict_reduced = {
-            "all_items": [0,1,-99],
-            "positive_items_and_kA": [1,-99],
+            "all_items": [0, 1, -99],
+            "positive_items_and_kA": [1, -99],
         }
+    
     # English video names
     video_names = {7: 'Mania', 8: 'Depression', 9: 'Schizophrenia'}
+    
+    # Rating type colors and labels (matching the quadrant plot)
+    rating_colors = {
+        0: '#3498db',    # blue for absent
+        1: "#e87d2e",    # orange for present
+        -99: '#95a5a6'   # gray for not assessable
+    }
+    rating_labels = {
+        0: 'Absent (0)',
+        1: 'Present (1)',
+        -99: 'Not assessable (-99)'
+    }
 
     figures = []
-
+    plot_data_dict = {}
+    
     for vid in video_ids:
         # Filter to single video
         master_vid = master_df[master_df['video_id'] == vid].copy()
         ref_vid = reference[reference['ID_Video'] == vid].copy()
 
-  
         # Human and LLM ratings for this video
         rating_humans_copy = master_vid[master_vid['site'].isin(['clinic_3', 'clinic_1', 'clinic_2'])].copy()
         rating_ai_all = master_vid[master_vid['site'] == best_ai][psy_cols].copy()
@@ -1591,8 +1621,8 @@ def create_interactive_error_scatter_with_begruendung(
         reduced_dfs = reduce_data_to_3_categories(psy_cols, all_dfs)
 
         rating_humans_copy_red = reduced_dfs[0]
-        rating_ai_red     = reduced_dfs[1]
-        rating_ref_red    = reduced_dfs[2]
+        rating_ai_red = reduced_dfs[1]
+        rating_ref_red = reduced_dfs[2]
         rating_ai_all_red = reduced_dfs[3]
 
         psy_cols_red = [c + "_reduced" for c in psy_cols]
@@ -1613,68 +1643,66 @@ def create_interactive_error_scatter_with_begruendung(
 
         # Item summaries
         human_item_summary = human_results['all_items'][4]
-        ai_item_summary    = ai_results['all_items'][4]
+        ai_item_summary = ai_results['all_items'][4]
 
         # Prepare data for plotting
         plot_data = []
         for item_red in psy_cols_red:
-            collision_tracker = defaultdict(int)
-
-            
-
             item_base = item_red.replace('_reduced', '')
             begruendung_col = item_base.split('_')[0] + "_begründung"
 
             # Error rates
             human_error_rate = human_item_summary.loc[item_red, 'error_rate'] * 100
-            ai_error_rate    = ai_item_summary.loc[item_red, 'error_rate'] * 100
+            ai_error_rate = ai_item_summary.loc[item_red, 'error_rate'] * 100
 
             # Reference and prediction (reduced)
-            ref_rating   = rating_ref_red[item_red].iloc[0]
+            ref_rating = rating_ref_red[item_red].iloc[0]
             ai_prediction = rating_ai_red[item_red].iloc[0]
 
             # LLM justification
             maj_rating = rating_ai_red[item_red].iloc[0]
             matching_rows = rating_ai_all_red[rating_ai_all_red[item_red] == maj_rating]
             if not matching_rows.empty:
-                # Get the index of the first matching row
                 first_match_idx = matching_rows.index[0]
                 begruendung_text = rating_ai_begruendung.loc[first_match_idx, begruendung_col]
             else:
                 print(f"had to use fallback for item {item_base}")
-                # Fallback to first row if no match (shouldn't happen)
                 begruendung_text = rating_ai_begruendung.loc[rating_ai_begruendung.index[0], begruendung_col]
 
-            # Category and color: green when LLM better, red when worse, grey when tie
+            # Determine color based on mode
+            if color_by_rating:
+                # Color by reference rating type
+                ref_rating_int = int(ref_rating) if not pd.isna(ref_rating) else 0
+                color = rating_colors.get(ref_rating_int, '#95a5a6')
+                color_category = rating_labels.get(ref_rating_int, f'Unknown ({ref_rating_int})')
+            else:
+                # Original behavior: color by LLM correct/wrong
+                if ai_error_rate < human_error_rate or ai_error_rate <= 0.5:
+                    color = '#2ca02c'  # green
+                    color_category = 'LLM correct'
+                else:
+                    color = '#d62728'  # red
+                    color_category = 'LLM wrong'
+
+            # Who better (kept for backward compatibility)
             if ai_error_rate < human_error_rate or ai_error_rate <= 0.5:
-                color = '#2ca02c'   # green
                 who_better = 'LLM correct'
-            elif ai_error_rate > human_error_rate or ai_error_rate >= 0.5:
-                color = '#d62728'   # red
+            else:
                 who_better = 'LLM wrong'
 
-
             begruendung_text_wrapped = _wrap_hover(begruendung_text, width=60)
-            
+
             count_cols = [c for c in human_item_summary.columns if c.startswith('count_')]
             if count_cols:
-                # Get the rating values from column names (e.g., 'count_0' -> 0, 'count_1' -> 1)
                 count_data = human_item_summary.loc[item_red, count_cols]
-                # Find which rating had the maximum count
-                max_count_col = count_data.idxmax()  # Returns column name like 'count_1'
+                max_count_col = count_data.idxmax()
                 most_common_rating = int(max_count_col.replace('count_', ''))
             else:
                 most_common_rating = np.nan
 
             rng = np.random.default_rng(hash(item_base) % 2**32)
-
-            # No jitter on human (x-axis)
             human_err_plot = human_error_rate
 
-            # Jitter LLM vertically (y-axis only):
-            #  - if LLM error = 0%: add jitter (push upward)
-            #  - if LLM error = 100%: subtract jitter (push downward)
-            #  - otherwise: small symmetric jitter
             if ai_error_rate <= 1e-9:
                 jitter_y = rng.uniform(0, jitter_amount)
                 ai_err_plot = min(100, ai_error_rate + jitter_y)
@@ -1695,6 +1723,7 @@ def create_interactive_error_scatter_with_begruendung(
                 'ref_rating': ref_rating,
                 'ai_prediction': ai_prediction,
                 'color': color,
+                'color_category': color_category,
                 'who_better': who_better,
                 'human_n_errors': int(human_item_summary.loc[item_red, 'n_errors']),
                 'human_n_raters': int(human_item_summary.loc[item_red, 'n_raters']),
@@ -1702,24 +1731,57 @@ def create_interactive_error_scatter_with_begruendung(
                 'ai_n_raters': int(ai_item_summary.loc[item_red, 'n_raters']),
                 'begruendung': begruendung_text_wrapped
             })
-        df_plot = pd.DataFrame(plot_data)
 
-        
+        df_plot = pd.DataFrame(plot_data)
+        df_plot['video_id'] = vid
+        df_plot['video_name'] = video_names.get(vid, f'Video {vid}')
+        plot_data_dict[vid] = df_plot.copy()
+
         # Create figure
         fig = go.Figure()
 
-        # Add scatter points for each category (legend in English)
-        for who_better in ['LLM correct', 'LLM wrong', 'Tie']:
-            df_subset = df_plot[df_plot['who_better'] == who_better]
+        # Add threshold lines if enabled
+        if show_threshold_lines:
+            # Low error threshold (20%)
+            fig.add_vline(
+                x=low_error_threshold,
+                line=dict(color='gray', width=2, dash='dash'),
+                annotation_text=f'Low ({low_error_threshold}%)',
+                annotation_position='top',
+                annotation=dict(font_size=10, font_color='gray')
+            )
+            # High error threshold (80%)
+            fig.add_vline(
+                x=high_error_threshold,
+                line=dict(color='gray', width=2, dash='dash'),
+                annotation_text=f'High ({high_error_threshold}%)',
+                annotation_position='top',
+                annotation=dict(font_size=10, font_color='gray')
+            )
+            # Horizontal line at 50% (LLM correct/wrong boundary)
+            fig.add_hline(
+                y=50,
+                line=dict(color='gray', width=1, dash='dot'),
+            )
+
+        # Determine grouping column based on color mode
+        group_col = 'color_category' if color_by_rating else 'who_better'
+        
+        # Get unique categories and their colors
+        if color_by_rating:
+            categories = [rating_labels[k] for k in [0, 1, -99] if rating_labels[k] in df_plot['color_category'].values]
+            category_colors = {rating_labels[k]: rating_colors[k] for k in [0, 1, -99]}
+        else:
+            categories = ['LLM correct', 'LLM wrong']
+            category_colors = {'LLM correct': '#2ca02c', 'LLM wrong': '#d62728'}
+
+        # Add scatter points for each category
+        for idx, category in enumerate(categories):
+            df_subset = df_plot[df_plot[group_col] == category]
             if df_subset.empty:
                 continue
-            #change tie to LLM correct or wrong based on LLM error rate
-            if who_better == 'Tie':
-                df_subset.loc[df_subset['ai_error_rate'] < 50, 'who_better'] = 'LLM correct'
-                df_subset.loc[df_subset['ai_error_rate'] >= 50, 'who_better'] = 'LLM wrong'
 
-            legend_rank = {'LLM wrong': 1, 'LLM correct': 2, 'Tie': 3}[who_better]
-            # Hover text in English
+            # Hover text
             hover_text = []
             for _, row in df_subset.iterrows():
                 text = (
@@ -1731,8 +1793,8 @@ def create_interactive_error_scatter_with_begruendung(
                     f"LLM: {row['ai_error_rate_original']:.1f}% ({row['ai_n_errors']}/{row['ai_n_raters']})<br>"
                     f"<br>"
                     f"<b>Ratings:</b><br>"
-                    f"Reference: {row['ref_rating']}<br>"
-                    f"LLM prediction: {row['ai_prediction']}<br>"
+                    f"Reference: {rating_labels.get(int(row['ref_rating']), row['ref_rating'])}<br>"
+                    f"LLM prediction: {rating_labels.get(int(row['ai_prediction']), row['ai_prediction'])}<br>"
                     f"<br>"
                     f"<b>LLM justification:</b><br>"
                     f"{row['begruendung']}"
@@ -1743,31 +1805,22 @@ def create_interactive_error_scatter_with_begruendung(
                 x=df_subset['human_error_rate'],
                 y=df_subset['ai_error_rate'],
                 mode='markers',
-                name=who_better,
+                name=category,
                 marker=dict(
                     size=12,
-                    color=df_subset['color'].iloc[0],
+                    color=category_colors.get(category, '#95a5a6'),
                     opacity=0.7,
                     line=dict(width=1, color='white')
                 ),
                 text=hover_text,
                 hovertemplate='%{text}<extra></extra>',
-                legendrank=legend_rank
+                legendrank=idx + 1
             ))
 
-        # Add diagonal tie line
-        """ fig.add_trace(go.Scatter(
-            x=[0, 100],
-            y=[0, 100],
-            mode='lines',
-            name='Tie',
-            line=dict(dash='dash', color='gray', width=2),
-            hoverinfo='skip',
-            showlegend=True
-        )) """
-
-        # Layout in English
+        # Layout
         vid_name = video_names[vid]
+        legend_title = "Reference Rating" if color_by_rating else "LLM Performance"
+        
         fig.update_layout(
             title=dict(
                 text=f"{base_title}<br>Video {vid} - {vid_name}",
@@ -1782,7 +1835,7 @@ def create_interactive_error_scatter_with_begruendung(
                 showgrid=True
             ),
             yaxis=dict(
-                title="LLM Correctn-Binary",
+                title="LLM Correctness (Binary)",
                 range=[-5, 105],
                 tickvals=[0, 100],
                 ticktext=["LLM correct", "LLM wrong"],
@@ -1796,6 +1849,7 @@ def create_interactive_error_scatter_with_begruendung(
             width=1200,
             height=700,
             legend=dict(
+                title=dict(text=legend_title, font=dict(size=12)),
                 bgcolor='rgba(255,255,255,0.9)',
                 bordercolor='#333',
                 borderwidth=1,
@@ -1806,8 +1860,42 @@ def create_interactive_error_scatter_with_begruendung(
             ),
             plot_bgcolor='#FAFAFA'
         )
-        #save the interactive plot as html
-        path_html_save = os.path.join(path_html, f"error_rate_scatter_video_{vid}.html")
+
+        # Add quadrant annotations if threshold lines are shown
+        if show_threshold_lines:
+            # Get existing annotations (from add_vline, add_hline)
+            existing_annotations = list(fig.layout.annotations) if fig.layout.annotations else []
+            
+            # Add quadrant labels
+            quadrant_annotations = [
+                dict(x=0.08, y=0.92, xref='paper', yref='paper',
+                     text='<b>LLM-specific<br>difficulty</b>', showarrow=False,
+                     font=dict(size=11, color='#555555'), 
+                     bgcolor='rgba(255,255,255,1.0)',
+                     borderpad=4),
+                dict(x=0.92, y=0.92, xref='paper', yref='paper',
+                     text='<b>Shared<br>difficulty</b>', showarrow=False,
+                     font=dict(size=11, color='#555555'),
+                     bgcolor='rgba(255,255,255,1.0)',
+                     borderpad=4),
+                dict(x=0.08, y=0.08, xref='paper', yref='paper',
+                     text='<b>Low<br>difficulty</b>', showarrow=False,
+                     font=dict(size=11, color='#555555'),
+                     bgcolor='rgba(255,255,255,1.0)',
+                     borderpad=4),
+                dict(x=0.92, y=0.08, xref='paper', yref='paper',
+                     text='<b>Clinician-specific<br>difficulty</b>', showarrow=False,
+                     font=dict(size=11, color='#555555'),
+                     bgcolor='rgba(255,255,255,1.0)',
+                     borderpad=4),
+            ]
+            
+            # Combine existing and new annotations
+            all_annotations = existing_annotations + quadrant_annotations
+            fig.update_layout(annotations=all_annotations)
+
+        # Save and show
+        path_html_save = os.path.join(path_html, f"{prefix}_error_rate_scatter_video_{vid}.html")
         fig.write_html(path_html_save)
         fig.show()
 
@@ -1817,11 +1905,121 @@ def create_interactive_error_scatter_with_begruendung(
         print(f"Total items: {len(df_plot)}")
         print(f"LLM correct: {len(df_plot[df_plot['who_better'] == 'LLM correct'])}")
         print(f"LLM wrong: {len(df_plot[df_plot['who_better'] == 'LLM wrong'])}")
-        print(f"Tie: {len(df_plot[df_plot['who_better'] == 'Tie'])}")
+        
+        if color_by_rating:
+            print(f"\nBy reference rating type:")
+            for rating_val, label in rating_labels.items():
+                count = len(df_plot[df_plot['ref_rating'] == rating_val])
+                print(f"  {label}: {count}")
 
         figures.append(fig)
 
-    return figures
+    return figures, plot_data_dict
+
+def plot_difficulty_by_rating(
+    difficulty_df: pd.DataFrame,
+    video_id: int = None,
+    video_name: str = None,
+    figsize: tuple = (10, 6),
+    save_path: str = None,
+    ax: plt.Axes = None
+) -> plt.Figure:
+    """
+    Plot reference rating distribution by difficulty type.
+    
+    Parameters:
+    -----------
+    difficulty_df : pd.DataFrame
+        DataFrame with 'difficulty_type', 'ref_rating', and optionally 'video_id' columns
+    video_id : int, optional
+        If provided, filter for specific video. If None, use all videos.
+    video_name : str, optional
+        Name for the video (used in title). If None, uses video_id.
+    figsize : tuple
+        Figure size (width, height)
+    save_path : str, optional
+        Path to save the figure
+    ax : plt.Axes, optional
+        Existing axes to plot on. If None, creates new figure.
+        
+    Returns:
+    --------
+    plt.Figure or None
+    """
+    # Define rating labels
+    rating_labels = {0: 'Absent', 1: 'Present', -99: 'Not assessable'}
+    
+    # Filter for specific video if provided
+    df = difficulty_df.copy()
+    if video_id is not None and 'video_id' in df.columns:
+        df = df[df['video_id'] == video_id]
+    
+    # Filter for the difficulty types we care about
+    difficulty_types_of_interest = ['clinician_specific_difficulty', 'llm_specific_difficulty', 'shared_difficulty']
+    filtered_df = df[df['difficulty_type'].isin(difficulty_types_of_interest)]
+    
+    if filtered_df.empty:
+        print(f"No difficulty data found for video_id={video_id}")
+        return None
+    
+    # Count by difficulty type and reference rating
+    difficulty_counts = filtered_df.groupby(['difficulty_type', 'ref_rating']).size().unstack(fill_value=0)
+    
+    # Rename columns (ref_rating values) with labels
+    difficulty_counts.columns = [rating_labels.get(c, str(c)) for c in difficulty_counts.columns]
+    
+    # Rename index (difficulty types) for cleaner labels
+    difficulty_counts.index = difficulty_counts.index.map({
+        'clinician_specific_difficulty': 'Clinician-Specific\nDifficulty',
+        'llm_specific_difficulty': 'LLM-Specific\nDifficulty',
+        'shared_difficulty': 'Shared\nDifficulty'
+    })
+    
+    # Ensure all rating columns exist
+    for col in ['Absent', 'Present', 'Not assessable']:
+        if col not in difficulty_counts.columns:
+            difficulty_counts[col] = 0
+    
+    # Reorder columns
+    difficulty_counts = difficulty_counts[['Absent', 'Present', 'Not assessable']]
+    
+    # Create the plot
+    if ax is None:
+        fig, ax = plt.subplots(figsize=figsize)
+    else:
+        fig = ax.get_figure()
+    
+    x = np.arange(len(difficulty_counts.index))
+    width = 0.25
+    multiplier = 0
+    
+    colors = ['#2ecc71', '#e74c3c', '#3498db']  # Green, Red, Blue
+    
+    for idx, (attribute, color) in enumerate(zip(difficulty_counts.columns, colors)):
+        offset = width * multiplier
+        bars = ax.bar(x + offset, difficulty_counts[attribute], width, label=attribute, color=color, alpha=0.8)
+        # Add value labels on bars
+        ax.bar_label(bars, padding=3, fontsize=10, fontweight='bold')
+        multiplier += 1
+    
+    ax.set_xlabel('Difficulty Type', fontsize=12)
+    ax.set_ylabel('Number of Items', fontsize=12)
+    
+    # Set title
+    title_suffix = f"Video {video_id}" if video_id else "All Videos"
+    if video_name:
+        title_suffix = video_name
+    ax.set_title(f'Reference Rating Distribution by Difficulty Type\n({title_suffix})', fontsize=14)
+    
+    ax.set_xticks(x + width)
+    ax.set_xticklabels(difficulty_counts.index, fontsize=11)
+    ax.legend(title='Reference Rating', loc='upper left', fontsize=10)
+    ax.grid(axis='y', alpha=0.3)
+    
+    if save_path:
+        fig.savefig(save_path, dpi=300, bbox_inches='tight')
+    
+    return fig, difficulty_counts
 
 def rater_level_ai_majority_vs_humans(
     master_df: pd.DataFrame,
@@ -3320,3 +3518,32 @@ def create_publication_error_scatter_with_extreme_cases(
     
     return figures
 
+def classify_from_plot_data(
+    df: pd.DataFrame,
+    high_error_threshold: float = 80.0,  # Note: already in percentage
+    low_error_threshold: float = 20.0
+) -> pd.DataFrame:
+    """
+    Classify items by difficulty using pre-computed plot data.
+    """
+    df = df.copy()
+    
+    # LLM correctness (error rate 0 = correct, 100 = wrong)
+    df['llm_correct'] = df['ai_error_rate_original'] < 50
+    
+    # Classify difficulty
+    conditions = [
+        (df['human_error_rate_original'] > high_error_threshold) & (~df['llm_correct']),
+        (df['human_error_rate_original'] <= low_error_threshold) & (~df['llm_correct']),
+        (df['human_error_rate_original'] > high_error_threshold) & (df['llm_correct']),
+        (df['human_error_rate_original'] <= low_error_threshold) & (df['llm_correct']),
+    ]
+    choices = [
+        'shared_difficulty',
+        'llm_specific_difficulty', 
+        'clinician_specific_difficulty',
+        'low_difficulty'
+    ]
+    df['difficulty_type'] = np.select(conditions, choices, default='moderate_difficulty')
+    
+    return df
