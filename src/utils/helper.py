@@ -6,6 +6,7 @@ import textwrap
 import matplotlib.pyplot as plt
 from matplotlib.patches import Circle
 import matplotlib.patches as mpatches
+from matplotlib.path import Path
 import seaborn as sns
 from scipy import stats
 import math
@@ -18,6 +19,7 @@ import numpy as np
 import pandas as pd
 from scipy.stats import ttest_ind, mannwhitneyu, binomtest
 from itertools import combinations
+from matplotlib.lines import Line2D
 
 AMDP_MAPPING_English = {
     1:  ("bewusstseinsverminderung", "Lowered_Vigilance"),
@@ -1286,14 +1288,14 @@ def build_best_per_video_table(per_video_results, use_reduced=True, video_labels
 def _fmt_mean_sd(mean, sd):
     if np.isnan(mean):
         return ""
-    return f"{mean:.3f}" if (np.isnan(sd) or sd == 0) else f"{mean:.3f} ± {sd:.3f}"
+    return f"{mean:.2f}" if (np.isnan(sd) or sd == 0) else f"{mean:.2f} ± {sd:.2f}"
 
 def _fmt_mean_range(mean, range_tuple):
     if np.isnan(mean):
         return ""
     if range_tuple is None or any(np.isnan(x) for x in range_tuple):
-        return f"{mean:.3f}"
-    return f"{mean:.3f} ({range_tuple[0]:.3f} - {range_tuple[1]:.3f})"
+        return f"{mean:.2f}"
+    return f"{mean:.2f} ({range_tuple[0]:.2f} - {range_tuple[1]:.2f})"
 
 def _extract_mean_sd(entry):
     if "all_items" not in entry:
@@ -1352,13 +1354,13 @@ def build_best_per_video_table_with_settings(per_video_results, use_reduced=True
             if use_range:
                 m_use, range_use = _extract_mean_range(group_dict)
                 if is_t0:
-                    cell = f"{m_use:.3f}" if not np.isnan(m_use) else ""
+                    cell = f"{m_use:.2f}" if not np.isnan(m_use) else ""
                 else:
                     cell = _fmt_mean_range(m_use, range_use)
             else:
                 m_use, sd_use = _extract_mean_sd(group_dict)
                 if is_t0:
-                    cell = f"{m_use:.3f}" if not np.isnan(m_use) else ""
+                    cell = f"{m_use:.2f}" if not np.isnan(m_use) else ""
                 else:
                     cell = _fmt_mean_sd(m_use, sd_use)
 
@@ -1368,14 +1370,14 @@ def build_best_per_video_table_with_settings(per_video_results, use_reduced=True
                     nr_mean, nr_range = _extract_mean_range(block_nr.get(model_key, {})) if block_nr else (np.nan, None)
                     r_mean, r_range = _extract_mean_range(block_r.get(model_key, {})) if block_r else (np.nan, None)
                     if is_t0:
-                        cell = f"{nr_mean:.3f} / {r_mean:.3f}" if (not np.isnan(nr_mean) and not np.isnan(r_mean)) else ""
+                        cell = f"{nr_mean:.2f} / {r_mean:.2f}" if (not np.isnan(nr_mean) and not np.isnan(r_mean)) else ""
                     else:
                         cell = f"{_fmt_mean_range(nr_mean, nr_range)} / {_fmt_mean_range(r_mean, r_range)}"
                 else:
                     nr_mean, nr_sd = _extract_mean_sd(block_nr.get(model_key, {})) if block_nr else (np.nan, np.nan)
                     r_mean, r_sd = _extract_mean_sd(block_r.get(model_key, {})) if block_r else (np.nan, np.nan)
                     if is_t0:
-                        cell = f"{nr_mean:.3f} / {r_mean:.3f}" if (not np.isnan(nr_mean) and not np.isnan(r_mean)) else ""
+                        cell = f"{nr_mean:.2f} / {r_mean:.2f}" if (not np.isnan(nr_mean) and not np.isnan(r_mean)) else ""
                     else:
                         cell = f"{_fmt_mean_sd(nr_mean, nr_sd)} / {_fmt_mean_sd(r_mean, r_sd)}"
 
@@ -1415,13 +1417,13 @@ def build_best_per_video_table_compact(per_video_results, use_reduced=True, comb
             if use_range:
                 m_use, range_use = _extract_mean_range(group_dict)
                 if is_t0:
-                    cell = f"{m_use:.3f}" if not np.isnan(m_use) else ""
+                    cell = f"{m_use:.2f}" if not np.isnan(m_use) else ""
                 else:
                     cell = _fmt_mean_range(m_use, range_use)
             else:
                 m_use, sd_use = _extract_mean_sd(group_dict)
                 if is_t0:
-                    cell = f"{m_use:.3f}" if not np.isnan(m_use) else ""
+                    cell = f"{m_use:.2f}" if not np.isnan(m_use) else ""
                 else:
                     cell = _fmt_mean_sd(m_use, sd_use)
 
@@ -1430,14 +1432,14 @@ def build_best_per_video_table_compact(per_video_results, use_reduced=True, comb
                     nr_mean, nr_range = _extract_mean_range(block_nr.get(model_key, {})) if block_nr else (np.nan, None)
                     r_mean, r_range = _extract_mean_range(block_r.get(model_key, {})) if block_r else (np.nan, None)
                     if is_t0:
-                        cell = f"{nr_mean:.3f} / {r_mean:.3f}" if (not np.isnan(nr_mean) and not np.isnan(r_mean)) else ""
+                        cell = f"{nr_mean:.2f} / {r_mean:.2f}" if (not np.isnan(nr_mean) and not np.isnan(r_mean)) else ""
                     else:
                         cell = f"{_fmt_mean_range(nr_mean, nr_range)} / {_fmt_mean_range(r_mean, r_range)}"
                 else:
                     nr_mean, nr_sd = _extract_mean_sd(block_nr.get(model_key, {})) if block_nr else (np.nan, np.nan)
                     r_mean, r_sd = _extract_mean_sd(block_r.get(model_key, {})) if block_r else (np.nan, np.nan)
                     if is_t0:
-                        cell = f"{nr_mean:.3f} / {r_mean:.3f}" if (not np.isnan(nr_mean) and not np.isnan(r_mean)) else ""
+                        cell = f"{nr_mean:.2f} / {r_mean:.2f}" if (not np.isnan(nr_mean) and not np.isnan(r_mean)) else ""
                     else:
                         cell = f"{_fmt_mean_sd(nr_mean, nr_sd)} / {_fmt_mean_sd(r_mean, r_sd)}"
 
@@ -1552,8 +1554,8 @@ def create_interactive_error_scatter_with_begruendung(
     prefix: str = "",
     color_by_rating: bool = True,  # NEW: color by reference rating type
     show_threshold_lines: bool = True,  # NEW: show difficulty threshold lines
-    low_error_threshold: float = 20.0,  # NEW: threshold for low difficulty
-    high_error_threshold: float = 80.0,  # NEW: threshold for high difficulty
+    low_error_threshold: float = 30.0,  # NEW: threshold for low difficulty
+    high_error_threshold: float = 70.0,  # NEW: threshold for high difficulty
 ):
     """
     Create interactive scatter plots showing LLM vs Human error rates with LLM justifications.
@@ -1784,6 +1786,8 @@ def create_interactive_error_scatter_with_begruendung(
             # Hover text
             hover_text = []
             for _, row in df_subset.iterrows():
+                if row["item"] == "p58_other_feelings_of_alien_influence_final":
+                    print("Debug: Found special item for hover text.")
                 text = (
                     f"<b>{row['item']}</b><br>"
                     f"<br>"
@@ -1871,23 +1875,20 @@ def create_interactive_error_scatter_with_begruendung(
                 dict(x=0.08, y=0.92, xref='paper', yref='paper',
                      text='<b>LLM-specific<br>difficulty</b>', showarrow=False,
                      font=dict(size=11, color='#555555'), 
-                     bgcolor='rgba(255,255,255,1.0)',
-                     borderpad=4),
+                     ),
                 dict(x=0.92, y=0.92, xref='paper', yref='paper',
                      text='<b>Shared<br>difficulty</b>', showarrow=False,
                      font=dict(size=11, color='#555555'),
-                     bgcolor='rgba(255,255,255,1.0)',
-                     borderpad=4),
+                   ),
                 dict(x=0.08, y=0.08, xref='paper', yref='paper',
                      text='<b>Low<br>difficulty</b>', showarrow=False,
                      font=dict(size=11, color='#555555'),
-                     bgcolor='rgba(255,255,255,1.0)',
-                     borderpad=4),
+                    ),
                 dict(x=0.92, y=0.08, xref='paper', yref='paper',
                      text='<b>Clinician-specific<br>difficulty</b>', showarrow=False,
                      font=dict(size=11, color='#555555'),
-                     bgcolor='rgba(255,255,255,1.0)',
-                     borderpad=4),
+                    ),
+                     
             ]
             
             # Combine existing and new annotations
@@ -1915,6 +1916,464 @@ def create_interactive_error_scatter_with_begruendung(
         figures.append(fig)
 
     return figures, plot_data_dict
+
+def create_publication_error_scatter_with_extreme_cases(
+    master_df: pd.DataFrame,
+    reference: pd.DataFrame,
+    best_ai: str,
+    psy_cols: list,
+    groups_dict_reduced: dict = None,
+    video_ids: list = [7, 8, 9],
+    jitter_amount: float = 30,
+    base_title: str = "Error Rate Comparison: LLM vs. Humans",
+    save: bool = False,
+    color_by_rating: bool = True, 
+    show_threshold_lines: bool = True, 
+    low_error_threshold: float = 30.0,  
+    high_error_threshold: float = 70.0,  
+):
+    """
+    Create publication-ready scatter plots with extreme disagreement analysis.
+    
+    For each video:
+    - Row 1: Scatter plot (Human error on x-axis, LLM error on y-axis)
+             with 4 circled extreme cases
+    - Row 2: Four bar plots showing human rating distributions for extreme cases
+             with markers for AI prediction (diamond) and reference (star)
+    
+    Extreme cases:
+    - 2 items where AI error = 0% and human error is maximal
+    - 2 items where AI error = 100% and human error is minimal
+    
+    Parameters:
+    -----------
+    color_by_rating : bool
+        If True, color points by reference rating type (0, 1, -99)
+        If False, color by LLM correct/wrong (original behavior)
+    show_threshold_lines : bool
+        If True, show vertical threshold lines at low_error_threshold and high_error_threshold
+    low_error_threshold : float
+        Threshold below which items are considered "low difficulty" for humans
+    high_error_threshold : float
+        Threshold above which items are considered "high difficulty" for humans
+    """
+    if groups_dict_reduced is None:
+        groups_dict_reduced = {
+            "all_items": [0, 1, -99],
+        }
+    
+    # English video names
+    video_names = {7: 'Mania', 8: 'Depression', 9: 'Schizophrenia'}
+    
+    # Rating type colors and labels (matching the interactive plot)
+    rating_colors = {
+        0: '#3498db',    # blue for absent
+        1: "#e87d2e",    # orange for present
+        -99: '#95a5a6'   # gray for not assessable
+    }
+    rating_labels = {
+        0: 'Absent (0)',
+        1: 'Present (1)',
+        -99: 'Not assessable (-99)'
+    }
+    
+    # Simplified labels for bar plots
+    bar_rating_labels = {0: 'Absent', 1: 'Present', -99: 'Not assessable'}
+    
+    figures = []
+    
+    for vid in video_ids:
+        # Filter to single video
+        master_vid = master_df[master_df['video_id'] == vid].copy()
+        ref_vid = reference[reference['ID_Video'] == vid].copy()
+        
+        # Human and LLM ratings for this video
+        rating_humans_copy = master_vid[master_vid['site'].isin(['clinic_3', 'clinic_1', 'clinic_2'])].copy()
+        rating_ai_all = master_vid[master_vid['site'] == best_ai][psy_cols].copy()
+        rating_ref = ref_vid[psy_cols].copy()
+        
+        # Get LLM justifications
+        ai_begruendung_cols = [col.split('_')[0] + "_begründung" for col in psy_cols]
+        rating_ai_begruendung = master_vid[master_vid['site'] == best_ai][ai_begruendung_cols].copy()
+        
+        # Reduced versions (3 categories)
+        rating_ai_mode = rating_ai_all.mode(axis=0).iloc[0].to_frame().T
+        rating_ai_mode['ids'] = 0
+        
+        all_dfs = [rating_humans_copy, rating_ai_mode, rating_ref, rating_ai_all]
+        reduced_dfs = reduce_data_to_3_categories(psy_cols, all_dfs)
+        
+        rating_humans_copy_red = reduced_dfs[0]
+        rating_ai_red = reduced_dfs[1]
+        rating_ref_red = reduced_dfs[2]
+        rating_ai_all_red = reduced_dfs[3]
+        
+        psy_cols_red = [c + "_reduced" for c in psy_cols]
+        
+        # Compute accuracies
+        human_results = compute_multiple_accuracies_for_filtered_rating_ranges(
+            rating_ref=rating_ref_red[psy_cols_red],
+            rating_df=rating_humans_copy_red[psy_cols_red + ['ids']],
+            groups_dict=groups_dict_reduced,
+            id_col='ids'
+        )
+        ai_results = compute_multiple_accuracies_for_filtered_rating_ranges(
+            rating_ref=rating_ref_red[psy_cols_red],
+            rating_df=rating_ai_red[psy_cols_red + ['ids']],
+            groups_dict=groups_dict_reduced,
+            id_col='ids'
+        )
+        
+        # Item summaries
+        human_item_summary = human_results['all_items'][4]
+        ai_item_summary = ai_results['all_items'][4]
+        
+        # Prepare data for plotting
+        plot_data = []
+        for item_red in psy_cols_red:
+            item_base = item_red.replace('_reduced', '')
+            begruendung_col = item_base.split('_')[0] + "_begründung"
+            maj_rating = rating_ai_red[item_red].iloc[0]
+            matching_rows = rating_ai_all_red[rating_ai_all_red[item_red] == maj_rating]
+            if not matching_rows.empty:
+                first_match_idx = matching_rows.index[0]
+                ai_justification = rating_ai_begruendung.loc[first_match_idx, begruendung_col]
+            else:
+                print(f"had to use fallback for item {item_base}")
+                ai_justification = rating_ai_begruendung.loc[rating_ai_begruendung.index[0], begruendung_col]
+            
+            # Error rates
+            human_error_rate = human_item_summary.loc[item_red, 'error_rate'] * 100
+            ai_error_rate = ai_item_summary.loc[item_red, 'error_rate'] * 100
+            
+            # Reference and prediction (reduced)
+            ref_rating = rating_ref_red[item_red].iloc[0]
+            ai_prediction = rating_ai_red[item_red].iloc[0]
+            
+            # Determine color based on mode
+            if color_by_rating:
+                # Color by reference rating type
+                ref_rating_int = int(ref_rating) if not pd.isna(ref_rating) else 0
+                color = rating_colors.get(ref_rating_int, '#95a5a6')
+                color_category = rating_labels.get(ref_rating_int, f'Unknown ({ref_rating_int})')
+            else:
+                # Original behavior: color by LLM correct/wrong
+                if ai_error_rate < human_error_rate or ai_error_rate <= 0.5:
+                    color = '#2ca02c'  # green
+                    color_category = 'LLM correct'
+                else:
+                    color = '#d62728'  # red
+                    color_category = 'LLM wrong'
+            
+            # Who better (kept for backward compatibility)
+            if ai_error_rate < human_error_rate or ai_error_rate <= 0.5:
+                who_better = 'LLM correct'
+            else:
+                who_better = 'LLM wrong'
+            
+            # Get count columns for human ratings
+            count_cols = [c for c in human_item_summary.columns if c.startswith('count_')]
+            count_data = {}
+            if count_cols:
+                for cc in count_cols:
+                    rating_val = int(cc.replace('count_', ''))
+                    count_data[rating_val] = int(human_item_summary.loc[item_red, cc])
+            
+            # Jitter for plotting
+            rng = np.random.default_rng(hash(item_base) % 2**32)
+            human_err_plot = human_error_rate
+            
+            if ai_error_rate <= 1e-9:
+                jitter_y = rng.uniform(0, jitter_amount)
+                ai_err_plot = min(100, ai_error_rate + jitter_y)
+            elif ai_error_rate >= 100 - 1e-9:
+                jitter_y = rng.uniform(0, jitter_amount)
+                ai_err_plot = max(0, ai_error_rate - jitter_y)
+            else:
+                jitter_y = rng.uniform(-jitter_amount, jitter_amount)
+                ai_err_plot = np.clip(ai_error_rate + jitter_y, 0, 100)
+            
+            plot_data.append({
+                'item': item_base,
+                'human_error_rate': human_err_plot,
+                'ai_error_rate': ai_err_plot,
+                'human_error_rate_original': human_error_rate,
+                'ai_error_rate_original': ai_error_rate,
+                'ref_rating': ref_rating,
+                'ai_prediction': ai_prediction,
+                'color': color,
+                'color_category': color_category,
+                'who_better': who_better,
+                'human_n_errors': int(human_item_summary.loc[item_red, 'n_errors']),
+                'human_n_raters': int(human_item_summary.loc[item_red, 'n_raters']),
+                'count_data': count_data,
+                'ai_justification': ai_justification 
+            })
+        
+        df_plot = pd.DataFrame(plot_data)
+        
+        # ============ SELECT EXTREME CASES ============
+        tolerance = 1e-9
+        
+        # Type A: AI perfect (error ≈ 0), humans maximally wrong
+        df_ai_perfect = df_plot[df_plot['ai_error_rate_original'] <= tolerance].copy()
+        if len(df_ai_perfect) >= 2:
+            df_ai_perfect = df_ai_perfect.nlargest(2, 'human_error_rate_original')
+        extreme_A = df_ai_perfect.to_dict('records')
+        
+        # Type B: AI completely wrong (error ≈ 100), humans minimally wrong
+        df_ai_wrong = df_plot[df_plot['ai_error_rate_original'] >= (100 - tolerance)].copy()
+        if len(df_ai_wrong) >= 2:
+            df_ai_wrong = df_ai_wrong.nsmallest(2, 'human_error_rate_original')
+        extreme_B = df_ai_wrong.to_dict('records')
+        
+        extreme_cases = extreme_A + extreme_B
+        
+        # ============ CREATE FIGURE ============
+        fig = plt.figure(figsize=(17, 9))
+        gs = fig.add_gridspec(2, 4, height_ratios=[3, 1], hspace=0.5, wspace=0.35,
+                             left=0.08, right=0.88, top=0.94, bottom=0.15)
+        
+        # Row 1: Scatter plot (spans all columns)
+        ax_scatter = fig.add_subplot(gs[0, :])
+        
+        # Add threshold lines if enabled
+        if show_threshold_lines:
+            # Low error threshold (20%)
+            ax_scatter.axvline(
+                x=low_error_threshold,
+                color='gray',
+                linewidth=2,
+                linestyle='--',
+                zorder=1
+            )
+            # High error threshold (80%)
+            ax_scatter.axvline(
+                x=high_error_threshold,
+                color='gray',
+                linewidth=2,
+                linestyle='--',
+                zorder=1
+            )
+            # Horizontal line at 50% (LLM correct/wrong boundary)
+            ax_scatter.axhline(
+                y=50,
+                color='gray',
+                linewidth=1,
+                linestyle=':',
+                zorder=1
+            )
+            
+            # Add threshold labels at top
+            ax_scatter.text(
+                low_error_threshold, 105,
+                f'Low ({low_error_threshold:.0f}%)',
+                ha='center', va='bottom',
+                fontsize=10, color='gray'
+            )
+            ax_scatter.text(
+                high_error_threshold, 105,
+                f'High ({high_error_threshold:.0f}%)',
+                ha='center', va='bottom',
+                fontsize=10, color='gray'
+            )
+        
+        # Determine grouping column based on color mode
+        group_col = 'color_category' if color_by_rating else 'who_better'
+        
+        # Get unique categories and their colors
+        if color_by_rating:
+            categories = [rating_labels[k] for k in [0, 1, -99] if rating_labels[k] in df_plot['color_category'].values]
+            category_colors = {rating_labels[k]: rating_colors[k] for k in [0, 1, -99]}
+        else:
+            categories = ['LLM correct', 'LLM wrong']
+            category_colors = {'LLM correct': '#2ca02c', 'LLM wrong': '#d62728'}
+        
+        # Plot points by category for proper legend
+        for category in categories:
+            df_subset = df_plot[df_plot[group_col] == category]
+            if df_subset.empty:
+                continue
+            ax_scatter.scatter(
+                df_subset['human_error_rate'],
+                df_subset['ai_error_rate'],
+                s=100,
+                c=category_colors.get(category, '#95a5a6'),
+                alpha=0.7,
+                edgecolors='white',
+                linewidths=1,
+                label=category,
+                zorder=2
+            )
+        
+        # Circle the extreme cases
+        for idx, case in enumerate(extreme_cases):
+            circle = Circle(
+                (case['human_error_rate'], case['ai_error_rate']),
+                radius=2,
+                fill=False,
+                edgecolor='black',
+                linewidth=1.0,
+                linestyle='--',
+                zorder=3
+            )
+            ax_scatter.add_patch(circle)
+            
+            # Add label (A1, A2, B1, B2)
+            label = f"{'A' if idx < 2 else 'B'}{(idx % 2) + 1}"
+            ax_scatter.text(
+                case['human_error_rate'] + 2.2,
+                case['ai_error_rate'] + 0.1,
+                label,
+                ha='left',
+                va='bottom',
+                fontsize=13,
+                fontweight='bold',
+                zorder=4
+            )
+        
+        # Add quadrant annotations if threshold lines are shown
+        if show_threshold_lines:
+            # Quadrant labels with background boxes
+            quadrant_props = dict(boxstyle='round,pad=0.3', facecolor='white', alpha=1.0, edgecolor='none')
+            
+        
+        ax_scatter.set_yticks([10, 90])
+        ax_scatter.set_yticklabels(["LLM correct", "LLM wrong"], fontsize=12)
+        ax_scatter.set_xlabel('Clinician Error Rate in Percentage', fontsize=14, fontweight='bold')
+        ax_scatter.set_ylabel('LLM Prediction', fontsize=14, fontweight='bold')
+        ax_scatter.set_xlim(-5, 105)
+        ax_scatter.set_ylim(-5, 105)
+        ax_scatter.grid(True, alpha=0.3, linestyle='--')
+        ax_scatter.tick_params(axis='x', labelsize=12)
+        
+        # Legend with appropriate title
+        legend_title = "Reference Rating" if color_by_rating else "LLM Performance"
+        ax_scatter.legend(
+            loc='center right',
+            fontsize=12,
+            framealpha=0.9,
+            bbox_to_anchor=(0.98, 0.5),
+            title=legend_title,
+            title_fontsize=12,
+        )
+        
+        ax_scatter.set_title(
+            f"{base_title}\nVideo {vid} - {video_names[vid]}",
+            fontsize=16,
+            fontweight='bold',
+            pad=15
+        )
+        
+        # Row 2: Four bar plots for extreme cases
+        for idx, case in enumerate(extreme_cases):
+            ax_bar = fig.add_subplot(gs[1, idx])
+            
+            # Prepare bar data with labels
+            categories_bar = [0, 1, -99]
+            counts = [case['count_data'].get(cat, 0) for cat in categories_bar]
+            category_labels_bar = [bar_rating_labels[cat] for cat in categories_bar]
+            
+            # Bar colors - all blue
+            bar_colors = ['#1f77b4', '#1f77b4', '#1f77b4']
+            
+            # Create bars
+            bars = ax_bar.bar(category_labels_bar, counts, color=bar_colors, alpha=0.7, edgecolor='black', linewidth=1)
+            
+            # Add markers for AI prediction and reference
+            max_height = max(counts) if counts else 1
+            marker_y = max_height + max(1, 0.05 * max_height)
+            
+            # AI prediction (diamond)
+            ai_pred_idx = categories_bar.index(case['ai_prediction']) if case['ai_prediction'] in categories_bar else None
+            if ai_pred_idx is not None:
+                ax_bar.scatter(
+                    ai_pred_idx,
+                    marker_y,
+                    s=100,
+                    marker='D',
+                    color='red',
+                    linewidths=1.5,
+                    zorder=5
+                )
+            
+            # Reference (star)
+            ref_idx = categories_bar.index(case['ref_rating']) if case['ref_rating'] in categories_bar else None
+            if ref_idx is not None:
+                ax_bar.scatter(
+                    ref_idx,
+                    marker_y,
+                    s=80,
+                    marker='*',
+                    color='black',
+                    linewidths=1.5,
+                    zorder=5
+                )
+            
+            # Labels and formatting
+            label = f"{'A' if idx < 2 else 'B'}{(idx % 2) + 1}"
+            ax_bar.set_title(
+                f"{label}: {case['item'].replace('_final','')}",
+                fontsize=10,
+                fontweight='bold'
+            )
+            ax_bar.set_ylabel('Clinician Count', fontsize=10)
+            ax_bar.set_ylim(0, marker_y * 1.15)
+            ax_bar.grid(axis='y', alpha=0.3, linestyle='--')
+            ax_bar.tick_params(axis='x', labelsize=9)
+            ax_bar.tick_params(axis='y', labelsize=9)
+            
+            justification_text = case['ai_justification']
+            wrapped_text = textwrap.fill(justification_text, width=45)
+            ax_bar.text(
+                0.5, -0.30,
+                f"LLM JUSTIFICATION:\n{wrapped_text}",
+                transform=ax_bar.transAxes,
+                ha='center', va='top',
+                fontsize=11, wrap=True, multialignment='center'
+            )
+        
+        # Add shared legend for bar plots outside on the right
+        legend_elements = [
+            Line2D([0], [0], marker='D', color='w', markerfacecolor='red', markersize=10, label='AI prediction', linewidth=0),
+            Line2D([0], [0], marker='*', color='w', markerfacecolor='black', 
+                markersize=12, label='Reference', linewidth=0)
+        ]
+        
+        fig.legend(
+            handles=legend_elements,
+            loc='center right',
+            bbox_to_anchor=(0.98, 0.20),
+            fontsize=11,
+            framealpha=0.9,
+            title='Bar Plot Markers',
+            title_fontsize=11
+        )
+        
+        if save:
+            plt.savefig(f"figure_{vid}.png", dpi=600, bbox_inches='tight')
+        plt.show()
+        
+        # Print summary
+        print(f"\n{'='*60}")
+        print(f"Video {vid} - {video_names[vid]}")
+        print(f"{'='*60}")
+        print(f"Total items: {len(df_plot)}")
+        print(f"\nExtreme Cases Selected:")
+        for idx, case in enumerate(extreme_cases):
+            label = f"{'A' if idx < 2 else 'B'}{(idx % 2) + 1}"
+            print(f"  {label}: {case['item']}")
+            print(f"      Clinician error: {case['human_error_rate_original']:.1f}%, AI error: {case['ai_error_rate_original']:.1f}%")
+        
+        if color_by_rating:
+            print(f"\nBy reference rating type:")
+            for rating_val, label in rating_labels.items():
+                count = len(df_plot[df_plot['ref_rating'] == rating_val])
+                print(f"  {label}: {count}")
+        
+        figures.append(fig)
+    
+    return figures
 
 def plot_difficulty_by_rating(
     difficulty_df: pd.DataFrame,
@@ -1992,8 +2451,8 @@ def plot_difficulty_by_rating(
     x = np.arange(len(difficulty_counts.index))
     width = 0.25
     multiplier = 0
-    
-    colors = ['#2ecc71', '#e74c3c', '#3498db']  # Green, Red, Blue
+
+    colors = ['#3498db', '#e87d2e', '#95a5a6']  # Blue, orange, grey
     
     for idx, (attribute, color) in enumerate(zip(difficulty_counts.columns, colors)):
         offset = width * multiplier
@@ -2030,10 +2489,10 @@ def rater_level_ai_majority_vs_humans(
     ref_vid_col: str = "ID_Video",
     site_col: str = "site",
     id_col: str = "id_code_v2",
+    ai_rater_id: str = "AI_majority",
     psy_cols_regex: str = r'^p\d+_.*_final$',
     exclude_value: int = 10000,
     videos_to_use: list[int] | None = None,
-    ai_rater_id: str = "AI_majority"
 ) -> tuple[pd.DataFrame, dict, pd.DataFrame]:
     """
     Berechnet Accuracy pro Rater, wobei die KI als EIN Majority-Vote-Rater
@@ -2952,7 +3411,8 @@ def plot_per_video_comparison(
     human_per_video: pd.DataFrame,
     ai_per_video: pd.DataFrame,
     video_names: dict = {7: 'Mania', 8: 'Depression', 9: 'Schizophrenia'},
-    figsize: tuple = (10, 6)
+    figsize: tuple = (10, 6),
+    save_path: str = None,
 ):
     """
     Create a plot for each video showing the three strategies with reference lines.
@@ -3014,25 +3474,28 @@ def plot_per_video_comparison(
                    label=f'AI - Majority Mean ({ai_mean:.2f})', linewidth=2)
         
         # Styling
-        #ax.set_title(f"Distribution of Accuracy Across Simulations\nVideo {vid} - {vid_name}", 
-        #             fontsize=14, fontweight='bold')
+        ax.set_title(f"{vid_name}", 
+                     fontsize=10, fontweight='bold')
         ax.set_ylabel("Accuracy", fontsize=12)
         ax.set_xticklabels([
             'Clinicians Only',
-            'Clinicians (Board-Certified Supervision)',
+            'Clinicians (BC-Supervision)',
             'Clinicians (AI-Supervision)'
-        ], fontsize=10)
+        ], fontsize=8)
         ax.grid(axis='y', alpha=0.3)
-        ax.legend(fontsize=10)
+        ax.legend(fontsize=12, loc='lower right')
+        
         
         plt.tight_layout()
+        if save_path:
+            plt.savefig(f"{save_path}/simulation_{vid}_comparison_plot.png", dpi=300)
         plt.show()
         
         # Print statistics for this video
         print(f"\n{'='*60}")
         print(f"VIDEO {vid} - {vid_name.upper()} STATISTICS")
         print(f"{'='*60}")
-        print(f"Human mean accuracy: {human_mean:.4f}")
+        print(f"Clinician mean accuracy: {human_mean:.4f}")
         print(f"AI majority accuracy: {ai_mean:.4f}")
         print(f"\nSimulation results:")
         for strategy, stats in sim_result['summary'].items():
@@ -3055,7 +3518,8 @@ def plot_human_vs_ai_violin(
     figsize: tuple = (6, 8),
     show_legend: bool = True,
     ax: plt.Axes = None,
-    return_fig: bool = False
+    return_fig: bool = False,
+    title: bool = False
 ) -> plt.Axes | tuple:
     """
     Create a violin plot comparing human rater accuracies with AI performance.
@@ -3113,49 +3577,50 @@ def plot_human_vs_ai_violin(
         y_scatter, human_accs,
         alpha=0.6, s=80, color="#0f5586",
         edgecolor='white', linewidth=1,
-        label='Human raters'
+        label='Clinicians'
     )
     
     # Add AI diamond marker
     ax.scatter(
         [0], [ai_accuracy],
         marker='D', s=100, color='#d62728',
-        label=f'LLM ({ai_accuracy:.3f})', zorder=5,
+        label=f'LLM ({ai_accuracy:.2f})', zorder=5,
         edgecolor='black', linewidth=1
     )
     
     # Add reference lines
     ax.axhline(
         human_accs.mean(), color='darkblue', linestyle='--',
-        linewidth=2, alpha=0.7, label=f'Human mean ({human_accs.mean():.3f})'
+        linewidth=2, alpha=0.7, label=f'Clinician mean ({human_accs.mean():.2f})'
     )
     ax.axhline(
         np.median(human_accs), color='orange', linestyle='--',
-        linewidth=2, alpha=0.7, label=f'Human median ({np.median(human_accs):.3f})'
+        linewidth=2, alpha=0.7, label=f'Clinician median ({np.median(human_accs):.2f})'
     )
     
     # Styling
     ax.set_xlim(-0.5, 0.5)
     ax.set_ylim(human_accs.min() - 0.05, human_accs.max() + 0.05)
     ax.set_xticks([])
-    ax.set_ylabel('Accuracy', fontweight='bold', fontsize=11)
-    ax.set_title(
-        f'{video_id} — Distribution of Human Raters with LLM Performance',
-        fontweight='bold', fontsize=12
-    )
+    ax.set_ylabel('Accuracy', fontweight='bold', fontsize=11),
+    if title:
+        ax.set_title(
+            f'{title}',
+            fontweight='bold', fontsize=10
+        )
     
     ax.grid(axis='y', alpha=0.3)
     ax.set_facecolor('#FAFAFA')
     
     # Add legend with smaller marker sizes
     if show_legend:
-        legend = ax.legend(loc='lower right', fontsize=9,
+        legend = ax.legend(loc='lower right', fontsize=12,
                           handlelength=1.5, scatterpoints=1)
         
         # Scale down marker sizes in the legend
         for handle in legend.legend_handles:
             if hasattr(handle, 'set_markersize'):
-                handle.set_markersize(5)
+                handle.set_markersize(8)
             if hasattr(handle, 'set_sizes'):
                 handle.set_sizes([25])
     
@@ -3166,7 +3631,7 @@ def plot_human_vs_ai_violin(
 
 
 
-def create_publication_error_scatter_with_extreme_cases(
+def create_publication_error_scatter_with_extreme_cases_old(
     master_df: pd.DataFrame,
     reference: pd.DataFrame,
     best_ai: str,
@@ -3520,8 +3985,8 @@ def create_publication_error_scatter_with_extreme_cases(
 
 def classify_from_plot_data(
     df: pd.DataFrame,
-    high_error_threshold: float = 80.0,  # Note: already in percentage
-    low_error_threshold: float = 20.0
+    high_error_threshold: float = 70.0,  # Note: already in percentage
+    low_error_threshold: float = 30.0
 ) -> pd.DataFrame:
     """
     Classify items by difficulty using pre-computed plot data.
@@ -3547,3 +4012,440 @@ def classify_from_plot_data(
     df['difficulty_type'] = np.select(conditions, choices, default='moderate_difficulty')
     
     return df
+
+
+def compute_overall_from_table(df):
+    """Extract values from video columns and compute overall mean, min, and max."""
+    video_cols = ['Mania', 'Depression', 'Schizophrenia']
+    
+    def extract_and_average(row):
+        nr_values = []
+        r_values = []
+        nr_mins = []
+        nr_maxs = []
+        r_mins = []
+        r_maxs = []
+        
+        for col in video_cols:
+            cell = str(row[col])
+            # Split by " / " to get not-reduced and reduced parts
+            parts = cell.split(' / ')
+            if len(parts) == 2:
+                nr_part, r_part = parts
+                
+                # Extract main value and range for not-reduced
+                nr_main_match = re.match(r'([\d.]+)', nr_part.strip())
+                nr_range_match = re.search(r'\(([\d.]+)\s*-\s*([\d.]+)\)', nr_part)
+                
+                # Extract main value and range for reduced
+                r_main_match = re.match(r'([\d.]+)', r_part.strip())
+                r_range_match = re.search(r'\(([\d.]+)\s*-\s*([\d.]+)\)', r_part)
+                
+                if nr_main_match:
+                    nr_values.append(float(nr_main_match.group(1)))
+                    if nr_range_match:
+                        nr_mins.append(float(nr_range_match.group(1)))
+                        nr_maxs.append(float(nr_range_match.group(2)))
+                    else:
+                        # No range means single value - use it as min and max
+                        nr_mins.append(float(nr_main_match.group(1)))
+                        nr_maxs.append(float(nr_main_match.group(1)))
+                
+                if r_main_match:
+                    r_values.append(float(r_main_match.group(1)))
+                    if r_range_match:
+                        r_mins.append(float(r_range_match.group(1)))
+                        r_maxs.append(float(r_range_match.group(2)))
+                    else:
+                        r_mins.append(float(r_main_match.group(1)))
+                        r_maxs.append(float(r_main_match.group(1)))
+        
+        if nr_values and r_values:
+            nr_mean = np.mean(nr_values)
+            r_mean = np.mean(r_values)
+            nr_min = min(nr_mins) if nr_mins else nr_mean
+            nr_max = max(nr_maxs) if nr_maxs else nr_mean
+            r_min = min(r_mins) if r_mins else r_mean
+            r_max = max(r_maxs) if r_maxs else r_mean
+            
+            # Format: mean (min - max) / mean (min - max)
+            if nr_min == nr_max:
+                nr_str = f"{nr_mean:.2f}"
+            else:
+                nr_str = f"{nr_mean:.2f} ({nr_min:.2f} - {nr_max:.2f})"
+            
+            if r_min == r_max:
+                r_str = f"{r_mean:.2f}"
+            else:
+                r_str = f"{r_mean:.2f} ({r_min:.2f} - {r_max:.2f})"
+            
+            return f"{nr_str} / {r_str}"
+        return ""
+    
+    df['All'] = df.apply(extract_and_average, axis=1)
+    return df
+
+def get_human_performance_table(
+    human_master: pd.DataFrame,
+    reference: pd.DataFrame,
+    psy_cols_regex: str = r'^p\d+_.*_final$',
+    video_ids: list = [7, 8, 9],
+    video_names: dict = None
+) -> pd.DataFrame:
+    """
+    Calculate human rater performance (reduced and not reduced) per video.
+    Returns accuracy as decimal with range (min-max) instead of std.
+    
+    Parameters:
+    -----------
+    human_master : pd.DataFrame
+        DataFrame containing human ratings with 'video_id' and 'site' columns
+    reference : pd.DataFrame
+        DataFrame containing reference ratings with 'ID_Video' column
+    psy_cols_regex : str
+        Regex pattern to identify psychopathology columns
+    video_ids : list
+        List of video IDs to analyze
+    video_names : dict
+        Mapping of video_id to video name (e.g., {7: 'Mania'})
+    
+    Returns:
+    --------
+    pd.DataFrame with columns: video_id, video_name, n_raters, accuracy_not_reduced, accuracy_reduced
+    (accuracy values as decimal with range format: "0.75 - 0.85")
+    """
+    if video_names is None:
+        video_names = {7: 'Mania', 8: 'Depression', 9: 'Schizophrenia'}
+    
+    # Extract psy columns
+    psy_cols = [col for col in human_master.columns if re.match(psy_cols_regex, col)]
+    
+    rows = []
+    
+    for vid in video_ids:
+        # Filter data for this video
+        human_vid = human_master[human_master['video_id'] == vid].copy()
+        ref_vid = reference[reference['ID_Video'] == vid].copy()
+        
+        if human_vid.empty or ref_vid.empty:
+            continue
+        
+        # Get reference values (not reduced)
+        ref_values_nr = ref_vid[psy_cols].iloc[0].values
+        
+        # Calculate not reduced accuracy per rater
+        accuracies_nr = []
+        for idx, row in human_vid.iterrows():
+            human_values = row[psy_cols].values
+            # Count matches (excluding NaN comparisons)
+            valid_mask = ~(pd.isna(human_values) | pd.isna(ref_values_nr))
+            if valid_mask.sum() > 0:
+                matches = (human_values[valid_mask] == ref_values_nr[valid_mask]).sum()
+                acc = matches / valid_mask.sum()
+                accuracies_nr.append(acc)
+        
+        # Create reduced versions (0,1,2,3 -> 0,1; -99 stays -99)
+        def reduce_rating(val):
+            if pd.isna(val):
+                return val
+            if val == -99:
+                return -99
+            elif val in [0]:
+                return 0
+            elif val in [1, 2, 3]:
+                return 1
+            return val
+        
+        # Reduced reference
+        ref_values_r = np.array([reduce_rating(v) for v in ref_values_nr])
+        
+        # Calculate reduced accuracy per rater
+        accuracies_r = []
+        for idx, row in human_vid.iterrows():
+            human_values = np.array([reduce_rating(v) for v in row[psy_cols].values])
+            valid_mask = ~(pd.isna(human_values) | pd.isna(ref_values_r))
+            if valid_mask.sum() > 0:
+                matches = (human_values[valid_mask] == ref_values_r[valid_mask]).sum()
+                acc = matches / valid_mask.sum()
+                accuracies_r.append(acc)
+        
+        n_raters = len(human_vid)
+        mean_acc_nr = np.mean(accuracies_nr) if accuracies_nr else np.nan
+        min_acc_nr = np.min(accuracies_nr) if accuracies_nr else np.nan
+        max_acc_nr = np.max(accuracies_nr) if accuracies_nr else np.nan
+        
+        mean_acc_r = np.mean(accuracies_r) if accuracies_r else np.nan
+        min_acc_r = np.min(accuracies_r) if accuracies_r else np.nan
+        max_acc_r = np.max(accuracies_r) if accuracies_r else np.nan
+        
+        rows.append({
+            'video_id': vid,
+            'video_name': video_names.get(vid, f'Video {vid}'),
+            'n_raters': n_raters,
+            'accuracy_not_reduced_mean': mean_acc_nr,
+            'accuracy_not_reduced_min': min_acc_nr,
+            'accuracy_not_reduced_max': max_acc_nr,
+            'accuracy_reduced_mean': mean_acc_r,
+            'accuracy_reduced_min': min_acc_r,
+            'accuracy_reduced_max': max_acc_r,
+        })
+    
+    df = pd.DataFrame(rows)
+    
+    # Add overall row
+    total_raters = df['n_raters'].sum()
+    overall_nr = df['accuracy_not_reduced_mean'].mean()
+    overall_r = df['accuracy_reduced_mean'].mean()
+    
+    # For overall, get min/max from all individual values
+    all_min_nr = df['accuracy_not_reduced_min'].min()
+    all_max_nr = df['accuracy_not_reduced_max'].max()
+    all_min_r = df['accuracy_reduced_min'].min()
+    all_max_r = df['accuracy_reduced_max'].max()
+    
+    overall_row = pd.DataFrame([{
+        'video_id': 'Overall',
+        'video_name': 'All Videos',
+        'n_raters': total_raters,
+        'accuracy_not_reduced_mean': overall_nr,
+        'accuracy_not_reduced_min': all_min_nr,
+        'accuracy_not_reduced_max': all_max_nr,
+        'accuracy_reduced_mean': overall_r,
+        'accuracy_reduced_min': all_min_r,
+        'accuracy_reduced_max': all_max_r,
+    }])
+    
+    df = pd.concat([df, overall_row], ignore_index=True)
+    
+    # Format for display as decimal range (no percentage)
+    df['accuracy_not_reduced'] = df.apply(
+    lambda x: f"{x['accuracy_not_reduced_mean']:.2f} ({x['accuracy_not_reduced_min']:.2f} - {x['accuracy_not_reduced_max']:.2f})" 
+    if pd.notna(x['accuracy_not_reduced_min']) and pd.notna(x['accuracy_not_reduced_max'])
+    else f"{x['accuracy_not_reduced_mean']:.2f}", axis=1
+)
+    df['accuracy_reduced'] = df.apply(
+        lambda x: f"{x['accuracy_reduced_mean']:.2f} ({x['accuracy_reduced_min']:.2f} - {x['accuracy_reduced_max']:.2f})" 
+        if pd.notna(x['accuracy_reduced_min']) and pd.notna(x['accuracy_reduced_max'])
+        else f"{x['accuracy_reduced_mean']:.2f}", axis=1
+    )
+
+    return df[['video_id', 'video_name', 'n_raters', 'accuracy_not_reduced', 'accuracy_reduced']]
+
+def create_error_sankey_static(plot_data_df, video_id=None, video_name=None, save_path=None, ax=None, 
+                                rater_type="llm", prediction_col=None, print_summary=True):
+    """
+    Create a static Sankey-style diagram showing flow from reference ratings to predictions
+    for INCORRECT predictions only, using matplotlib.
+    
+    Parameters:
+    -----------
+    plot_data_df : DataFrame with 'ref_rating' and prediction column
+    video_id : optional filter for specific video
+    video_name : optional name for title
+    save_path : optional path to save the figure
+    ax : optional matplotlib axes
+    rater_type : str, either "llm" or "clinician" - changes labels and title
+    prediction_col : str, column name for predictions
+    print_summary : bool, if True prints a summary of error flows for figure notes
+    """
+    df = plot_data_df.copy()
+    
+    if video_id is not None:
+        df = df[df['video_id'] == video_id]
+    
+    # Set prediction column based on rater type if not specified
+    if prediction_col is None:
+        prediction_col = 'ai_prediction' if rater_type == "llm" else 'most_common_human_rating'
+    
+    # Check if prediction column exists
+    if prediction_col not in df.columns:
+        print(f"Column '{prediction_col}' not found. Available columns: {df.columns.tolist()}")
+        return None, pd.DataFrame()
+    
+    # Filter to only incorrect predictions
+    df_errors = df[df['ref_rating'] != df[prediction_col]].copy()
+    
+    if df_errors.empty:
+        print(f"No errors for video_id={video_id}")
+        return None, pd.DataFrame()
+    
+    # Map ratings to labels
+    rating_map = {0: 'Absent', 1: 'Present', -99: 'Not Assessable'}
+    
+    # Count flows from reference to prediction
+    flow_counts = df_errors.groupby(['ref_rating', prediction_col]).size().reset_index(name='value')
+    flow_counts.rename(columns={prediction_col: 'prediction'}, inplace=True)
+    
+    # Calculate error stats
+    total_items = len(df)
+    total_errors = len(df_errors)
+    error_rate = total_errors / total_items * 100 if total_items > 0 else 0
+    
+    # Print summary for figure notes
+    if print_summary:
+        rater_label = "LLM" if rater_type == "llm" else "Clinician"
+        vid_label = f" ({video_name})" if video_name else f" (Video {video_id})" if video_id else ""
+        print(f"\n{'='*60}")
+        print(f"{rater_label} Error Flow Summary{vid_label}")
+        print(f"{'='*60}")
+        print(f"Total items: {total_items} | Total errors: {total_errors} | Error rate: {error_rate:.1f}%")
+        print(f"\nError breakdown:")
+        
+        fp_count = 0
+        fn_count = 0
+        other_count = 0
+        
+        for _, row in flow_counts.iterrows():
+            ref_val = row['ref_rating']
+            pred_val = row['prediction']
+            value = row['value']
+            ref_label = rating_map.get(ref_val, str(ref_val))
+            pred_label = rating_map.get(pred_val, str(pred_val))
+            
+            if ref_val == 0 and pred_val == 1:
+                error_type = "False Positive"
+                fp_count += value
+            elif ref_val == 1 and pred_val == 0:
+                error_type = "False Negative"
+                fn_count += value
+            else:
+                error_type = "Other"
+                other_count += value
+            
+            print(f"  • {ref_label} → {pred_label}: n={value} ({error_type})")
+        
+        print(f"\nSummary for notes:")
+        print(f"  False Positives (Absent→Present): n={fp_count}")
+        print(f"  False Negatives (Present→Absent): n={fn_count}")
+        print(f"  Other errors: n={other_count}")
+        print(f"{'='*60}")
+    
+    # Create figure if no ax provided
+    if ax is None:
+        fig, ax = plt.subplots(figsize=(10, 6))
+    else:
+        fig = ax.get_figure()
+    
+    # Define positions for nodes
+    ref_ratings = sorted(df_errors['ref_rating'].unique())
+    pred_ratings = sorted(df_errors[prediction_col].unique())
+    
+    # Node positions (left side: reference, right side: prediction)
+    left_x = 0.15
+    right_x = 0.85
+    
+    # Calculate y positions for nodes
+    ref_y_positions = {r: 0.8 - i * 0.3 for i, r in enumerate(ref_ratings)}
+    pred_y_positions = {r: 0.8 - i * 0.3 for i, r in enumerate(pred_ratings)}
+    
+    def get_node_color(rating):
+        if rating == 0:
+            return '#3498db'  # blue for Absent
+        elif rating == 1:
+            return '#e87d2e'  # orange for Present
+        else:
+            return '#95a5a6'  # gray for Not Assessable
+    
+    # Draw nodes (rectangles)
+    node_height = 0.15
+    node_width = 0.08
+    
+    # Set labels based on rater type
+    rater_label = "LLM" if rater_type == "llm" else "Clinician"
+    
+    # Reference nodes (left)
+    for rating, y_pos in ref_y_positions.items():
+        rect = mpatches.FancyBboxPatch(
+            (left_x - node_width/2, y_pos - node_height/2),
+            node_width, node_height,
+            boxstyle="round,pad=0.01",
+            facecolor=get_node_color(rating),
+            edgecolor='black',
+            linewidth=1.5
+        )
+        ax.add_patch(rect)
+        ax.text(left_x - 0.12, y_pos, f"Ref:\n{rating_map.get(rating, rating)}", 
+                ha='right', va='center', fontsize=10, fontweight='bold')
+    
+    # Prediction nodes (right)
+    for rating, y_pos in pred_y_positions.items():
+        rect = mpatches.FancyBboxPatch(
+            (right_x - node_width/2, y_pos - node_height/2),
+            node_width, node_height,
+            boxstyle="round,pad=0.01",
+            facecolor=get_node_color(rating),
+            edgecolor='black',
+            linewidth=1.5
+        )
+        ax.add_patch(rect)
+        ax.text(right_x + 0.12, y_pos, f"{rater_label}:\n{rating_map.get(rating, rating)}", 
+                ha='left', va='center', fontsize=10, fontweight='bold')
+    
+    # Draw flows (curved arrows with width proportional to count)
+    max_flow = flow_counts['value'].max()
+    
+    for _, row in flow_counts.iterrows():
+        ref_val = row['ref_rating']
+        pred_val = row['prediction']
+        value = row['value']
+        
+        # Start and end positions
+        start_x = left_x + node_width/2
+        start_y = ref_y_positions[ref_val]
+        end_x = right_x - node_width/2
+        end_y = pred_y_positions[pred_val]
+        
+        # Flow color based on error type
+        if ref_val == 0 and pred_val == 1:
+            color = '#e74c3c'  # red - False Positive
+        elif ref_val == 1 and pred_val == 0:
+            color = '#9b59b6'  # purple - False Negative
+        else:
+            color = '#16a085'  # teal - Other
+        
+        # Line width proportional to flow value
+        line_width = 2 + (value / max_flow) * 15
+        
+        # Control points for bezier curve
+        mid_x = (start_x + end_x) / 2
+        
+        verts = [
+            (start_x, start_y),
+            (mid_x, start_y),
+            (mid_x, end_y),
+            (end_x, end_y),
+        ]
+        codes = [Path.MOVETO, Path.CURVE4, Path.CURVE4, Path.CURVE4]
+        path = Path(verts, codes)
+        
+        patch = mpatches.PathPatch(
+            path, 
+            facecolor='none', 
+            edgecolor=color, 
+            linewidth=line_width,
+            alpha=0.6
+        )
+        ax.add_patch(patch)
+    
+    # Title
+    title = f"{rater_label} Error Flow: Reference → Incorrect Prediction"
+    if video_name:
+        title += f"\n({video_name})"
+    ax.set_title(title, fontsize=12, fontweight='bold')
+    
+    # Legend
+    legend_elements = [
+        mpatches.Patch(facecolor='#e74c3c', alpha=0.6, label='False Positive (Absent→Present)'),
+        mpatches.Patch(facecolor='#9b59b6', alpha=0.6, label='False Negative (Present→Absent)'),
+        mpatches.Patch(facecolor='#16a085', alpha=0.6, label='Other Errors'),
+    ]
+    ax.legend(handles=legend_elements, loc='lower center', ncol=3, fontsize=10)
+    
+    ax.set_xlim(-0.05, 1.05)
+    ax.set_ylim(0, 1)
+    ax.axis('off')
+    
+    if save_path:
+        fig.savefig(save_path, dpi=300, bbox_inches='tight')
+    
+    return fig, flow_counts

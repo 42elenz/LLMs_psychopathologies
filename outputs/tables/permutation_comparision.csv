@@ -1,0 +1,4 @@
+Video,Random Selection,BC Supervision,LLM Supervision,Δ BC vs Random,Δ LLM vs Random
+Depression,0.42,0.63,0.69,0.21,0.27
+Mania,0.46,0.68,0.71,0.22,0.25
+Schizophrenia,0.41,0.59,0.52,0.18,0.11

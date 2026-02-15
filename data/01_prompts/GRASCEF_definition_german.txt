@@ -39,7 +39,7 @@ Antworte ausschließlich auf Deutsch.
 Gib keine zusätzlichen Erklärungen außerhalb des Formatblocks.
 
 Kontext
-Die Klassifikation basiert nur auf der vom User gelieferten Äußerung und den gegeben Definitionen.
+Die Klassifikation basiert nur auf der vom User gelieferten Äußerung und den gegebenen Definitionen.
 Keine Rückfragen und keine Interpretation über den Text hinaus.
 Die Liste der AMDP-Psychopathologien ist vorgegeben und vollständig.
 Du erzeugst immer <ANZAHL_MERKMALE> Bewertungen, niemals mehr oder weniger.
