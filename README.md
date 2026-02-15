@@ -10,7 +10,7 @@ Simulated patient interviews assessed via three pathways: practicing clinicians 
 ## Results Visualization mentioned in publication 
 Interactive visualizations comparing model performance with human ratings:
 
-- **Mania**: https://42elenz.github.io/LLM_psychopathologies/selection__error_rate_scatter_video_7.html
+- **Mania**: [https://42elenz.github.io/LLM_psychopathologies/selection__error_rate_scatter_video_7.html](https://42elenz.github.io/LLM_psychopathologies/selection__error_rate_scatter_video_7.html)
 - **Depression**: https://42elenz.github.io/LLM_psychopathologies/selection__error_rate_scatter_video_8.html
 - **Schizophrenia**: https://42elenz.github.io/LLM_psychopathologies/selection__error_rate_scatter_video_9.html
 
