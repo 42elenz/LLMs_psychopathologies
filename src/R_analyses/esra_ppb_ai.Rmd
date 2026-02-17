@@ -13,14 +13,14 @@ library(furrr)
 
 
 ```{r Loading data, echo=FALSE}
-df <- read_csv("data/r_export_mixed_model_data_simple.csv")
+df <- read_csv("r_export_mixed_model_data_simple.csv")
 
 df <- df %>% mutate(across(everything(), as.factor)) %>%
   mutate(Correct = as.integer(as.character(Correct))) %>% 
   #rbind(.,df_aug) %>% 
   select(-c("Model_name", "ausbildung_fertig"))
 
-df2 <- read_csv("data/disagreement_data.csv") %>% 
+df2 <- read_csv("disagreement_data.csv") %>% 
   select(-c("final_value", "correct_reference")) %>% 
   mutate(strategy = as.factor(strategy_chosen), item_id = as.factor(item_id), video_id = as.factor(video_id), pair_id=as.factor(pair_id)) %>% 
   select(-strategy_chosen)
@@ -38,6 +38,36 @@ df %>% filter(Ratertype=="human") %>%
   summarise(sumscore = sum(as.numeric(as.character(Correct)))) %>% 
   pull(sumscore) %>% 
   hist()
+
+df %>% filter(Ratertype=="human", Video_id==7) %>% 
+  group_by(ID) %>% 
+  summarise(percent_correct = mean(as.numeric(as.character(Correct)))) %>% 
+  pull(percent_correct) %>% 
+  hist()
+
+df %>% filter(Ratertype=="human", Video_id==7) %>% 
+  group_by(ID) %>% 
+  summarise(n=n())
+
+df %>% filter(Ratertype=="human", Video_id==8) %>% 
+  group_by(ID) %>% 
+  summarise(percent_correct = mean(as.numeric(as.character(Correct)))) %>% 
+  pull(percent_correct) %>% 
+  hist()
+
+df %>% filter(Ratertype=="human", Video_id==8) %>% 
+  group_by(ID) %>% 
+  summarise(n=n())
+
+df %>% filter(Ratertype=="human", Video_id==9) %>% 
+  group_by(ID) %>% 
+  summarise(percent_correct = mean(as.numeric(as.character(Correct)))) %>% 
+  pull(percent_correct) %>% 
+  hist()
+
+df %>% filter(Ratertype=="human", Video_id==9) %>% 
+  group_by(ID) %>% 
+  summarise(n=n())
 ```
 
 Overall comparison AI vs human based on simulation
@@ -102,50 +132,126 @@ obs_stat <- df2 %>%
   ) %>%
   select(llm_vs_random, third_vs_random)
 
+obs_stat_7 <- df2 %>%
+  filter(video_id==7) %>% 
+  group_by(strategy) %>%
+  summarise(acc = mean(as.numeric(is_correct))) %>%
+  pivot_wider(names_from = strategy, values_from = acc) %>%
+  mutate(
+    llm_vs_random   = ai_always - human_only,
+    third_vs_random = human_only_supervision - human_only
+  )
+
+obs_stat_8 <- df2 %>%
+  filter(video_id==8) %>% 
+  group_by(strategy) %>%
+  summarise(acc = mean(as.numeric(is_correct))) %>%
+  pivot_wider(names_from = strategy, values_from = acc) %>%
+  mutate(
+    llm_vs_random   = ai_always - human_only,
+    third_vs_random = human_only_supervision - human_only
+  )
+
+obs_stat_9 <- df2 %>%
+  filter(video_id==9) %>% 
+  group_by(strategy) %>%
+  summarise(acc = mean(as.numeric(is_correct))) %>%
+  pivot_wider(names_from = strategy, values_from = acc) %>%
+  mutate(
+    llm_vs_random   = ai_always - human_only,
+    third_vs_random = human_only_supervision - human_only
+  )
 ```
 
-```{r permutation function, echo=FALSE}
-permute_once <- function(df) {
-  df %>%
-    group_by(video_id, item_id, pair_id) %>%
-    mutate(strategy = sample(strategy)) %>%
-    ungroup()
-}
+```{r tables, eval=FALSE}
+
+df2 %>% 
+  filter(video_id==7) %>% 
+  select(is_correct, strategy) %>% 
+  droplevels() %>% 
+  table()
+
+df2 %>% 
+  filter(video_id==8) %>% 
+  select(is_correct, strategy) %>% 
+  droplevels() %>% 
+  table()
+
+df2 %>% 
+  filter(video_id==9) %>% 
+  select(is_correct, strategy) %>% 
+  droplevels() %>% 
+  table()
+
 ```
 
-```{r conditional permutation simulation, eval=FALSE, echo=FALSE}
-set.seed(1)
+```{r permutation function}
+perm_test_video <- function(df, video, B = 5) {
 
-B <- 5000
+  df_v <- df %>% filter(video_id == video)
 
-plan(multisession)
-
-perm_stats <- future_map_dfr(seq_len(B), function(b) {
-  df_perm <- permute_once(df2)
-
-  df_perm %>%
+  obs <- df_v %>%
     group_by(strategy) %>%
     summarise(acc = mean(is_correct), .groups = "drop") %>%
     pivot_wider(names_from = strategy, values_from = acc) %>%
     mutate(
-      llm_vs_random   = ai_always - human_only,
-      third_vs_random = human_only_supervision - human_only,
-      iter = b
+      llm_vs_human   = ai_always - human_only,
+      third_vs_human = human_only_supervision - human_only
     )
-}, .options = furrr_options(seed = TRUE))
 
-readr::write_csv(perm_stats, "data/perm_stats.csv.gz")
+  permute_once_v <- function() {
+    df_v %>%
+      group_by(video_id, item_id, pair_id) %>%
+      mutate(
+        strategy = if (n_distinct(is_correct) > 1)
+          sample(strategy)
+        else
+          strategy
+      ) %>%
+      ungroup()
+  }
 
+  perm <- replicate(B, {
+    df_p <- permute_once_v()
+
+    df_p %>%
+      group_by(strategy) %>%
+      summarise(acc = mean(is_correct), .groups = "drop") %>%
+      pivot_wider(names_from = strategy, values_from = acc) %>%
+      mutate(
+        llm_vs_human   = ai_always - human_only,
+        third_vs_human = human_only_supervision - human_only
+      )
+  }, simplify = FALSE) %>% bind_rows()
+
+  tibble(
+    video_id = video,
+    contrast = c("LLM vs human", "Supervisor vs human"),
+    estimate = c(obs$llm_vs_human, obs$third_vs_human),
+    p_value = c(
+      (sum(abs(perm$llm_vs_human) >= abs(obs$llm_vs_human)) + 1) / (B + 1),
+      (sum(abs(perm$third_vs_human) >= abs(obs$third_vs_human)) + 1) / (B + 1)
+    )
+  )
+}
 ```
 
-```{r pvalue calculation, echo=FALSE}
-perm_stats <- read_csv("data/perm_stats.csv.gz")
+```{r run permutation test, eval=FALSE}
+set.seed(1)
+plan(multisession)
 
-p_llm <- round((sum(abs(perm_stats$llm_vs_random) >= abs(obs_stat$llm_vs_random)) + 1) /
-         (nrow(perm_stats) + 1),4)
+results_video <- future_map_dfr(
+  unique(df2$video_id),
+  ~ perm_test_video(df2, .x, B = 5000),
+  .options = furrr_options(seed = TRUE)
+)
 
-p_third <- round((sum(abs(perm_stats$third_vs_random) >= abs(obs_stat$third_vs_random)) + 1) /
-         (nrow(perm_stats) + 1),4)
+saveRDS(results_video, file = "results_video.rds")
+```
+
+```{r load results of permutation test}
+results_video <-
+readRDS("results_video.rds")
 ```
 
 ## Methods
@@ -157,9 +263,9 @@ Correct∼Video+(1∣ID)+(1∣Item)+(1∣Video:Item),logit link
 We used the fitted model to generate a reference distribution for the total score under the assumption that responses follow the human performance distribution (simulated n = 10000. The AI score was then compared against this model-based reference distribution.
 
 ### Comparison of disagreement-resolution strategies
-To compare disagreement-resolution strategies, we conducted a conditional permutation test with stratification by video. For each unique combination of video, item, and rater pairing, three adjudicated responses were available, corresponding to the three strategies (random selection, third rater, LLM).
-Under the null hypothesis of no strategy effect, strategy labels are exchangeable within each video–item–pairing unit. We therefore generated the null distribution by randomly permuting strategy labels within each such unit, while keeping the observed responses, item identity, video, and pairing fixed. This permutation scheme preserves video-specific item difficulty, pairing-related dependencies, and the unbalanced rating structure arising from incomplete video coverage.
-The test statistic was the difference in mean accuracy between strategies (LLM vs random selection; third rater vs random selection). Two-sided p-values were obtained as the proportion of permutations yielding an absolute test statistic at least as large as the observed value. Results are based on 5,000 permutations.
+To compare disagreement-resolution strategies, we conducted a permutation test separate for each video based on the items with disagreement between the two raters as only in these cases the different strategies actually play a role. For each unique combination of item, and rater pairing, three adjudicated responses were available, corresponding to the three strategies (random selection, experienced clinician, LLM).
+Under the null hypothesis of no strategy effect, strategy labels are exchangeable within each item–pairing unit. We therefore generated the null distributions for each of the videos by randomly permuting strategy labels within each such unit, while keeping the observed responses, item identity and pairing fixed. This permutation scheme preserves video-specific item difficulty and pairing-related dependencies.
+The test statistic was the difference in mean accuracy between strategies (LLM vs random selection; experienced clinician vs random selection). Two-sided p-values were obtained as the proportion of permutations yielding an absolute test statistic at least as large as the observed value. Results are based on 5,000 permutations.
 
 ## Results
 ### Overall comparison LLM vs human
@@ -195,4 +301,4 @@ The AI achieved a total accuracy of `r observed_sum/300` (dashed line). Under th
 Only `r round(100 * mean(sim_scores >= observed_sum), 1)`% of simulated scores were equal to or larger than the observed AI score.
 
 ### Comparison of disagreement-resolution strategies 
-Using this permutation test, adjudication via the LLM yielded higher accuracy than random selection (Δ accuracy = `r round(obs_stat$llm_vs_random,2)`; permutation p = `r p_llm`). Adjudication via a third rater also outperformed random selection (Δ accuracy = `r round(obs_stat$third_vs_random,2)`; permutation p = `r p_third`), though with a slightly smaller effect size.
+As the permutation test is based on the items with rater disagreement consequentally the accuracy reported here is in regards to these items only. Both adjudication via the LLM and the experienced clinician yielded significantly higher accuracies than random selection (Depression video: LLM accuracy = `r round(obs_stat_7$ai_always,3)`, experienced clinician accuracy = `r round(obs_stat_7$human_only_supervision,3)`, random human accuracy = `r round(obs_stat_7$human_only,3)`, Δ accuracy LLM vs random = `r round(obs_stat_7$llm_vs_random,3)`, permutation p = `r round(results_video %>% filter(video_id==7, contrast=="LLM vs human") %>% pull(p_value),4)`, Δ accuracy experienced clinician vs random = `r round(obs_stat_7$third_vs_random,3)`, permutation p = `r round(results_video %>% filter(video_id==7, contrast=="Supervisor vs human") %>% pull(p_value),4)`; Mania video: LLM accuracy = `r round(obs_stat_8$ai_always,3)`, experienced clinician accuracy = `r round(obs_stat_8$human_only_supervision,3)`, random human accuracy = `r round(obs_stat_8$human_only,3)`, Δ accuracy LLM vs random = `r round(obs_stat_8$llm_vs_random,3)`, permutation p = `r round(results_video %>% filter(video_id==8, contrast=="LLM vs human") %>% pull(p_value),4)`, Δ accuracy experienced clinician vs random = `r round(obs_stat_8$third_vs_random,3)`, permutation p = `r round(results_video %>% filter(video_id==8, contrast=="Supervisor vs human") %>% pull(p_value),4)`; Schizophrenia video: LLM accuracy = `r round(obs_stat_9$ai_always,3)`, experienced clinician accuracy = `r round(obs_stat_9$human_only_supervision,3)`, random human accuracy = `r round(obs_stat_9$human_only,3)`, Δ accuracy LLM vs random = `r round(obs_stat_9$llm_vs_random,3)`, permutation p = `r round(results_video %>% filter(video_id==9, contrast=="LLM vs human") %>% pull(p_value),4)`, Δ accuracy experienced clinician vs random = `r round(obs_stat_9$third_vs_random,3)`, permutation p = `r round(results_video %>% filter(video_id==9, contrast=="Supervisor vs human") %>% pull(p_value),4)`).
