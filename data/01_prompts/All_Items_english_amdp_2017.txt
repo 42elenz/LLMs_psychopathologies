@@ -1,0 +1,1840 @@
+1.	Lowered vigilance (O)
+Definition
+Disturbances of vigilance
+
+Explanations and examples
+This is a quantitative symptom dimension. The term ‘vigilance’ originates in the field of neurophysiology and is applied similarly to the term ‘wakefulness’. Vigilance disturbances range from diminished clarity of mind (drowsiness) to somnolence, sopor and coma. Patients are sleepy to different degrees and display generally slowed down behaviour.
+
+Notes on rating
+‘mild’		The patient is drowsy or sleepy but reacts promptly to spoken stimuli.
+‘severe’		The patient can only be roused through pain stimulus or other strong stimuli.
+
+Symptoms to differentiate from
+2.	Clouded consciousness
+3.	Narrowed consciousness
+ 
+2.	Clouded consciousness (O)
+Definition
+Qualitative impairment in clarity of consciousness. Impaired ability to understand aspects relating to one’s own person and the environment, to make meaningful connections between them and to communicate and act sensibly.
+
+Explanations and examples
+Clouded consciousness leads to impairment in all aspects of experience and behaviour and is not limited to particular areas. Symptom characteristics of clouded consciousness include e.g. turning away from the outside world, limited perceptual abilities, distractibility or difficulties with memory recall. Clouded consciousness may, for example, present in the context of delirium, acute psychotic symptoms or intoxication.
+
+Notes on rating
+‘mild’		Some degree of uncertainty presents in relation to making connections between experiences.
+‘severe’		A considerable degree of uncertainty presents in relation to making connections between experiences.
+	
+Symptoms to differentiate from	
+1.	Lowered vigilance
+3.	Narrowed consciousness
+
+3.	Narrowed consciousness (SO)
+Definition
+Diminished experience and restricted behaviour with accompanying diminished responsiveness to external stimuli.
+
+Explanations and examples
+A useful analogy to illustrate this qualitative symptom dimension is that of a beam of light in a blacked out space. The model to imagine is that the patient’s mind viewed as analogous to a a narrow and relatively firmly fixed beam of light. The patient’s mind (the beam of light) appears fixated on or fascinated/captivated by a particular experience or external/extraneous set of circumstances.
+
+The symptom not only presents in psychiatric disorders such as stupor or acute reactions to stress but also with hypnosis or extreme concentration on a specific topic such as, for example, when attempting to find a solution to a difficult set of problems.
+
+Notes on rating
+‘mild’	The patient’s mental state of diminished awareness and response can easily be broken. After a road accident, for example, a patient appears as if in a stupor; in conversation, however, a police constable quickly manages to establish from the patient information about the facts surrounding the incident.
+‘severe’	The patient’s mental state of diminished awareness and response can only be influenced with considerable effort. A patient may, for example, be absorbed in listening to his voices; attempts to provoke the patient to concentrate on other topics are met with no response, or only a vaguely indicated response before returning to his inner experiences.
+
+Symptoms to differentiate from
+1.	Lowered vigilance
+2.	Clouded consciousness
+18.	Restricted thinking
+20.  	Rumination 
+
+4.	Expanded consciousness (S)
+Definition
+This is a qualitative dimension of consciousness disturbances, where patients report instances of heightened or intensified awareness of inner and outer events.
+
+Explanations and examples
+The patients experience themselves as generally more alert, livelier and more open. Feelings or sensory perceptions are experienced as particularly intense. Expanded consciousness can present under the influence of narcotics, drugs or in the context of psychotic or manic episodes. Meditative states of mind may also lead to expanded consciousness.
+
+Notes on rating
+‘mild’	Experience of expanded consciousness is reported by the patient but does not manifest during examination.
+‘severe’	Experience of pronounced expanded consciousness is reported by the patient and becomes observable in conversation during examination.
+
+Symptoms to differentiate from
+33.	Delusional mood
+53.	Derealization
+
+2.3	Disturbances of orientation
+
+Preliminary notes
+
+The term ‘orientation’ refers to the awareness of date, place, situation and person. In the case of incorrect answers, efforts to obtain further clarification should be undertaken in order to differentiate this symptom from others (e.g. 10. Concentration). The patient must be given an opportunity to correct his statements.
+
+Delusional disturbances of orientation, e.g. delusional misinterpretation of situations or misidentification of persons, are not to be recorded here if the patient also displays instances of real/accurate orientation (e.g. if the patient believes to be God but, at the same time, is able to report accurately on his own personal circumstances, no disturbance of orientation is deemed present).
+
+5.	Disorientation according to date (S)
+Definition
+Current date (day, month, year), day of the week or season/time of year are not or only partially known.
+
+Explanations and examples
+Especially where a patient’s answer is only ‘mildly’ inaccurate, the patient should be offered an opportunity to correct his statement, i.e. he should be made aware of the fact that the answer was incorrect. Only afterwards should a definitive assessment and rating of an answer be undertaken. If, at second attempt, the patient manages to produce the correct answer without further prompting, the initial (wrong) answer should not be evaluated.
+
+Episodic memory dysfunction, i.e. a patient’s inability to sort memory contents into chronological order, should not be classified as a time-related orientation problem but as a retention disturbance (12. Retention). 
+
+Notes on rating
+‘mild’	Responses as to current date or day of the week deviate by a maximum of 2 days from the correct answers, even after prompting; responses given in relation to current month, 	year and season/time of year are factually accurate. 
+‘severe’		The response given in relation to current year deviates by more than one year from the correct answer, or the current season/time of year is unknown. 
+	
+Symptoms to differentiate from
+10.	Concentration	
+12.	Retention
+
+6.	Disorientation according to Place (S)
+Definition
+The patient is unable to identify his present location, or the answers produced in this respect are extremely inaccurate.
+
+Explanations and examples
+Where a patient is unable to identify his present location (the name of the town or village; with larger cities possibly the district) due to lack of factual information only (e.g. a patient has been transferred to another location without being informed of the details), ‘not ascertained’ should be recorded. 
+
+If a patient is unable to find his way around in his own immediate surroundings (e.g. on the ward, a patient becomes lost on his way back to his room), this is to be documented as a retention problem (12. Retention) rather than a situational orientation problem (6. Place).
+
+Notes on rating
+‘mild’		The patient displays initial uncertainty as to identification of present location.
+‘severe’		The patient is unable to identify his present location, even after prompting.
+
+Symptoms to differentiate from
+7.	Situation
+12.	Memory Retention
+
+7.	Disorientation according to Situation (S)
+Definition
+The patient displays only partial or no awareness of current surroundings and proceedings and their significance or purpose.
+
+Explanations and examples
+A patient may have difficulties in articulating the fact that he is currently in a room at a hospital for the purpose of being assessed as a patient. 
+
+Notes on rating
+‘mild’	The patient is uncertain as to his current surroundings and proceedings and his role in them (e.g. at the hospital for an examination).
+‘severe’	The patient is incapable of stating what role or surroundings and proceedings he is currently in, even after prompting.
+		
+Symptoms to differentiate from
+6.	Disorientation according to Place
+
+8.	Disorientation according to one’s own person (S)
+Definition
+The patient is not or only partially aware of his identity and/or personal history. 
+
+Explanations and examples
+Knowledge of identity and personal history comprises details such as date and place of birth, age, name(s), living arrangements and personal age-related roles in life and in a social context (e.g. job/profession).
+
+Notes on rating
+‘mild’	Uncertainty in relation to particular items of biographical data.
+‘severe’	Essential items of biographical data (e.g. number of children, place of birth) cannot be recalled by the patient.
+
+Symptoms to differentiate from
+12.	Memory Retention
+54.	Depersonalization
+
+2.4	Disturbances of attention and memory
+
+Preliminary notes
+
+This section illustrates different aspects of cognitive impairment.
+
+Instances of impairment reported and plausibly substantiated by the patient with corresponding examples are to be rated as ‘mild’, even if they are not observable during the interview. If the patient feels a diminished ability with regards to their perception, concentration, retention and memory without this becoming plausible to the interviewer during the interview, only 71. Feelings of inadequacy should be rated.
+
+9.	Disturbed Apperception (SO)
+Definition
+A patient’s impaired ability to understand the meaning and significance of verbal utterances and written texts and to establish meaningful connections between their contents and the context in which they were made or written. The patient’s degree of ability to cognitively process received information is being assessed here.
+
+Explanations and examples
+A patient’s mental grasp of facts may be more or less inaccurate, slow (slow mental recall), or absent. Where impaired apperception is not easily evident during interview, it should be tested for with test items such as word pairs (differences and similarities), common sayings or proverbs, picture stories or short stories and fables.
+
+Concretism may also play a role in this context. Concretism refers to an inability to master abstract-symbolic thought. Typical examples are difficulties with sorting elements into different categories, problems with generalisations, and fixed adherence to details or focus on the self in the understanding and interpretation of metaphorical phrases and idiomatic expressions. 
+
+Notes on rating
+‘mild’	Experience of impaired apperception is subjectively but plausibly related by the patient. Alternatively, the patient manages a correct interpretation of, e.g. a short story or fable, but only with hesitation, possibly at second attempt only.
+‘severe’	Questions or simple requests are not understood by the patient. The patient is unable to interpret simple metaphorical phrases or idiomatic expressions.
+	
+Symptoms to differentiate from
+10.	Disturbed Concentration
+23.	Tangential thinking (Vorbeireden) 
+10.	Disturbed Concentration (SO)
+Definition
+Reduced ability to keep one’s attention and remain focused on an activity or topic for a prolonged period of time.
+
+Explanations and examples
+Provided the patient is capable, in principle, of carrying out simple subtractions and reciting the names of the months in the right order, suitable tests are challenges such as: “Starting with the number 81, keep taking away/subtracting 4”; or: “Tell me the names of the months backwards, starting with ...”. During the course of a clinical examination, instances of concentration disturbances present less in absolute numbers but rather in an increasing number of mistakes when performing a task, or an increasingly slowing rate of processing speed in, and eventual abandonment of, the task attempted.
+
+Notes on rating
+‘mild’		The patient gives a plausible account of experiencing disturbed concentration which, however, is not observable during interview.
+‘severe’	Communication is visibly hampered by disturbed concentration.
+
+Symptoms to differentiate from
+9.	Apperception
+18.	Restricted thinking
+11.	Memorization
+12.	Retention
+
+11.	Disturbed Memorization (short-term) (SO)
+Definition
+Partial or total inability to retain fresh information and subsequent recall over a time span of around 10 minutes.
+
+Explanations and examples
+With test materials, tasks testing for recognition must be differentiated from tasks testing for recall (more challenging). Immediate memory impairment may also vary between different sense modalities and types of material as well as depend on the affective loading of materials presented, which underlines the importance of using materials which are as neutral as possible. For the purpose of comparability, it is recommended to re-use the same materials (e.g. items such as ‘34’, ‘Oslo’, ‘ashtray’). The patient initially repeats the items immediately after the interviewer, so that 9. Apperception can be excluded. If the patient cannot spontaneously recall the items after, say, a 10-minute interval, assistance may be provided (e.g. “one of the items was a number”).
+
+Notes on rating
+‘mild’	Of the three items presented, only two are available for spontaneous recall after 10 minutes. Alternatively, an instance of impaired memorization is related by the patient in form of a plausible account.
+‘severe’	The three numbers or terms cannot be recalled after a 10-minute interval, even with prompting.
+		
+Symptoms to differentiate from
+9. 	Disturbed apperception 
+10.	Disturbed Concentration
+12.	Retention
+
+12.	Retention (long-term) (SO)
+Definition
+Reduction in or loss of ability to store information in the memory for longer than 10 minutes or recall previously studied material from memory. 
+
+Explanations and examples
+Retention disturbances may be experienced in connection with recent or more distant events. 
+
+Amnesias (temporary memory gaps or memory gaps in relation to particular areas of knowledge) and episodic memory dysfunction (a patient’s inability to sort memory contents into chronological order) also belong to the category of retention disturbances.
+
+Notes on rating
+‘mild’		The patient is able to recall certain events or information but cannot remember individual details. Alternatively, a patient gives a subjective and plausible account of experiencing a retention disturbance, although no signs of the disturbance are in evidence during interview.
+‘severe’	The patient is incapable of remembering important events or essential information.
+	
+Symptoms to differentiate from
+8.	Disorientation concerning th Self
+11.	Disturbed Memorization
+
+13.	Confabulation (O)
+Definition
+The filling of memory gaps with spontaneously occurring and changing contents.
+
+Explanations and examples
+In instances of confabulation, contents of answers to the same question change over time. For the purpose of assessment, therefore, it is necessary to repeatedly question the patient on the same facts and details. Having forgotten the facts as well as the contents of previous replies, the patient remains unaware of the inconsistencies contained in the various answers provided. 
+
+Confabulations are always underpinned by retention disturbances (12. Retention), which must be documented additionally. 
+
+Notes on rating
+‘mild’	Confabulations are in evidence during interview in one instance only.
+‘severe’	Numerous memory gaps are in evidence, which the patient fills with confabulations throughout.
+
+Symptoms to differentiate from
+14.	Paramnesias
+
+14.	Paramnesia (S)
+Definition
+Distorted or deceptive memories, involuntary upcoming memories, heightened memory recall.
+
+Explanations and examples
+There are various symptom characteristics involved:
+- 	mistaken recognition of or familiarity with a given set of facts or circumstances (seen, heard, 	experienced once before, ‘déjà-vu’) and, conversely, perceived unfamiliarity (never seen 	before, 	‘jamais-	vu’);
+-	ecmnesia (distorted sense of time and inability to order remembered events 	chronologically, whereby the past is experienced as the present);
+-	hypermnesia (increased or heightened memory recall, e.g. photographic memory);
+-	flashbacks (recurrent involuntary memories) and intrusions (involuntary memories 	of a traumatic experience);
+-	false memories (e.g. as in false-memory-syndrome).
+
+Delusional and deluded memories are not included in this section.
+
+Notes on rating
+‘mild’	One of the above symptoms presents in mild form only.
+‘severe’	One of the above symptoms leads to considerable impairment in the patient’s experience of everyday life.
+
+Symptoms to differentiate from
+13.	Confabulation
+
+2.5	Formal thought disorders 
+
+Preliminary notes
+
+Formal thought disorders are observable from a patient’s verbal statements. Possible indications are changes in speed, coherence and cogency of thought. An essential criterion in the severity rating of formal thought disorders may be the level of disruption to the psychiatric examination process experienced; such obstruction by formal disorders of thought, however, does not need to be in evidence throughout the examination. Formal disorders of thought may present particularly clearly at emotionally stressful instances during interview or after extended interview time.
+
+15.	Inhibited thinking (S)
+Definition
+The thinking process is subjectively experienced by the patient as being slowed down or blocked (as by an inner wall of resistance).
+
+Explanations and examples
+The patient manages to overcome the obstruction hampering the thinking process with great trouble and effort only. The subjective experience of inhibited thinking may assume such proportions as to lead the patient to believe himself to be incapable of thought.
+
+Notes on rating
+‘mild’	The patient feels only slightly impaired by inhibited thinking and can fulfil his normal	everyday duties.
+‘severe’	The patient feels almost completely inhibited and reports that words manage to cross his lips with extreme difficulty and effort only. Alternatively, the obstruction of thought processes leads to pronounced subjectively experienced functional impairment and is a source of considerable distress to the patient.
+
+Symptoms to differentiate from
+16.	Retarded thinking
+20.	Rumination 
+
+16.	Retarded thinking (O)
+Definition
+The flow of thought processes is slowed down and dragging.
+
+Explanations and examples
+Continuous delays in expressing thoughts obstruct the flow of conversation. Increased response latency is in evidence throughout. 
+
+Notes on rating
+‘mild’	The presence of retarded thinking becomes evident to the interviewer but does not significantly obstruct the examination process.
+‘severe’		The course of the conversation is severely disrupted by hampered flow of thought, hesitations and long pauses caused by thought delay.
+	
+Symptoms to differentiate from
+15.	Inhibited thinking
+87.	Mutism
+
+17.	Circumstantial thinking (O)
+Definition
+An inability to separate the essential from the unessential during a conversation without, however, rendering the conversation incoherent.
+
+Explanations and examples
+The patient becomes lost in unimportant details and remains fixed on them without, however, losing track of his conversational aim. Such verbosity/long-windedness obstructs the examination process.
+
+Notes on rating
+‘mild’	The patient’s long-windedness becomes evident to the interviewer but does not significantly obstruct the examination process.
+‘severe’	The patient’s long-windedness significantly obstructs the examination process.
+
+Symptoms to differentiate from
+9.	Apperception
+18.	Restricted thinking
+22.	Flight of ideas
+25.	Incoherence
+88.	Logorrhea
+
+18.	Restricted thinking (O)
+Definition
+Limited range of thought content, fixation on one particular topic or a small number of topics only. Fixation on a small number of objectives only.
+
+Explanations and examples
+In conversation, the patient experiences difficulty switching from one topic to another, or consistently returns to a given topic on repeated occasions. During examination, different topics must be introduced into the conversation. This is important since whilst the topic of ill health represents a central topic of the examination interview, a frequent return to it in conversation must not automatically be construed as a manifestation of restricted thinking. In the context of the topic of ill health, restricted thinking is present only where the patient remains fixated on particular aspects of the topic from which he can only be distracted with great difficulty, if at all (e.g. a depressive patient who remains fixated on the topic of disorder-related digestive problems). 
+
+Notes on rating
+‘mild’	The patient reverts to ‘his’ topic repeatedly on several occasions;  during intervening intervals, however, the discussion of other topics is easily possible.
+‘severe’	The patient is firmly fixated on ‘his’ topic, and despite being prompted to converse on alternative subjects immediately (i.e. after a couple of sentences) reverts back to it. 
+		
+Symptoms to differentiate from
+20.	Rumination 
+30.	Obsessive thoughts
+
+19.	Perseveration (O)
+Definition
+Persistent repetition of previously used words, phrases or details to the point where they become meaningless in the context of the current stage of the interview.
+
+Explanations and examples
+For assessment of this symptom, the interviewer is guided by his overall impression as to whether the frequent repetitions remain meaningful in the context of the conversation or not.
+
+A patient may, for example, correctly identify a key as ‘key’ but subsequently uses the word ‘key’ persistently when asked to say his name or identify other objects.
+
+Notes on rating
+‘mild’	Instances of perseveration are observed once or twice during interview.
+‘severe’	Instances of perseveration are frequent and lead to obstructions in the examination process.
+
+Symptoms to differentiate from
+84.	Parakinesia
+
+20.	Rumination (S) 
+Definition
+Endless mental preoccupation with or excessive concern over mostly unpleasant thoughts.
+
+Explanations and examples
+The patient reports that his thoughts continually and endlessly revolve around the same concerns and that the cycle can be broken with great difficulty only. The patient experiences these ruminations as uncomfortable or distressing.
+
+Notes on rating
+‘mild’		The patient feels only slightly impaired by his ruminations and manages to fulfil his normal everyday duties.
+‘severe’	The patient is clearly functionally and emotionally impaired by his ruminations.
+
+Symptoms to differentiate from
+18.	Restricted thinking
+21.	Pressured thinking
+30.	Obsessive thoughts
+
+21.	Pressured thinking (S)
+Definition
+The patient feels helplessly exposed to the pressures of crushing floods of different ideas or thoughts.
+
+Explanations and examples
+The patient feels unable to stay in control of or mentally sort the crushing flood of constantly new ideas or thoughts. These thoughts may be sensible or nonsensical, seemingly tumbling over one another or occur as if automated. The patient’s thought processes do not necessarily appear accelerated to the outside observer.
+
+Notes on rating
+‘mild’	The patient reports experiencing instances of pressured thinking but remains capable of concentrating on particular thoughts and developing these.
+‘severe’		The patient is no longer able to stem or control the crushing flood of ideas or thoughts.
+
+Symptoms to differentiate from
+20.	Rumination
+30.	Obsessive thoughts
+57.	Thought insertion
+
+22.	Flight of ideas (O)
+Definition
+An increasing multitude of thoughts and ideas which, however, are no longer firmly guided by clear thinking goals. As a result of diverse associations, thinking goals change frequently or become lost.
+
+Explanations and examples
+Patients suffering from flight of ideas become lost, flustered and confused and often fail to develop a thought to its conclusion, as the train of thought is constantly interrupted by interfering new ideas. The distractions which interrupt clear, goal-oriented thinking may stem from external interference (e.g. background noises) or be based on various mental associations. The thinking processes of a patient suffering from flight of ideas are not necessarily accelerated.
+
+Notes on rating
+‘mild’	The disturbance does not obstruct the examination.
+‘severe’		The patient repeatedly skips from one topic to another. The interviewer is able to follow the train of thought of the conversation, but the examination process is considerably hampered.
+	
+Symptoms to differentiate from
+17.	Circumstantial thinking
+25.	Incoherence
+88.	Logorrhea
+
+23.	Tangential thinking (O)
+Definition
+The patient appears to understand the contents of the questions addressed to him but provides answers which are completely out of context (“vorbeireden”).
+
+Explanations and examples
+The deciding factor in the assessment of this symptom is not the fact that the answer is incorrect (as e.g. in a school exam) but that the patient completely misses the point of the question by talking past or around it.
+
+An example of a patient talking past or around the point would be: “Why did you come to the clinic yesterday?” – “The Chinese Wall is over 5,000 km long.” – “Do you remember what I asked you?” – “Yes, you wanted to know why I came to the clinic yesterday.”
+
+It is important for the interviewer to ascertain whether or not the patient has understood the question correctly. It is best to ask the patient to verbally repeat the question after the interviewer. Instances of intentional avoidance of the question (i.e. ‘beating about the bush’) or ‘talking at cross purposes’ are immaterial in the assessment of tangential thinking and are not documented.
+
+Notes on rating
+‘mild’	The interviewer observes one single instance of tangential thinking during examination.
+‘severe’	Frequent instances of tangential thinking hamper the examination process.
+		
+Symptoms to differentiate from
+9.	Apperception
+10.	Concentration
+18.	Restricted thinking
+25.	Incoherence
+
+24.	Thought Blocking/Disruption of thought (SO)
+Definition
+Sudden disruption of an otherwise normal flow of thought or speech for no obvious reason.
+
+Explanations and examples
+The patient hesitates in mid-sentence, falls silent, then tries to re-start the conversation on possibly an entirely different topic. The interviewer may observe this phenomenon as ‘blocking’ (O), or the patient may report a ‘disruption of thought’ (S), i.e. an instance of sudden disruption of the thought process for no obvious reason.
+
+Notes on rating
+‘mild’	Blocking or disruption of thoughts is observed once or twice during interview or reported by the patient as having been experienced during the period under assessment.
+‘severe’	Frequent instances of blocking or disruption of thought are experienced during examination and obstruct the examination process.
+		
+Symptoms to differentiate from
+10.	Concentration
+
+25.	Incoherence/derailment (O)
+Definition
+The interviewer is unable to establish sensible connections of the patient’s thinking and verbal output. In extreme cases, what remains is a seemingly arbitrary tumble of fragmented sentences, phrases and thoughts. 
+
+Explanations and examples
+	“Yesterday afternoon I came to the clinic because there’s an election next year and the baker’s only opens at 8.00 in the morning.” (Paralogia)
+	“In the past, people consisted of blue-eyed humans and how the brains work.”
+	“I met this girl who couldn’t show herself in any other way than they all generally took  everything. It was meant so, and it had to be called: leave our guv’nor merry in the belly. True joy is a girl and a bloke all warped together and the two of them seeking eternal salvation in their fortune. (Schizophasia)
+
+In mild forms of incoherence with illogical thinking (paralogia), the syntax may remain intact. In more severe forms, the syntax is seriously flawed (paragrammatism) and all that may ultimately remain is an unintelligible, senseless tumble of words and syllables (language disintegration, schizophasia).
+
+Notes on rating
+‘mild’	One or two instances of incoherence present during examination where the patient displays signs of incoherent thought, but the examination process is not significantly disrupted. 
+‘severe’		Incoherence renders longer stretches of the patient’s speech unintelligible, or there is at least one clearly observable instance of language disintegration (as in schizophasia).
+	
+Symptoms to differentiate from
+17.	Circumstantial thinking
+22.	Flight of ideas
+
+26.	Neologisms (O)
+Definition
+The formation of new words, or usage of words, which flout normal conventions and are generally not easily understandable.
+
+Explanations and examples
+Following an EEG examination, a patient reports that: “Yesterday, I had to have a diagraph and my head was being totally demachronised.” Semantically unorthodox word usage is another symptom characteristic which is documented here. In extreme cases, patients may create and make use of an entirely artificial language.
+
+Terms and expressions which are particular to certain cultural or sub-cultural environments (e.g. youth culture, advertisement and drug scene) are immaterial in the context neologisms and are not documented here; neither is poor language knowledge.
+
+Notes on rating
+‘mild’	Only one instance of neologisms is observed during examination.
+‘severe’		Neologisms present relatively frequently during examination.
+
+Symptoms to differentiate from
+84.	Parakinesia
+85.	Mannerisms
+
+2.6	Worries and compulsions
+
+Preliminary notes
+
+This is a heterogeneous group of disturbances, consisting of different symptoms which share anxiety as their underlying cause.
+
+27.	Suspiciousness (SO)
+Definition
+The behaviour of others is viewed with anxiety, mistrust or hostility and perceived as directed at one’s own person.
+
+Explanations and examples
+During examination, a patient repeatedly asks for reassurance that the dictaphone is switched off. Another patient asks for reassurance that the interviewer is, indeed, a qualified medical practitioner. A third patient may repeatedly ask for clarification as to why he is being asked to answer particular questions.
+
+Suspiciousness may also present within a delusional episode, in which case this delusional episode is recorded separately (see symptoms no. 33- 46 under Delusions). Not all instances of delusion are linked to suspiciousness.
+
+Notes on rating
+‘mild’		An instance of suspiciousness is observed over a short period during interview, or is spontaneously experienced or reported by the patient.
+‘severe’		The patient’s behaviour is extensively influenced by underlying suspiciousness. The patient continually reports fears and anxieties held on account of harbouring feelings of suspicion.
+
+Symptoms to differentiate from
+67.	Dysphoria
+
+28.	Hypochondriasis (S)
+Definition
+Anxious, fearful perception of one’s own body on which e.g. physical sensations of discomfort are felt, accompanied by an objectively unfounded fear of falling ill or being ill, or of being or becoming physically disfigured; normal bodily functions are attributed disproportionately large significance.
+
+Explanations and examples
+Patients suffering from hypochondriasis pay exaggerated attention to bodily phenomena, observe these anxiously and overrate their importance. The objects of such hypochondriac fears may vary. 
+
+Also documented here are fears of illness, colloquially often referred to as phobias, such as e.g. cardiophobia, AIDS-phobia or carcinophobia, and a disproportionate fear of falling ill with dementia. 
+
+Hypochondriasis may present concurrently with 44. Hypochondriac delusions; if this is the case, experiences of anxiety must be clearly in evidence.
+
+Notes on rating
+‘mild’	The patient reports increased self-observation for fear of falling ill. Hypochondriac fears, however, do not yet lead to an increased frequency in arranging for doctor’s appointments or changing to other doctors and specialists. 
+‘severe’	The conversation is thematically dominated by reports on observations of bodily functions and fears of illness. Alternatively, based on a persistent anxiety of being ill despite medical	 examination results to the contrary, the patient reports of a continuous search for help (ranging from medical doctors to natural healers).
+		
+Symptoms to differentiate from
+29.	Phobias
+
+29.	Phobias (S)
+Definition
+An overwhelming fear/anxiety of particular situations or objects, generally resulting in active avoidance of the stimulus or stimuli in question.
+
+Explanations and examples
+A phobia is a form of anxiety experienced in connection with certain situations or objects and recognised by the patient as unfounded or unreasonable. The patient strives to avoid confrontation with the anxiety- inducing situations or objects at all cost.
+
+Phobias include agoraphobia, specific phobias (e.g. arachnophobia) and social phobia. Body-related anxieties which are colloquially also referred to as phobias, e.g. cardiophobia, AIDS-phobia or carcinophobia, are not documented here but at 28. Hypochondriasis.
+
+ Notes on rating
+‘mild’	No significant impairment in everyday life is experienced.
+‘severe’		Considerable impairment in everyday life is experienced on account of active avoidance behaviour.
+	
+Symptoms to differentiate from
+28.	Hypochondriasis
+65.	Anxiety
+
+30.	Obsessive thoughts (S)
+Definition
+Persistent, recurring thoughts which are experienced as unreasonable or exaggerated.
+
+Explanations and examples
+The patient experiences obsessive thoughts often as distressing. They cannot be controlled or stopped by the patient, or only with great difficulty, and persist against his will and inner resistance. The patient experiences obsessive thoughts as his own rather than as externally imposed.
+
+Suicidal tendencies should only be recorded here if they are of a compulsive nature. 
+
+ Notes on rating
+‘mild’	The patient reports experiencing obsessive thoughts which, however, do not impair everyday life.
+‘severe’		Obsessive thoughts occur practically constantly or lead to impairment in everyday life.
+	
+Symptoms to differentiate from
+20.	Rumination 
+57.	Thought insertion
+
+31.	Compulsive impulses (S)
+Definition
+Persistently recurring impulses to perform certain actions which are experienced as senseless or exaggerated.
+
+Explanations and examples
+The patient experiences compulsive impulses often as distressing. They cannot be controlled or stopped by the patient, or only with great difficulty, and persist against his will and inner resistance. The patient experiences compulsive impulses as his own rather than as externally imposed.
+
+Compulsive impulses include e.g. the urge to have to repeatedly check something, to cause harm to oneself or to others, or to utter obscene words.
+
+Suicidal tendencies should only be recorded here if they are of a compulsive nature.
+
+Notes on rating
+‘mild’		Compulsive impulses present only occasionally, are not experienced as distressing and do not generally impact on everyday life.
+‘severe’	Compulsive impulses present often and impact on everyday life.
+	
+Symptoms to differentiate from
+30.	Obsessive thoughts
+32.	Compulsive actions
+58.	Other feelings of alien influence
+
+32.	Compulsive actions (S)
+Definition
+Persistently and repeatedly carried out actions which are experienced as futile or exaggerated.
+
+Explanations and examples
+Compulsive actions and rituals must be carried out in a prescribed form, frequently in a prescribed number of repetitions (e.g. compulsive washing and checking). The patient experiences compulsive actions often as distressing. They cannot be controlled or stopped by the patient, or only with great difficulty, and persist mostly against his will and inner resistance. The patient experiences compulsive actions as his own rather than as externally imposed.
+
+Compulsive actions must be differentiated from e.g. repetitive actions performed under compulsion from hallucinations or delusions, which are not recorded here.
+
+Instances of self-harming can also be of a compulsive nature, in which case they are documented here.
+
+Notes on rating
+‘mild’		Compulsive actions present but do not impact on the patient’s everyday life.
+‘severe’		Compulsive actions present often and impact on the patient’s everyday life.
+	
+Symptoms to differentiate from
+84.	Parakinesia 
+
+2.7	Delusions
+
+Preliminary notes
+
+Delusions are the result of an unspecific change in perception and experience, culminating in a faulty judgement about the reality which is based on unquestioned, a priori evidence (high level of certainty which is not founded on prior experiences) and maintained with unshakable subjective conviction, irrespective of and in contradiction to objective reality and common human knowledge and experience.  The patient generally feels no need to prove the accuracy of his delusional convictions, as to him, their correctness is eminently obvious. Delusions present in the context of a variety of psychotic disorders and are not specific to schizophrenia only.
+
+For delusions, there are always a minimum of two documentation and assessment entries required: one relating to formal description (symptoms no. 34 to 38) and one relating to description of content (symptoms no. 39 to 46). Additional documentation in the area of symptoms no. 39 to 46 is dispensed with only in the case of an isolated delusional mood (33. Delusional mood), since content of delusion remains (as yet) unidentified at that stage.
+
+It is important to remember that in connection with symptoms no. 34 to 36, the symptoms no. 34. Delusional perception and 35. Sudden delusional ideas chronologically precede 36. Delusional ideas. This means that symptoms no. 34. Delusional perception and 35. Sudden delusional ideas must only be documented in addition to symptom no. 36. Delusional ideas as long as they also present within the same defined period of assessment. 
+
+Overvalued ideas (i.e. ideas defining/dominating life) do not meet the criteria for delusions and must consequently not be documented here.
+
+Preliminary notes on evaluating symptoms relating to content of delusions (symptoms no. 39 – 46)
+
+Evaluating symptoms relating to content of delusions is uniformly undertaken according to the following criteria:
+1.	The extent of impairment in life in a general social context (i.e. work, family and leisure) is assessed. The standard applied is the level of social functioning before manifestation of delusional symptoms.
+2.	There must be a connection between delusional symptoms and observed impairments. 
+
+Example
+A patient believes he is being pursued and spied on by a crime syndicate. Nevertheless, the patient manages to go to work regularly and meet his family obligations (= a ‘mild’ manifestation of 40. Delusions of persecution).
+
+Another patient consults one doctor after another, spends days on end lying in bed, neglects previous interests and hobbies and stays away from work with the excuse of suffering from an incurable disease (= a ‘severe’ manifestation of 44. Hypochondriac delusions).
+ 
+33.	Delusional mood (S)
+Definition
+Delusional mood indicates an unusual, often confused and tense emotional state of mind preceding manifestation of the delusion (comparable to an aura). The mood consists of attributing significance to and making connections between unsubstantiated guesses, suppositions and expectations which, to the healthy person, have no meaning or relevance. 
+
+Explanations and examples
+Indications are an atmosphere of concern and tense anticipation in which the world or the self is experienced as strangely changed. There is a variety of moods associated with the subjective belief in the delusional experience. Most often it is a sense of sinister premonition as well as apprehension about the changes in one’s self or in the environment. Other common moods are terror, fear and mistrust; helplessness; occasionally also aloofness, elation and optimism.
+
+At the stage of experiencing delusional mood, the contents of the delusion (e.g. 40. Delusions of persecution) remain as yet unidentified, which is why patients are mostly unable to state reasons for their experience of delusional mood.
+	“Do tell me what’s happening, please. Something’s up, I know it is, but I don’t know what.”
+	“There’s something in the air, everything around me is weirdly changed ... all very strange. People are giving me such dark looks - something must have happened, mustn’t it?”
+	“Suddenly I was grabbed by this weird feeling of happiness; I felt that something truly grand was about to happen but I couldn’t imagine what. But, come evening - I suddenly fell in and saw the light.” 
+
+Notes on rating
+‘mild’		The delusional mood is limited to a few areas of experience only. A patient may report a strange change in atmosphere at the work place which fills him with suspicion and trepidation.
+‘severe’		A patient’s experience is dominated by delusional mood. For the patient, an otherwise familiar and trusted environment has lost its significance, everything has become eerily changed and unfamiliar.
+	
+Symptoms to differentiate from
+38.	Delusional dynamics
+53.	Derealization
+59.	Perplexity
+
+34.	Delusional perception (S)
+Definition
+Abnormal significance/meaning, usually related to one’s self, is attributed to a real perception. This happens without the presence of a rationally or emotionally understandable underlying reasons. This symptom represents a delusional misinterpretation of an accurate perception of an external stimulus.
+
+Explanations and examples
+During a walk in the park, a patient notices a dog looking at him and lifting one of its front paws. The patient interprets this as a sign of divine revelation.
+
+‘Mnestic perceptions’, as particular forms of delusional perception, are also documented here: “When I was a kid I had a fork which had this symbol of a crown engraved on it. Now I suddenly realise what that was meant to mean – I’m clearly of noble descent!”
+
+Instances of mistaken identity are also recorded here as long as the act of recognition is of genuine character (i.e. meets the criteria for a delusional perception).
+
+Instances of delusional perception reported and recorded prior to the current period of assessment are classified as 36. Delusional ideas and documented there (see preliminary notes to this section).
+
+Notes on rating
+‘mild’		Instances of delusional perception are limited to specific areas of experience (one instance of reported delusional perception within the current period of assessment).
+‘severe’	The patient’s entire experience is dominated by delusional perception (in excess of three different instances of delusional perception reported within the current period of assessment).
+
+Symptoms to differentiate from
+35.	Sudden delusional ideas
+36.	Delusional ideas
+47.	Illusions
+
+35.	Sudden delusional ideas (S)
+Definition
+Purely mentally conceived, newly emerged delusional ideas and convictions.
+
+Explanations and examples
+	“Yesterday, I realised that I’ll be awarded the Nobel Peace Prize because I’ve managed telepathically to get the superpowers of this world to reconcile.” 
+	“This morning, it became crystal clear to me that my son isn’t actually my son at all.”
+
+Unlike symptom no. 34. Delusional perception, the symptom of sudden delusional ideas is not preceded by unusual perceptions. Instances of sudden delusional ideas reported and recorded prior to the current period of assessment are classified as 36. Delusional ideas and documented there (see preliminary notes to this section).
+
+‘Mnestic sudden delusional ideas’ should be documented here as a particular form of sudden delusional ideas. An example would be a patient who suddenly remembers that he had already been endowed with supernatural powers as a child.
+
+Notes on rating
+‘mild’	Instances of sudden delusional ideas are limited to specific areas of experience (one to two instances of sudden delusional ideas within the current period of assessment).
+‘severe’		The patient’s experience is dominated by sudden delusional ideas (in excess of three different instances of sudden delusional ideas reported within the current period of assessment).
+	
+Symptoms to differentiate from
+34.	Delusional perception
+36.	Delusional ideas
+
+36.	Delusional thoughts  (S)
+Definition
+Persistent/Enduring delusional thoughts and convictions.
+
+Explanations and examples
+Delusional ideas emerge from 35. Sudden delusional ideas or 34. Delusional perception (see preliminary notes to this section).
+	“Several months ago, there were hundreds of yellow cars all over town which were obviously on the lookout for me. Ever since then, they’ve been continually targeting me.”
+	“As long as three years ago it became somehow clear to me – and now I know for sure – that I belong to a much higher form of intelligence and probably originate from Planet Alpha Centauri.”
+
+Notes on rating
+‘mild’	Instances of delusional ideas are limited to specific areas of experience (one to two instances of delusional ideas within the current period of assessment).
+‘severe’	The patient’s experience is dominated by delusional ideas (in excess of three  different instances of delusional ideas reported within the current period of assessment).
+
+Symptoms to differentiate from
+34.	Delusional perception
+35.	Sudden delusional ideas
+
+37.	Systematized delusions (S)
+Definition
+‘Degree of interconnectedness’ (logical or paralogical) among individual delusional symptoms and other delusional phenomena, hallucinations, ego-disorders or also non-pathological, changed observations or experiences.
+
+Explanations and examples
+In the context of systematised delusions, connections are established with the above-mentioned individual phenomena, which are often of causal or final character and are use by the patient as proof and confirmation of his beliefs and convictions. In cases of systematised delusions, the elements connected must be documented additionally (e.g. 36. Delusional ideas or 34. Delusional perception).
+
+Notes on rating
+‘mild’	Connections are only suspected, causal reasons are considered, or only individual elements are connected.
+‘severe’		The system of a patient’s particular set of delusion is well-established, elaborate, structured and ‘mature’. Hardly any ‘open questions’ remain. Sceptical enquiries are met with ‘persuasive efforts’ and counter-arguments.
+	
+Symptoms to differentiate from
+None.
+
+38.	Delusional dynamics (SO)
+Definition
+The extent or intensity of affects emerging from the delusions.
+
+Explanations and examples
+For the interviewer, the extent of affective drive accompanying the delusion becomes evident from the patient’s behaviour during the period of assessment and from the way in which instances of delusion are reported. 
+
+Where delusional thoughts are reported with minimal affective resonance and little psychomotor activity, the delusional dynamics are weak. In long-term chronic schizophrenics, for example, delusions are often reported in an emotionless, stereotyped and mechanical way without any recognizable affective emotions. 
+
+The delusional dynamics are strong when, for example, a patient with depressive 42. Delusions of guilt breaks down in tearful desperation while lamenting his own failings. 
+
+Notes on rating
+‘mild’	Only a low level of affective resonance is noticeable from the patient’s verbal descriptions, facial expression and physical gestures. 
+‘severe’		The affective drive linked to the delusion dominates the patient and becomes clearly evident from his actions, verbal utterances, physical movements and gestures. 
+	
+Symptoms to differentiate from
+33.	Delusional mood 
+
+39.	Delusions of reference (S)
+Definition
+The delusional conviction that environmental events or objects are intended to be of special significance to the patient. Delusional attribution of events to one’s self.
+
+Explanations and examples
+The patient feels himself to be the focus of attention in his environment. The patient is convinced that events occurring in his surroundings, which are not connected to him in any way, are specifically directed at his person and are of special significance for him. Conversations between others are seen as containing some reference or massages to the patient, a casual glance from a passerby conveys an important message. 
+
+Delusions of reference may present as isolated delusions, e.g. a delusion of love as a particular form of delusions of reference which manifests in an unshakable belief that a particular person is madly in love with the patient. In cases where no isolated form of delusions of reference exists but the delusion of reference forms part of another type of delusion (e.g. 40. Delusions of persecution), only that delusion should be documented.
+
+Notes on rating
+‘mild’	The delusion is restricted to specific individual areas of experience. For example, a patient reports that he is occasionally being scrutinised by a neighbour in a most singular fashion. No reports of similar instances either within the family or at work are forthcoming. The patient meets his family and work-related obligations without impairment. 
+‘severe’		In the context of a delusion of love, newspaper reports, television and radio news, and casual glances from passersby are perceived as proof of, and containing hidden messages relating to, impending marriage. The patient engages with increasing fervour in preparations for the big event while giving up his usual, regular routines.
+	
+Symptoms to differentiate from
+27.	Suspiciousness
+
+40.	Delusions of persecution (S)
+Definition
+The patient experiences himself as the target of hostilities or monitoring. The patient has got the delusion that he is threatened, offended, insulted, mocked, under surveillance or derided by others who are after his money and belongings and out to destroy his health or even his life.
+
+Explanations and examples
+	“The psychologists are constantly watching my every step with a huge telescope. They have CCTV-cameras to record my every movement and then use these tapes as evidence against me. They want to drive me to kill myself.”
+	“They use any trick under the sun to poison my food so that I’ll suffer a slow, agonising death. My old boss is behind all this, he’s the one who’s started it all, because he’s always held a grudge against me.”
+
+Also recorded here should be querulous (litigious) delusions, a special form of delusions of persecution in which the patient struggles for legal justice in relation to a perceived slight made against his person. 
+
+Notes on rating
+‘mild’	A patient may feel persecuted by a ring of spies but is able to meet his obligations at work and displays normal social behaviour.
+‘severe’	A patient is convinced that he is, for instance, in danger of being poisoned by his relatives. The patient refuses practically all forms of nourishment, does not leave the house or stops inviting visitors in.
+		
+Symptoms to differentiate from
+27.	Suspiciousness
+
+41.	Delusions of jealousy (S)
+Definition
+Delusional conviction of being deceived or betrayed by their partner. 
+
+Explanations and examples
+A patient is steadfastly convinced that his partner is about to have, or is already having, a sexual relationship with another person. Otherwise usual, routine events or observations become proof of the partner’s supposed infidelity. 
+
+Notes on rating
+‘mild’	A patient is convinced of his delusional belief in his wife’s infidelity but continues to live with her without becoming embroiled in frequent arguments on the topic.
+‘severe’	A patient’s attendance at work becomes irregular on account of having to spend hours watching his girlfriend to collect evidence of her unfaithfulness. He sends threatening letters/hate mail to supposed boyfriends and lovers.
+		
+Symptoms to differentiate from
+27.	Suspiciousness
+
+42.	Delusions of guilt (S)
+Definition
+Delusional conviction of having failed in one’s duty, committed a crime or sin,  or having wronged others.
+
+Explanations and examples
+The patient is convinced of having made an unforgivable and irreconcilable mistake. Such mistake may be in contravention of individual as well as social or religious norms. Delusions of guilt are often accompanied by the belief that one is in the process of being punished for one’s (past) misdemeanours. In many instances, actual minor failings committed in the past become disproportionately overrated.
+	A patient had been unfaithful to his wife at some point in the past and had forgotten or never spoken about the incident in intervening years. Now, in the context of his delusions of guilt, he reproaches himself continually for this act of wrongdoing.
+	“30 years ago, I once removed 10 postage stamps from the office where I worked – something I should never have done. Meanwhile, I’ve been found out and I’m sure they’ll bring me to book and make me account for what I’ve done and make me draw the consequences for my actions. I’m sure the police are already on the case as well.”
+	“I should never have agreed to the sale. That was a huge mistake. Once the kids get wind of this, they’ll be turning their backs on me. But then again, serves me right – brought it all on myself. It’s all well and truly over now.”
+
+Notes on rating
+‘mild’	A patient feels he has betrayed his parents’ trust and retribution is imminent, but he does not give the impression of being seriously impaired by his delusions of guilt.
+‘severe’	A patient believes his extramarital affair of many years ago to be the cause of his wife’s present serious illness. These delusions of guilt lead him to attempt suicide. 
+		
+Symptoms to differentiate from
+71.	Feelings of inadequacy
+73.	Feelings of guilt
+
+43.	Delusions of impoverishment (S)
+Definition
+Delusional conviction of not having enough financial means to live on and make ends meet.
+
+Explanations and examples
+Patients suffering from delusions of impoverishment are convinced that they are facing imminent financial ruin. They often report being unable to fund necessary treatments, meet debt repayments or pay for the cost of living. Family members are frequently included in these catastrophic financial scenarios, and the patient believes that their financial resources, too, are about to be depleted.
+
+Notes on rating
+‘mild’		The patient is convinced that he and his family have insufficient financial means and that financial ruin is imminent, but no significant change in circumstances or particular economic measures are instigated. 
+‘severe’		As a result of delusions of impoverishment, the patient refuses expensive medication and, convinced that his health insurance will decline to meet any further costs, insists on a medical discharge.
+	
+Symptoms to differentiate from
+74.	Feelings of impoverishment
+
+44.	Hypochondriacal delusions (S)
+Definition
+delusional conviction of having fallen ill with a serious illness.
+
+Explanations and examples
+Hypochondriacal delusions may involve a belief in having fallen victim to a serious illness such as cancer, AIDS or dementia. In some cases, patients may be convinced of facing imminent death from a severe illness without being able to relate any specifics of that illness.
+
+The actual presence of an illness in a patient does not preclude the potential for developing hypochondriac delusions.
+
+Notes on rating
+‘mild’	The patient is convinced that he is suffering from intestinal cancer without presenting with particular behavioural changes or impairment.
+‘severe’	The patient is convinced that he is suffering from AIDS. He is exclusively engaged in attending medical appointments and, in desperation, swallows excessive amounts of medication while entertaining suicidal thoughts.
+		
+Symptoms to differentiate from
+28.	Hypochondriasis
+51.	Bodily hallucinations
+
+45.	Delusions of grandiosity (S)
+Definition
+Delusional exaggerated self-esteem or self-aggrandizement, or the belief of having special powers or skills.
+
+Explanations and examples
+The patient is suffering from the delusional conviction of being superior to other people. This may be with regard to attributes such as intelligence, physical beauty, material wealth, talent, ancestry, and many more.
+	“Only a chosen handful, of which I’ll be one, will survive an atomic war!”
+	“I’m a super-intelligent human being and it’s my calling to reconcile the warring nations of this world.”
+	“In two weeks’ time I’ll be given my own TV show, and then I’ll organise a charity event and raise 40 million pounds to feed the world’s starving.”
+
+Notes on rating
+‘mild’		The patient believes himself to be a great inventor but is regularly employed as a reliable auxiliary gardener.
+‘severe’		The patient regards himself as the saviour of the world. He preaches openly in the streets or gives up his job on the grounds that the type of work it involves does not in any way match his superior skills and abilities.
+	
+Symptoms to differentiate from
+72.	Exaggerated self-esteem.
+
+46.	Other delusions (S)
+Definition
+Delusions that do not fit in any of the above categories.
+
+Explanations and examples
+A delusional conviction of being pregnant.
+
+A delusional conviction that some mighty and powerful organisation is planning the unification of all peoples and nations of this world, with no particular calling or special knowledge being attributed to the patient himself.
+
+A patient is convinced of having spent the previous night attending a meeting of extraterrestrials on another planet.
+
+‘Bizarre delusional phenomena’ as specified in the DSM (e.g. symptom characteristics such as ‘compulsive checking’, thought withdrawal, ‘experience of alien control’) are not documented here but in the section on Disorders of ego (symptoms no. 53. to 58). 
+
+Delusions of love are documented at 39. Delusions of reference.
+
+Notes on rating
+‘mild’		The delusion leads to limited impairment in everyday life.
+‘severe’		The delusion leads to pronounced impairment in everyday life.
+	
+Symptoms to differentiate from
+54.	Depersonalisation
+55.	Thought broadcasting
+56.	Thought withdrawal
+57.	Thought insertion
+58.	Other feelings of alien influence	
+
+2.8	Disorders of perception 
+
+Preliminary notes
+
+Although disturbances of perception are relatively easily diagnosed in clinical practice, a comprehensive definition is extremely difficult and touches on fundamental questions relating to human perception and understanding.
+
+In this section, three types of disturbances of perception are distinguished: illusions, hallucinations and pseudo-hallucinations. 
+
+The differentiating criterion between illusions and hallucinations is the respective presence or absence of an external stimulus (percept).
+
+‘Pseudo-hallucinations’, where the patient recognises the deceptive nature of his perception, are documented under hallucinations. Pseudo-hallucinations as an expression of intrusions or recurring memories (flashbacks) are recorded at 14. Paramnesias.
+
+Hallucinations are possible in all sense modalities, frequently simultaneously in several sense modalities at once.
+
+In the context of rating disturbances of perception, the following three criteria must be observed:
+1.	the frequency with which instances of particular disturbances are experienced during the period 	of assessment;
+2.	the level of intensity (realism, distinctness, complexity);
+3.	the extent of subjective impact (level of personal suffering and relevance on actions).
+
+In rating the degree of severity (mild, moderate, severe), the symptom characteristic presenting with the most pronounced manifestation is applied as the deciding criterion.
+
+47.	Illusions (S)
+Definition
+Misjudgements or misperceptions of real objects, noises or persons.
+
+Explanations and examples
+Illusions involve the ‘immediate’ mistaking of concrete objects, noises or persons as something else or other respectively (as opposed to 34. Delusional perception, where the perception is factually accurate but to which a deluded dimension of significance is attributed). 
+	In the dark of the night, an anxious patient mistakes bushes for threatening figures.
+	Patterns on wallpaper transform into grimacing ogres.
+	The sound of passing cars is mistaken for advancing columns of rolling tanks.
+
+Notes on rating
+‘mild’		An exhausted car driver mistakes for a split-second some trees for animals walking in the road.
+‘severe’	An indoor plant transforms into a threatening monster which causes the patient to jump out of bed in a panic.
+
+Symptoms to differentiate from
+34.	Delusional perception
+48.	Verbal hallucinations
+49.	Other auditory hallucinations
+50.	Visual hallucinations
+51.	Bodily hallucinations
+52.	Olfactory or gustatory hallucinations
+53.	Derealization
+48.	Hearing of voices (S)
+Definition
+Perception of voices (phonemes) without someone speaking.
+
+Explanations and examples
+The perceived voices may be addressing the patient directly, give him orders, comment on his actions or engage in a two-way conversation about the patient.
+
+The voices are not always necessarily perceived as external but may be vividly experienced also as unfamiliar (!) voices coming from within the patient’s own body. The ‘hearing aloud’ of own personal thoughts is also documented here.
+	“I heard my dead mother’s voice. She was always praising or criticising me, depending on what I was doing.”
+	“I heard the voices of several men talking about me. One of them eventually ordered me to drive up to London.”
+
+Unintelligible or inarticulate utterances of sounds (e.g. moaning, sighing, inarticulate mumbling under one’s breath) are documented at 49. Other auditory hallucinations.
+
+Notes on rating
+‘mild’	A patient reports that he does not attribute any significance to his occasionally heard voices.
+‘severe’		A patient reports having very clearly heard the voice of God, who commanded him to sell off all the family silver and donate the money to the poor.
+
+Symptoms to differentiate from
+47.	Illusions
+49.	Other auditory hallucinations
+55.	Thought broadcasting
+57.	Thought insertion
+ZP6	Thought hearing 
+
+49.	Other auditory hallucinations (S)
+Definition
+Perception of non-verbal hallucinatory sounds or noises (acouasm).
+
+Explanations and examples
+	“I kept hearing this music all the time – it was almost like in a concert.”
+	“I definitely heard very clearly this moaning and sighing coming right out of the wall.”
+	“It always goes ‘click’ in my head, and each time it happens, I become that little bit cleverer.”
+
+Notes on rating
+‘mild’	In the garden of the clinic the other evening, a patient heard an orchestra play from a great distance away.
+‘severe’	A patient complains to his neighbour about the constant, never-ending noise of hammering coming from the loft.
+
+Symptoms to differentiate from
+47.	Illusions
+48.	Verbal hallucinations
+
+50.	Visual hallucinations (S)
+Definition
+Visual perceptions without corresponding external stimuli.
+
+Explanations and examples
+Hallucinatory perceptions range from e.g. flashes of light, patterns, objects, people or entire scenes in complete absence of any external stimuli.
+	“And then, suddenly, in the middle of London, I saw this whole army of soldiers with golden helmets marching towards me.”
+	“The whole room was full of flashes of light everywhere and squares of all colours.”
+	“All of a sudden this dog came running into the ward and jumped right on top of the bed of the patient next to me.”
+
+Instances of heautoscopy, the so-called ‘doppelganger’ experience (i.e. encountering one’s double as an illusory duplication of one’s own self) are also documented here.
+
+Notes on rating
+‘mild’	A patient reports having briefly glimpsed the previous day a fuzzy impression of the face of the Virgin Mary.
+‘severe’	A patient sees a rabble of insects crawling about all over the room.
+	
+Symptoms to differentiate from
+47.	Illusions
+
+51.	Bodily hallucinations (S)
+Definition
+Tactile perception without corresponding stimuli, or altered bodily perceptions (coenesthesia).
+
+Explanations and examples
+Two different phenomena are recorded as bodily hallucinations, as follows:
+
+a)	Tactile hallucinations
+	“And then I felt this ice cold, hairy hand on my body; I felt very clearly every single finger of that hand on my skin. It was a very coarse hand.”
+	“Suddenly there was all this icy water running down my back. But when I checked, my skin felt completely dry.”
+	“All of a sudden I was able to physically feel all these tiny little crystals between my fingers – some were round, some longish in shape.”
+
+b)	altered bodily perception
+Qualitatively abnormal, new and strange as well as often negatively experienced bodily sensations. Patients frequently find these sensations difficult to describe or manage to do so only by resorting to bizarre comparisons. These sensations may be uniform and described in clearly defined terms but, equally often, they change in quality and extent. When they are experienced and described as externally caused, symptom no. 58. Other feelings of alien influence should be documented additionally. 
+	“My guts feel like stone and I have a constant burning sensation in my stomach.”
+	“It’s as if an electric current was running through my stomach; heart and belly kind of contract. In my head, my brain is sloshing about like in a pool of water.”
+	“I can feel a weird pull in my testicles as if they had iron weights attached to them.”
+
+Notes on rating
+‘mild’	“Every now and again there’s this strange pull inside my head as if my brain was about to be split in two.” (The patient, however, feels neither exceedingly worried by this nor impaired in any other way.)
+‘severe’	A patient feels a burning sensation (radiation) on the skin and therefore keeps his arm wrapped in tin foil.
+		
+Symptoms to differentiate from
+47.	Illusions
+
+52.	Olfactory and gustatory hallucinations (S)
+Definition
+Perceptions of particular tastes and smells without the presence of corresponding external stimuli.
+
+Explanations and examples
+The patient experiences an indefinable (mostly disagreeable) taste spreading in the mouth without having consumed any food or liquids.
+	“Suddenly I had this really awful, rotten taste in my mouth.”
+	“All of a sudden there was this intense smell of gas everywhere; it was really weird because I was the only one noticing it.”
+
+Olfactory or gustatory hallucinations often occur in tandem or present in a phenomenological overlap.
+
+Notes on rating
+‘mild’	“Last week, I once noticed this hint of a putrid smell, like of a rotting corpse, in my bedroom.” The patient does not appear unduly worried and undertakes no special measures to find or eradicate the source of the smell.
+‘severe’	A patient has been refusing food for days because of its apparently unusual taste. Alternatively, a patient blocks all open cracks around doors and windows in order to keep out the smell of gas.
+
+Symptoms to differentiate from
+34.	Delusional perception
+47.	Illusions
+
+2.9	Ego (boundary) disturbances 
+
+Preliminary notes
+
+Ego (boundary) disturbances relate to experiences which involve disturbances in the perception of the self as distinct from the environment, or of the integrity of self. They also include instances in which physical bodily processes as well as personal thought processes, feelings and actions are experienced as being externally directed.
+
+The DSM classifies some of the symptom characteristics referred to here as ‘bizarre delusional phenomena’ (e.g. ‘delusion of control, ‘thought withdrawal’, ‘passivity phenomena’).
+
+53.	Derealization (S)
+Definition
+The patient experiences surroundings or time as if they are unreal and changed; all feelings of familiarity with and trust in his environment are lost.
+
+Explanations and examples
+People, objects and surroundings appear unreal, unfamiliar or spatially altered. The patient experiences his environment as e.g. strange and unfamiliar, odd or eerie. The sensations may be intensive or weak in nature.
+	“To me, all sounds are muffled, as if they were being filtered somehow.”
+	“I see everything as if through a veil of mist.”
+	“All food tastes like cardboard.”
+	“I get the feeling as if everything’s happening in slow-motion.”
+
+Derealization (alienation experiences) may feature as a component of 33. Delusional mood. 
+
+Notes on rating
+‘mild’	Instances of derealisation are only fleetingly experienced or do not impact negatively on the patient.
+‘severe’	A major part of the patient’s experience is affected. The patient reports, e.g. that the world appears to be made from artificial matter, people resemble puppets without a real life, and the world in general seems totally alien.
+
+Symptoms to differentiate from
+4.	Expanded consciousness
+33.	Delusional mood
+36.	Delusional ideas
+
+54.	Depersonalization (S)
+Definition
+The patient perceives of himself as alien, unreal, changed or as a stranger.
+
+Explanations and examples
+The disturbances of Depersonalisation may be of a transient nature only or become more persistent over a longer period of time.
+	“Each time they implant a different ‘me’ so that I can’t retain my memories. They’ve transplanted the real ‘me’ into someone else.”
+	“When I have an anxiety attack, I can no longer feel my body – it feels as if it doesn’t belong to me anymore.”
+	“During a depression I’m like a machine, a robot. I don’t exist anymore. I’m dead. I feel like I’m just nothing. The ‘me’ is dead, I’m like a corpse.”
+
+Distorted experience of personal physical details (e.g. enlarged extremities) is also documented here.
+
+The phenomena of transitivism (attributing one’s own personal experiences and behavioural patterns to others) and appersonification (experiences observed e.g. in other people are transformed into personal bodily experiences) are recorded here also.
+
+Irrelevant in this context are naturally understandable moods of ‘not feeling oneself’ on account of illness, or ‘pseudo-philosophical’ thoughts on perpetually occurring changes of the self.
+
+Notes on rating
+‘mild’		Instances of depersonalization are of a fleeting nature only, or only certain areas of a patient’s ego or identity-awareness are affected.
+‘severe’	The patient is under the impression of having profoundly changed ego and identity-awareness, or instances of depersonalization persist over a longer period of time.
+	
+Symptoms to differentiate from
+8.	Self
+34.	Delusional perception
+47.	Illusions
+51.	Bodily hallucinations
+
+55.	Thought broadcasting (S)
+Definition
+The patient’s personal thoughts are experienced as no longer belonging to the patient alone but accessible by others who know what the patient is thinking (mind reading).
+
+Explanations and examples
+Instances of thought hearing (“Gedankenlautwerden”) are also documented here if the patient believes that the phenomenon is audible to others as well.
+	“People notice what I’m thinking. Everybody knows what’s happening inside my head.”
+	“When I’m thinking of something, the person opposite me notices straight away.”
+	“My father can listen in on my thoughts.”
+	“Everybody here can look inside my thoughts.”
+
+Not relevant here are a patient’s fears that other people can sense his state of well-being (“It shows how I feel”). 
+
+Notes on rating
+‘mild’	Instances of thought broadcasting manifest fleeting only, or only specific areas of the patient’s thoughts are affected.
+‘severe’	Practically all personal thoughts are ‘available’ to others, or instances of thought broadcasting persist over a longer period of time.
+		
+Symptoms to differentiate from
+27.	Suspiciousness
+48.	Verbal hallucinations 
+56.	Thought withdrawal
+ZP6	Thought hearing 
+
+56.	Thought withdrawal (S)
+Definition
+The patient’s thoughts are being removed or ‘stripped from him’.
+
+Explanations and examples
+A patient reports that other people or a higher force are snatching away or stealing his thoughts.
+	“In the place where all my thoughts once were, there’s now a great, big, gaping, black hole. All my thoughts were taken away from me by my first girlfriend.”
+
+Notes on rating
+‘mild’	Thought withdrawal occurs fleetingly only, or only parts of thoughts are affected, or the phenomenon is restricted to particular situations.
+‘severe’	A great number of thoughts are affected by thought withdrawal (i.e. being taken away), or thought withdrawal persists over a longer period of time.
+
+Symptoms to differentiate from
+24.	Blocking
+
+57.	Thought insertion (S)
+Definition
+Patients experience their thoughts and ideas as being externally influenced, prefabricated, controlled, directed, entered/ or externally imposed.
+
+Explanations and examples
+	“They hypnotise thoughts into my head which aren’t mine at all.”
+	“They continually force me to have thoughts about sex-related things which I simply don’t want to have.”
+
+Notes on rating
+‘mild’	Thought insertion occurs only fleetingly, only limited parts of thought are affected, or the phenomenon is restricted to a small number of situations only.
+‘severe’		A large number of thoughts are being induced, or thought insertion persists over a longer period of time.
+	
+Symptoms to differentiate from
+30.	Obsessive thoughts
+48.	Verbal hallucinations
+
+58.	Other feelings of alien influence (S)
+Definition
+Feelings, intentions, behaviour or bodily functions are experienced as externally controlled or made by others (passivity phenomena).
+
+Explanations and examples
+The patient feels externally compelled to say something specific, to scream, to act or behave in a particular way, to attack someone, to throw a tantrum etc.
+	“They force me to scream.”
+	“They control my heartbeat, they make it go faster or slower.”
+	“They force me to always keep tossing and turning in bed.”
+	“I’m a puppet whose strings are being pulled by outside forces.”
+	“They intentionally make me become sexually aroused.”
+
+Frequently reported complaints of being influenced by the media, society or parents are of no concern here. 
+
+All external influences concerning thoughts are documented at 55. Thought broadcasting, 56. Thought withdrawal or 57. Thought insertion.
+
+Notes on rating
+‘mild’		Instances of experiencing other feelings of alien control present only fleetingly, only a few areas of the patient’s perception are affected, or the experiences are restricted to a few situations only.
+‘severe’	Instances of experiencing other feelings of alien control greatly influence the patient’s experience or persist over a longer period of time.
+	
+Symptoms to differentiate from
+51.	Bodily hallucinations
+55.	Thought broadcasting
+56.	Thought withdrawal
+57.	Thought insertion
+
+2.10	Disturbances of affect
+
+Preliminary notes
+
+Assessment of affective disturbances (disturbances of feelings, moods, emotionality, well-being) is always fraught with difficulty.
+
+Since the AMDP-System is concerned with descriptive definitions of emotions/affects, symptom characteristics should always be documented if they present, irrespective of whether they are thought to be present as a result of a context-appropriate real-life event/situation or as psychopathological symptoms of a certain basic underlying psychiatric disorder. A case in point are symptoms no. 71. Feelings of inadequacy and 74. Feelings of impoverishment.  Both symptoms may correspond with actual real-life reduced productivity or material impoverishment of the patient respectively and as such be considered understandable emotions against the background of a patient’s real-life situation. Nevertheless, both symptoms must be documented. In individual cases, it may also prove difficult to isolate affective disturbances from other symptoms. A delusion, for example, is mostly linked to an emotion/affect. Here, too, the principle of description should be followed: e.g. in the case of a patient who experiences 73. Feelings of guilt, these should be recorded also where they occur in the context of 42. Delusions of guilt.
+
+59.	Perplexity (O)
+Definition
+The patient appears in the state of mind of someone who is totally lost and no longer capable of properly assessing his situation, surroundings or future. The patient can no longer understand what is happening to him and appears ‘stunned’ and perplexed (bewildered, helpless).
+
+Explanations and examples
+This is a symptom which can often be objectively assessed from the patient’s behaviour. The feeling of helplessness becomes recognisable from a combination of factors such as facial expressions, physical gestures and verbal utterances. The affective disturbance of perplexity does not include indecisiveness where decisions are required, or instances of ‘advice seeking’ (e.g. “I don’t seem to be able to figure out what to do next”). What should be recorded here is affective perplexity which may present in conjunction with a cognitive disorder.
+
+Of lesser importance in relation to this symptom is the cognitive aspect itself. The patient is no longer able to assess what is happening to him, what to think, plan or do. He is unable to understand events and to gain an overview of his situation.
+
+Perplexity manifests in a bewildered or anxious facial expression, at times in restlessness or hesitating pauses, in an inability to react, in searching actions, in phrases such as “What’s up? ... Where am I? ... What’s happening? ... What’s happened here? ... I don’t know ... I don’t know my way around”.
+
+Notes on rating
+‘mild’	The patient is temporarily helpless.
+‘severe’		The patient’s perplexity is predominant and obstructs the course of the interview.
+	
+Symptoms to differentiate from
+33.	Delusional mood
+53.	Derealization
+75.	Ambivalence
+
+60.	Feeling of loss of feeling (S)
+Definition
+The patient reports a reduction in or loss of affective experience and a subjectively felt emotional emptiness. The patient experiences himself as deprived of feelings, inwardly empty and numb both in respect of feelings of joy and happiness as well as sadness and despair.
+
+Explanations and examples
+The patient reports that feelings appear to have died out, that he feels inwardly cold and empty, bereft of feelings including those of sadness and despair. Instances of feeling of loss of feeling are subjectively related by the patient but often also discernible by the interviewer as poverty of emotions. “I’m totally dead inside, I can’t feel anything anymore, it’s dead and empty inside my soul. I can’t be happy about anything anymore, but I can’t be sad either, nothing moves or shocks me any longer, it’s all just frozen rigid.” – “I’d love to be able to cry, but I just can’t anymore”; “I can’t enjoy myself quite like I used to”; “Music and other things I would get enjoyment from I just don’t seem to be able to experience emotionally like I used to”.
+
+Notes on rating
+‘mild’	The patient experiences temporary reductions and changes in levels of feelings and emotions.
+‘severe’		The reduction in or loss of feelings and emotions is extremely pronounced or manifests for most of the day.
+	
+Symptoms to differentiate from
+61.	Blunted affect
+79.	Affective rigidity
+
+61.	Blunted affect (O)
+Definition
+The number (spectrum) of affective states displayed is diminished. 
+
+Explanations and examples
+Only a small number of emotional/affective states (e.g. rage, hatred, anger, sadness) are observable, or the patient remains emotionally passive and uninvolved. Not only depressive patients display diminished emotional states. Also manic or schizophrenic patients or patients with personality disorders may be suffering from blunted affect where only little emotional response is in evidence. For reliable assessment, the interviewer must attempt to elicit different emotional reactions in cases where they are not spontaneously forthcoming.
+
+Notes on rating
+‘mild’	The patient’s emotional responses tend to veer predominantly in one direction (e.g. depression) but, if prompted, the patient also displays other affective reactions.
+‘severe’	The patient shows no other affective reactions even after prompting.
+		
+Symptoms to differentiate from
+60.	Feeling of loss of feeling
+79.	Affective rigidity
+
+62.	Felt loss of vitality (S)
+Definition
+A reduction in the overall feeling of strength, energy and vitality.
+
+Explanations and examples
+Complaints such as “everything’s so difficult ... it’s all weighing me down so much ... I feel so totally shattered” are common with this symptom. Feeling physically weak and limp, rapid physical or mental exhaustion, fatigue or physical discomfort are characteristics recorded here.
+
+Isolated physical complaints (e.g. headache or backache) without a reduction in feelings of vitality are only recorded under somatic symptoms.
+
+Notes on rating
+‘mild’	The patient is aware of the symptom but does not feel impaired in any way.
+‘severe’		The patient feels considerably impaired by his felt loss of vitality.
+
+Symptoms to differentiate from
+71.	Feelings of inadequacy
+80.	Lack of drive
+81.	Inhibition of drive
+
+63.	Depressed mood (SO)
+Definition
+Negatively tinged affective state characterised by low mood, sadness and dejection.
+
+Explanations and examples
+Depressed mood includes a broad spectrum of feelings, ranging from utterances such as “I feel sad” to descriptions of feelings of discomfort, dejectedness, grief and sorrow, helplessness and reports of suffering from “dreadful, indescribable inner torment”. Expression of depressed mood may include visible dejectedness accompanied by tearfulness and extreme agitation leading to complete paralysis through pain and grief.
+
+Notes on rating
+‘mild’		The patient reports experiencing feelings of low mood, although little of this is in evidence judging from the patient’s behaviour (level of activitiy, speech, facial expressions, physical gestures).
+‘severe’		The patient’s mental state becomes clearly evident from his physical posture and movements as well as facial expressions and physical gestures.
+	
+Symptoms to differentiate from
+61.	Blunted affect
+79.	Affective rigidity
+
+64.	Hopelessness (S)
+Definition
+Diminished hopes, pessimistic frame of mind, lack of future perspective. Little or no belief/trust in a positive future (a fatalistic attitude of ‘impending doom and gloom’).
+
+Explanations and examples
+Of principal importance with this symptom is the altered emotional state, less so the cognitive aspects. The patient maintains a pessimistic view of the world. He expresses doubts about a positive future and has little or no hope left. Problems and difficulties are perceived everywhere. Every change is regarded as a deterioration of circumstances.
+
+Notes on rating
+‘mild’		The patient expresses doubts about positive future prospects in certain areas.
+‘severe’		The patient experiences feelings of hopelessness as agonising and/or they dominate all aspects of his life, and/or the patient feels left with practically no hope.
+
+Symptoms to differentiate from
+None.
+
+65.	Anxiety (SO)
+Definition
+The patient reports feeling anxious and fearful, sometimes without being able to indicate why or what of.
+
+Explanations and examples
+Anxiety may also be evident from psychomotor expressions and behaviour. Further in evidence may be anxiety-related physical reactions such as ‘sweating’, ‘shaking’ etc., which would then be additionally recorded under somatic findings.
+
+The cause of the anxiety is irrelevant (e.g. panic attacks, hypochondria, phobia, delusion). It must be ascertained whether additional documenting of 29. Phobias or 28. Hypochondriasis is required. 
+
+Notes on rating
+‘mild’		The patient reports feeling anxious without being significantly impaired by this.
+‘severe’		States of anxiety are such that they considerably impair the patient’s life.
+
+Symptoms to differentiate from
+29.	Phobias
+
+66.	Euphoria (SO)
+Definition
+Experiencing a state of excessive well-being, of comfort and contentment, of cheerfulness, confidence and enhanced levels of vitality.
+
+Explanations and examples
+Euphoria may be indicative of the basic mood of a manic patient, a short-term substance-induced euphoric state or another underlying illness. Also reactive euphoria (e.g. after having overcome a dangerous situation) is documented here.
+
+Notes on rating
+‘mild’	Instances of euphoria are only short or little pronounced. The patient manages to control and/or modify his feelings of euphoria.
+‘severe’	Feelings of euphoria define the patient’s life. The examination process may be partially or fully obstructed by the patient’s euphoric state of mind. The patient is no longer able to work or is encountering difficulties in a social context.
+
+Symptoms to differentiate from
+68.	Irritability
+72.	Exaggerated self-esteem
+
+67.	Dysphoria (SO)
+Definition
+Discontented ill-humouredness. The patient is in a dissatisfied mood displaying a sullen, crabby, discordant, unhappy, angry attitude.
+
+Explanations and examples
+Dysphoria may persist over a longer period of time during an assessment period, or arise in a situation-specific context in relation to particular conversation topics or with certain conversation partners.
+
+Notes on rating
+‘mild’	The patient retains control over his dysphoria and avoids possible negative consequences (e.g. upsetting friends and family).
+‘severe’		Negative consequences have already occurred as a result of dysphoria, friends have withdrawn, or examination is considerably hampered.
+	
+Symptoms to differentiate from
+27.	Suspiciousness
+68.	Irritability
+
+68.	Irritability (SO)
+Definition
+The patient reacts in an inappropriately swift or fierce manner with anger and/or aggression.
+
+Explanations and examples
+The examiner senses a readiness in the patient’s behaviour for affective outbursts tinged with aggression despite a seemingly calm (but tense) exterior. Alternatively, the patient renders plausible accounts of experiencing instances of the phenomenon during the period of assessment (“Just this one single fly on the wall managed to bring me to boiling point in a split second.”).
+
+Notes on rating
+‘mild’		Irritability becomes evident to the interviewer during interview on occasions only, and the interview process remains unaffected. The interviewer senses a charged atmosphere. Alternatively, a patient reports instances of experiencing feelings of irritability during the period of assessment which, however, he manages to keep under control. 
+‘severe’	The patient’s social interactions become significantly impaired by his irritability. Alternatively, the examination process is disrupted on account of the patient’s irritability, certain topics are avoided, or the interviewer adopts defensive strategies to avoid the patient’s reactions.
+
+Symptoms to differentiate from
+67.	Dysphoria
+94.	Aggressiveness
+
+69.	Inner restlessness (S)
+Definition
+The patient senses inner excitability/agitation, tension or nervousness.
+
+Explanations and examples
+The patient feels agitated, inwardly driven or harassed. Inner restlessness may be linked to a depressive, anxious, hopelessly despairing mood accompanied by manic irritability, mistrust, delusional mood or delusions of various content.
+
+Notes on rating
+‘mild’	The patient feels an inner restlessness but feels little or no impairment on account of it.
+‘severe’		The patient’s inner restlessness causes considerable impairment which e.g. hinders him from concentrating during examination, or his performance of everyday tasks is clearly affected.
+	
+Symptoms to differentiate from
+82.	Increased drive
+83.	Motor restlessness
+
+70.	Complaintiveness (O)
+Definition
+Pain, grief and anxiety are explicitly communicated through words, facial expressions and physical gestures (‘wailing/lamenting’).
+
+Explanations and examples
+Patients cry, sigh, moan, wail or lament.
+
+Notes on rating
+‘mild’	The examination process is not disrupted. The patient is capable of showing feelings other than of complaintiveness and to move on from his laments.
+‘severe’	The patient predominantly moans and complains, is hardly able to concentrate on other topics, the interview process is being severely disrupted, or the patient’s social interactions with others is considerably affected.
+
+Symptoms to differentiate from
+86.	Histrionics
+
+71.	Feelings of inadequacy (S)
+Definition
+Trust and confidence in one’s own achievement potential or one’s self-worth is diminished or lost.
+
+Explanations and examples
+The patient suffers under the impression of being worthless and useless. The patient perceives himself as incapable, lazy, clumsy, indecisive, ignorant, dim-witted, physically unattractive or similar. Feelings of inadequacy should also be recorded where a patient is suffering from the effects of real rather than perceived impairment. Feelings of inadequacy relate to perceived inadequacy independently of whether such feelings correspond with reality or not: a wheelchair user perceives of himself as a ‘worthless cripple’; a depressive patient without objectively observable cognitive impairment complains about severe impairment in the areas of thought and concentration.
+
+Explanations and examples
+‘mild’	Feelings of inadequacy are restricted to particular contexts or areas only and may begin to be perceived differently during the course of the interview.
+‘severe’	The patient suffers from feelings of inadequacy which dominate important individual areas, or a wide range of areas, of his life.
+		
+Symptoms to differentiate from
+63.	Depressed mood
+
+72.	Exaggerated self-esteem (S)
+Definition
+A positively experienced feeling of heightened self-esteem, strength or potential for achievement.
+
+Explanations and examples
+The patient is over-confident as to his achievement potential. He believes himself to be particularly smart and capable, or superior to others. The patient’s experience of exaggerated self-esteem should be assessed independently of his actual potential for achievement.
+
+Once the assessment criteria for the presence of exaggerated self-esteem are met, 45. Delusions of grandeur should be documented additionally. A delusion of grandeur is usually (but not always) accompanied by exaggerated self-esteem.
+
+Notes on rating
+‘mild’	The feeling of exaggerated self-esteem is limited to particular areas of the patient’s capabilities and/or presents for short instances only during the assessment period.
+‘severe’		The feeling of exaggerated self-esteem encompasses most areas of the self, and the patient feels especially capable in respect of all possible challenges and requirements.
+
+Symptoms to differentiate from
+66.	Euphoria
+
+73.	Feelings of guilt (S)
+Definition
+The patient feels guilty because of his actions, thoughts or desires. He is under the impression of having done wrong and acted in contravention of a given set of norms.
+
+Explanations and examples
+Only the individual feeling of being guilty should be recorded here which also includes feelings of guilt experienced in connection with instances where the patient has indeed committed e.g. an actual offence in contravention of a given norm or norms. Feelings of guilt do not necessarily need to present exclusively in the context of depressive experience only. 
+
+Where the criteria for delusions are fulfilled in relation to guilt, 42. Delusions of guilt must be documented additionally. 42. Delusions of guilt are mostly (but not always) accompanied by feelings of guilt.
+
+Notes on rating
+‘mild’	Perceived feelings of guilt do not significantly affect the patient’s behaviour, thoughts and emotions.
+‘severe’	Practically the patient’s entire emotions, thoughts and behaviour are affected by feelings of guilt. During conversation, the patient has great difficulty in finding a topic that is unrelated to his feelings of guilt.
+		
+Symptoms to differentiate from
+None.
+
+74.	Feelings of impoverishment (S)
+Definition
+The patient worries about not having the necessary financial means to meet the cost of living and make ends meet and believes he is impoverished.
+
+Explanations and examples
+A feeling of impoverishment does not necessarily have to form part of depressive experience. Feelings of impoverishment in cases of objectively ascertainable impoverishment should also be documented here. If the criteria for delusions in regard to impoverishment are fulfilled, 43. Delusions of impoverishment must be recorded additionally. 43. Delusions of impoverishment are mostly (but not always) accompanied by feelings of impoverishment.
+
+Notes on rating
+‘mild’	The patient’s feelings of impoverishment relate to certain aspects of his life only (e.g. anxiety about not being able to meet rent payments).
+‘severe’	Several areas of life are affected by the patient’s feelings of impoverishment.
+
+Symptoms to differentiate from
+64.	Hopelessness
+
+75.	Ambivalence (S)
+Definition
+The co-existence of contradictory feelings or impulses (ambitendency) in a patient, which he perceives as simultaneously present and distressing.
+
+Explanations and examples
+This symptom must be differentiated from cognitive ‘indecision’ or cognitive ‘contradiction’ which are colloquially often referred to as ‘ambivalence’. The conscious delaying of particular decisions is not recorded here either. Indecision as a result of 71. Feelings of inadequacy or (depressive) inhibition is also not included here.
+	A patient reports, for example,  hating and loving a person at the same time.
+	A patient maintains a continuous, and for him distressing, rocking movement out of a compulsion to want to walk off and stand still at the same time. 
+
+Notes on rating
+‘mild’	The experience of ambivalence is related to one aspect of feeling, thought or volition only. The patient feels only mildly, or not at all, impaired by this ambivalence.
+‘severe’	The contradictory feelings, thoughts or intentions affect a major part of the patient’s life. The patient is considerably impaired in his everyday functioning as a result of this ambivalence.
+
+Symptoms to differentiate from
+59.	Perplexity
+81.	Inhibition of drive
+
+76.	Parathymia (O)
+Definition
+Non-verbal expressions of feelings and the contents of reported experiences do not correspond.
+
+Explanation and examples
+The patient displays an ‘inappropriate’ or ‘unfitting’ affective response; he fails to produce an ‘appropriate’ emotional reaction: a patient reports cheerfully, for example, that he had again been most gruesomely tortured the previous night. Another patient perceives joy on receipt of a gift but erupts into fits of moaning and lamenting (paramimia). 
+
+Not every inadequate affective response is documented here: an embarrassed smile (e.g. as a result of personal insecurity) is not a symptom characteristic of parathymia. Equally, a patient’s continued and purposeful smiling while reporting severely troubling experiences (e.g. in order to maintain composure) is not classified as parathymic.
+
+It needs to be noted further that a range of different affective responses must be displayed in order to record parathymia. The case of e.g. a perpetually laughing manic patient with diminished affective responsiveness cheerfully relating a tragic experience is not classified as parathymic.
+
+Stereotypical laughter (as opposed to laughter produced as an emotional reaction) is recorded at 84. Parakinesia.
+
+Notes on rating
+‘mild’	The patient appears parathymic on a few occasions only during interview.
+‘severe’		The patient appears parathymic at several instances during interview, or the character of the conversation is mainly dominated by the patient’s parathymic behaviour.
+	
+Symptoms to differentiate from
+61.	Blunted affect
+84.	Parakinesia
+
+77.	Affective lability (SO)
+Definition
+A rapid change of affects/emotions which occurs spontaneously or as a result of external stimuli (emotional instability).
+
+Explanations and examples
+The observed emotional reactions are generally of very limited duration only, may be subject to multiple variations and change as to the nature of their ‘portents’. Affective lability persisting over a longer period of time, e.g. in the context of bipolar processes, are not documented here, nor are regular daily variations (circadian disturbances).
+
+Notes on rating
+‘mild’	The patient displays instances of affective lability during interview, or renders plausible accounts of experiencing such instances.
+‘severe’		Major parts of the conversation are dominated by instances of affective lability.
+
+Symptoms to differentiate from
+78.	Affective incontinence
+89.	Worse in the morning
+90.	Worse in the evening
+91.	Better in the evening
+
+78.	Affective incontinence (SO)
+Definition
+Affective reactions/expressions may become overbearing at the slightest impulse, remain beyond the control of the patient and at times assume an exaggerated level of intensity (lack of affective self-control).
+
+Explanations and examples
+Affective incontinence involves ‘uncontrollable’ sobbing and ‘flying off the handle’ in a rage. The patient is only able to control such outburst to a limited extent, or not at all. For example, a patient may report having to burst into tears repeatedly against his will whenever sad news is broadcast on the wireless.
+
+Notes on rating
+‘mild’	Affective incontinence manifests in rare instances only during interview, or the patient reports only occasional experience of the phenomenon.
+‘severe’		Affective incontinence presents throughout the interview, or the patient reports frequent experience of the phenomenon.
+
+Symptoms to differentiate from
+77.	Affective lability
+
+79.	Affective rigidity (O)
+Definition
+Reduction or loss of emotional modulation with reduced range of levels of affective expressiveness (amplitude). 
+
+Explanations and examples
+Various types of affective responses may be involved which, however, are generally only slightly modulated, if at all (here, affective flattening is recorded also). In cases where no spontaneous emotional modulation is observed, the interviewer must provide corresponding emotional stimuli.
+
+Notes on rating
+‘mild’	In order to modulate his affective responses, the patient requires external stimuli which then manage to elicit successful emotional modulation in the patient.
+‘severe’	A marked reduction in range of levels of affective expressiveness remains unchanged, even where strong external stimuli are applied.
+	
+Symptoms to differentiate from
+61.	Blunted affect
+
+2.11	Disturbances of drive and psychomotility
+
+Preliminary notes
+
+Drive is the energising force behind all psychological and physical functioning in relation to speed, intensity and perseverance. Drive thus sustains liveliness, personal momentum, motivation, devotion, attentiveness, spirit and personal initiative. Drive becomes recognizable foremost from levels of activity and psychomotility.
+
+80.	Lack of drive (SO)
+Definition
+Lack of energy, initiative and interest.
+
+Explanations and examples
+The disturbance is reported by the patient or becomes recognizable to the interviewer during examination from e.g. minimal spontaneous motor activity or lack of personal initiative during interview.
+	A patient neglects regular past hobbies (“I do a lot less these days than I used to.”)
+	A patient spends hours in front of the television and can be stimulated to engage in alternative activities with great difficulty only.
+
+Notes on rating
+‘mild’	Personal momentum and initiative are diminished but do not affect a patient’s everyday functioning.
+‘severe’		The patient responds hardly or not at all to external stimuli. Everyday functioning is considerably impaired. Stupor is also documented here.
+	
+Symptoms to differentiate from
+81.	Inhibition of drive
+87.	Mutism
+92.	Social withdrawal
+136.	Hypokinesia
+
+81.	Inhibition of drive (S)
+Definition
+The patient experiences levels of energy and personal initiative as stalled or blocked.
+
+Explanations and examples
+It is not a complete lack of energy, or the fact that habitual activities are engaged in less frequently (see 80. Lack of drive), which characterise manifestations of inhibition of drive, but the requirement for considerably increased levels of energy and effort necessary in order to engage in such habitual activities. Efforts on the part of the patient to overcome inhibition of drive are clearly in evidence. The patient articulates plans and intentions but fails to be able to realise them, breaks off renewed attempts, picks himself up in order to try again, and so on. In contrast to 80. Lack of drive, with inhibition of drive the patient’s will and intentionality are fully intact. Rather, the patient is driven but fails to succeed.
+	“Everything’s harder than normal; it’s as if I’m blocked somehow, but up to now hardly anybody’s noticed anything.”
+	“I decide to get up and get dressed, but it’s all just too exhausting and so I end up staying in bed.”
+	“I often end up sitting on the sofa saying to myself come on, let’s try and get on with something at least.”
+
+Notes on rating
+‘mild’	The patient reports experiencing feelings of inhibition of drive but manages to overcome these by actively trying.
+‘severe’		The feeling of inhibition of drive is overwhelming. The patient is barely able to perform small, routine everyday tasks such as getting dressed or making telephone calls.
+	
+Symptoms to differentiate from
+80.	Lack of drive
+87.	Mutism
+136.	Hypokinesia
+
+82.	Increased drive (SO)
+Definition
+Increased levels of energy, initiative and interest.
+
+Explanations and examples
+The patient’s increased levels of energy are directed at target-oriented activities which, however, do not have to be meaningful. The patient pursues a multitude of plans.
+
+Notes on rating
+‘mild’	Copious plans and intentions are articulated and partly realised, but the patient still remains prepared to accept reasoned guidance from others.
+‘severe’	The patient is constantly active, attempts at distracting him are rarely successful, he ignores negative results and consequences of his actions or remains unconcerned about them (e.g. partnership conflicts, financial difficulties, difficulties at the work place or in a social context with friends).
+		
+Symptoms to differentiate from
+93.	Excessive social contact
+
+83.	Motor restlessness (SO)
+Definition
+Increased levels of undirected motor activity.
+
+Explanations and examples
+The patient is physically active, running around or moving on the spot. Motor restlessness can also manifest in e.g. isolated scratching movements, the wringing of hands, foot swinging or drumming of fingers. 
+	The patient often taps or swings his feet during examination.
+	The patient reports frequent instances of aimlessly walking about in his flat during the course of the assessment period.
+	During examination, the patient finds it impossible to remain seated in his chair, gets up and paces up and down the room.
+
+Notes on rating
+‘mild’	Motor restlessness manifests in individual body parts such as the hands but does not impair the patient in his everyday functioning.
+‘severe’	The patient is constantly physically active and is barely able to perform his everyday tasks.
+		
+Symptoms to differentiate from
+69.	Inner restlessness
+82.	Increased drive
+84.	Parakinesia
+135.	Acute Dyskinesia
+137.	Akathisia
+
+84.	Parakinesia (O)
+Definition
+Parakinesia include several psychopathological symptoms:
+	Parakinesia are qualitatively abnormal, mostly complex physical movements which often involve gestural and facial expressions and also speech.
+	Stereotypy involves a patient’s tendency to repeat speech or motor expressions persistently in identical form over a longer period of time. In contrast to 19. Perseveration, there is no recognisable connection or relevance to words or gestures used earlier in the conversation. Stereotypy also includes verbigerations (word stereotypy), echolalia (echo-like repeating of words and phrases), echopraxia (automaton-like imitating), catalepsy (postural stereotypy), and ‘flexibilitas cerea’ (waxy flexibility). Mechanical laughter may also be recorded here.
+	Command automatism involves the patient mechanically performing actions in response to corresponding external stimuli.	
+	Negativism: negativistic patients fail to perform in precisely those areas where it is expected or asked of them to do so (passive negativism), or they engage in exactly the opposite (active negativism). Negativistic patients can in certain cases be brought to perform according to expectations by prohibiting them to do so in respect of the desired action, or by asking them to do the opposite of what is required (command negativism).
+
+Explanations and examples
+Also complex aural, facial and gestural expressions in the context of a tic disorder (Tourette Syndrome) are documented here.
+
+Notes on rating
+‘mild’		Parakinesia only present in isolated instances and do not impair the patient in his everyday functioning.
+‘severe’	Parakinesia present on frequent occasions and considerably impair the patient in his everyday functioning.
+		
+Symptoms to differentiate from
+19.	Perseveration
+32.	Compulsive actions
+83.	Motor restlessness
+85.	Mannerisms
+135.	Acute dyskinesia
+
+85.	Mannerisms (O)
+Definition
+Everyday movements and actions (also physical gestures, facial expressions and speech) appear to the outside observer as eccentric, cranky, showy and forced; they are sometimes performed in a distincitive/exaggeratedly playful quality.
+
+Explanations and examples
+Patients behave in e.g. a particularly conspicuous fashion (bizarre), with such comportment being in direct contravention to customary national, cultural and social norms in terms of speech, physical gestures and movements or physical appearance. 
+
+The symptom of mannerisms also includes unnatural, florid, self-important behaviour in the sense of pompousness and conceit. Labels such as exuberant, affected and contrived, forced, stylized and clichéd also relate to mannerisms. 
+
+Notes on rating
+‘mild’		The manifestation of the symptom of mannerisms in a patient does not lead to impairment in social relationships.
+‘severe’	The psychopathological phenomenon of mannerisms clearly impacts on first impression. During longer periods of contact over time, the symptom persists irrespective of conversation partner or situation.
+
+Symptoms to differentiate from
+26.	Neologisms 
+84.	Parakinesia
+86.	Histrionics
+
+86.	Histrionics (O)
+Definition
+Patients give the impression of play-acting themselves.
+
+Explanations and examples
+Histrionics often manifest in strange, overbearing theatrical expressive behaviour on the part of the patient. Instances of ‘aggravation’ (in the sense of ‘greatly exaggerated accounts of existing complaints’) are also recorded here.
+
+Notes on rating
+‘mild’		Histrionic behaviour is only occasionally, or to a minimal extent, in evidence during interview.
+‘severe’		The patient’s behaviour is dominated by histrionics.
+
+Symptoms to differentiate from
+85.	Mannerisms
+
+87.	Mutism (O)
+Definition
+The patient is taciturn or does not speak at all (falling silent).
+
+Explanations and examples
+The patient is fully awake/mentally alert but speaks less, becomes monosyllabic or falls completely silent. The phenomenon may be linked to lack of energy, inhibition, blocking or an active-negativistic refusal to establish verbal contact. (Deaf-)mutism is not recorded here.
+
+Notes on rating
+‘mild’		The patient communicates little, often also in a soft, barely audible voice. Communication is somewhat impaired, but still possible.
+‘severe’		The patient remains mute (has fallen silent), or communicates in very few words only. Communication is considerably impaired.
+	
+Symptoms to differentiate from
+16.	Retarded thinking
+80.	Lack of drive
+81.	Inhibition of drive 
+
+88.	Logorrhoea (O)
+Definition
+Increased loquacity (talkativeness).
+
+Explanations and examples
+Logorrheic speech can be coherent and logical and is not necessarily accelerated in all cases.
+
+Notes on rating
+‘mild’	The flow of speech can still be interrupted and the patient manages temporarily to tune into his interview partner.
+‘severe’	Communication with the patient is considerably hampered. The patient either ignores or rejects attempts at being interrupted.
+
+Symptoms to differentiate from
+17.	Circumstantial thinking
+22.	Flight of ideas
+82.	Increased drive
+
+2.12	Circadian disturbances
+
+Preliminary notes
+
+Variations observed in a patient’s symptoms over a 24-hour period are documented here.
+
+Changes in the symptoms are observed and assessed; not only time-of-day-dependent mood changes are being considered, but also regular patterns in connection with the emergence of other symptoms, e.g. ‘sun-downing’ (increasing restlessness in the evenings) or circadian variations with a delirious syndrome.
+
+The patient himself or third parties report that the patient’s overall condition, or a major part of his symptoms, improves or worsens in the morning or evening respectively compared with other times of the day.
+
+89.	Worse in the morning (SO)
+Definition
+Regular worsening of symptoms in the morning. 
+
+Explanations and examples
+The symptoms from which the patient visibly suffers or which are observable by third parties are clearly more pronounced in the morning.
+
+Such variations do not necessarily manifest on a daily basis but are, nevertheless, experienced or observed as a relatively ‘typical pattern’ (a morning low).
+
+Notes on rating
+‘mild’	The patient recognises such variation in his symptoms only when specifically addressed on the topic.
+‘severe’	The patient experiences himself as decidedly changed or different compared to other times of day, or third parties report accordingly. 
+		
+Symptoms to differentiate from
+91.	Better in the evening
+
+90.	Worse in the evening (SO)
+Definition
+Regular worsening of the symptoms in the evening. 
+
+Explanations and examples
+The symptoms from which the patient visibly suffers or which are observable by third parties are clearly more pronounced in the evening.
+
+Such variations do not necessarily manifest on a daily basis but are, nevertheless, experienced or observed as a relatively ‘typical pattern’ (an evening low).
+
+Notes on rating
+‘mild’	The patient recognises such variation in his symptoms only when specifically addressed on the topic.
+‘severe’	The patient’s usual activities become impaired by the changes in his condition in the evenings. Compared to other times of day, the patient experiences the changes in his condition in the evenings as clearly noticeable, or third parties report accordingly.
+
+Symptoms to differentiate from
+None.
+
+91.	Better in the evening (SO)
+Definition
+Regular improvement of the symptoms in the evening.
+
+Explanations and examples
+The symptoms from which the patient visibly suffers or which are observable by third parties are clearly less pronounced in the evening.
+
+Such variations do not necessarily manifest on a daily basis but are, nevertheless, experienced or observed as a relatively ‘typical pattern’ (an evening high).
+
+Notes on rating
+‘mild’	The patient becomes aware of such variation only on account of corresponding indications from the interviewer.
+‘severe’	The patient spontaneously reports these variations as clearly noticeable, or they are clearly observable by third parties (family members, care staff).
+
+Symptoms to differentiate from
+89.	Worse in the morning
+
+2.13	Other disturbances
+
+Preliminary notes
+
+This section summarises those symptom characteristics which cannot easily be attributed to other symptom areas but which are, nevertheless, of clinical relevance.
+
+92.	Social withdrawal (SO)
+Definition
+Withdrawal from other people’s company.
+
+Explanations and examples
+Social withdrawal on the patient’s part, which leads to reduced social contact, is recorded here. Not documented here is social isolation experienced despite a desire to maintain contact with others, and corresponding efforts undertaken by the patient.
+
+Notes on rating
+‘mild’	Social withdrawal is reported and plausibly illustrated but hardly noticeable on the ward or during interview.
+‘severe’	The patient maintains hardly any contact to friends and acquaintances or often withdraws alone to his room on the ward.
+
+Symptoms to differentiate from
+80.	Lack of drive
+81.	Inhibition of drive
+87.	Mutism
+
+93.	Excessive social contact (SO)
+Definition
+Increased social activity.
+
+Explanations and examples
+The patient increases contact with other people on his own accord. The nature of contact is mostly superficial and changeable. This excessive socialising is often experienced as disagreeable, annoying or selfish by others, with correspondingly negative consequences for the patient.
+
+Notes on rating
+‘mild’	The patient frequently visits friends and acquaintances and maintains increased contact, without negative consequences for the patient resulting from this.
+‘severe’	The patient increasingly often addresses strangers, and this excessive socialising leads to negative consequences for the patient.
+
+Symptoms to differentiate from
+82.	Increased drive
+88.	Logorrhoea
+
+94.	Aggressiveness (SO)
+Definition
+Hostile, offensive and attacking behaviour.
+
+Explanations and examples
+Verbal aggression as well as aggressive physical actions directed at other people or objects are recorded here.
+
+Examples of aggressiveness are verbal abuse, insults, threats, intimidation, acts of vandalism and causing grievous bodily harm.
+
+Auto-aggressiveness is not recorded here (see 96. Self-mutilation or 95. Suicidal tendencies).
+
+Notes on rating
+‘mild’	Verbal or physical aggressiveness results in minor consequences only. A patient pushes a doctor away during examination. Another patient verbally abuses care staff during hospital rounds calling them stupid, but apologises afterwards.
+‘severe’	The patient’s verbal or physical aggressiveness leads to serious consequences. A patient threatens other patients with the result that everybody is afraid of him. Another patient throws crockery about him in great agitation.
+ 
+Symptoms to differentiate from
+67.	Dysphoria
+68.	Irritability
+95.	Suicidal tendencies
+96.	Self-mutilation
+
+95.	Suicidal behavior (SO)
+Definition
+Thoughts, plans and concrete action taken in preparation of fulfilling a wish to die or committing suicide.
+
+Explanations and examples
+Weariness of life and death wishes are also recorded here in cases where no actual suicidal thoughts are in evidence.
+
+Cases where imperative voices demand suicide are documented here also.
+
+Daring or risky behaviour without suicidal intentions (e.g. high-risk adventure sports or smoking) are not documented here.
+
+Notes on rating
+‘mild’	A patient harbours suicidal thoughts from which, however, he manages to distance himself. Another patient is frail and elderly and wishes to be able to die but has no suicidal thoughts.
+‘severe’	A patient has pressing suicidal thoughts from which he can barely, if at all, distance himself. Another patient prepares a suicide attempt or actively embarks on such an attempt.
+		
+Symptoms to differentiate from
+96.	Self-mutilation
+
+96.	Self-mutilation (SO) 
+Definition
+Self-harming without suicidal intent.
+
+Explanations and examples
+Self-harming includes types of behaviour where a patient commits specific acts in order to physically harm himself (e.g. swallowing dangerous objects, intentional cutting, scratching or scolding of skin, or head-banging). Self-harming with a view to reducing inner tension is also recorded here.
+
+Risky behaviour without intention to self-harm (risky sexual behaviour, substance abuse, unhealthy eating habits or undergoing unnecessary cosmetic surgery) is not documented here.
+
+Notes on rating
+‘mild’	Instances of self-harming which lead to injuries which do not require medical attention (e.g. minor cuts to skin).
+‘severe’	Instances of self-harming which demand immediate medical attention, e.g. dressing a gaping or heavily bleeding wound, or endoscopic intervention).
+
+Symptoms to differentiate from
+94.	Aggressiveness
+95.	Suicidal tendencies
+
+97.	Lack of feeling ill (S)
+Definition
+The patient feels considerably less ill than he actually is, or not ill at all.
+
+Explanations and examples
+This symptom involves a patient’s extent of perception of being mentally or physically ill. The patient’s concept of illness is irrelevant: a hypochondriacal patient may not be suffering from lack of feeling of illness when feeling physically ill, while a medical doctor diagnoses him as clearly mentally ill.
+
+Examples of instances of lack of feeling of illness are demented patients or manic patients who do not perceive of themselves as being ill despite the presence of considerable impairment. A schizophrenic patient may believe himself to be perfectly healthy despite pronounced negative symptoms including social withdrawal and lack of drive.
+
+Notes on rating
+‘mild’	An only slightly impaired patient feels entirely healthy, whilst a severely impaired patient may perceive only limited impairment.
+‘severe’	A severely impaired patient feels entirely healthy.
+
+Symptoms to differentiate from
+98.	Lack of insight
+99.	Uncooperativeness
+
+98.	Lack of insight into illness (S)
+Definition
+The patient fails to perceive his complaints as manifestations of his psychopathological condition.
+
+Explanations and examples
+The extent of a patient’s insight into his psychopathological condition is recorded here. The patient’s perception of his illness is the deciding criterion: a hypochondriacal patient may, for example, demonstrate lack of insight into his condition by being of the firm conviction that he is suffering from a physical illness when, in fact, a psychopathological condition is present.
+
+Another example of lack of insight would be a schizophrenic patient who mistakes his acoustic hallucinations for a radio broadcast rather than recognising them as a symptom of his illness.
+
+Symptom 97. Lack of feeling of illness must be assessed and rated independently of lack of insight. Manic patients may be fully aware of and understand that they are ill but may, at the same time, perceive no feeling of illness.
+
+Notes on rating
+‘mild’	A patient attributes only a number of symptoms of his illness to other factors.
+‘severe’	A patient attributes virtually all symptoms of his illness to other factors.
+
+Symptoms to differentiate from
+97.	Lack of feeling of illness
+99.	Uncooperativeness
+
+99.	Uncooperativeness (SO)
+Definition
+The patient refuses treatment or resists attempts of being treated.
+
+Explanations and examples
+This symptom includes a wide spectrum of behaviour. Refusal of treatment may range from a lack of cooperation to complete refusal. Examples of typical behaviour are lateness for appointments, lack of readiness to participate in conversation, unreliable adherence to prescribed medication regimens, or complete refusal to accept a particular diagnosis.  
+
+Notes on rating
+‘mild’	A patient takes his medication only reluctantly and against what he perceives as his own better judgement.
+‘severe’	A patient completely refuses medication or urgently required in-patient clinical intervention.
+
+Symptoms to differentiate from
+97.	Lack of feeling of illness
+98.	Lack of insight
+
+100.	Need for care (SO)
+Definition
+A patient is reliant on others for the performance of activities relating to everyday functioning.
+
+Explanations and examples
+The patient is no longer capable of meeting the basic requirements of everyday life without outside help: the patient becomes bedridden, unable to eat or drink by himself and requires help with maintaining personal hygiene. 
+
+The need for long-term care may arise as a result of physical or mental illness, disability or developmental disorders.
+
+Notes on rating
+‘mild’	Reduced levels of independence in e.g. the preparation of meals, the cleaning of rooms and getting dressed and undressed.
+‘severe’	The patient is bedridden or needs to be fed.
+
+Symptoms to differentiate from
+None.
+

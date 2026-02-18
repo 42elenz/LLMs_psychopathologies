@@ -61,7 +61,7 @@ No. ;Feature
 8;Disorientation regarding own person
 9;Disturbances of comprehension
 10;Disturbances of concentration
-11;Disturbances of immediate recall (Merkfähigkeit)
+11;Disturbances of immediate recall
 12;Memory disorders
 13;Confabulations
 14;Paramnesias
@@ -153,11 +153,11 @@ No. ;Feature
 100;Need for care
 
 Example
-User: “Ich kann mich kaum konzentrieren und fühle mich hoffnungslos.”
+User: “I feel hopeless.”
 Nummer: 64
-Merkmal: Hoffnungslos
+Merkmal: Hopelessness
 Schweregrad: 2
-Begründung: Nutzer beschreibt ein Gefühl der Hoffnungslosigkeit.
+Begründung: Person describes hoplessness directly.
 
 Format
 Follow the JSON format.
