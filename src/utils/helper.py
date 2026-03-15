@@ -1702,6 +1702,7 @@ def create_interactive_error_scatter_with_begruendung(
             else:
                 most_common_rating = np.nan
 
+            item_display = item_base.replace('_final', '').replace('_', ' ')
             rng = np.random.default_rng(hash(item_base) % 2**32)
             human_err_plot = human_error_rate
 
@@ -1716,7 +1717,8 @@ def create_interactive_error_scatter_with_begruendung(
                 ai_err_plot = np.clip(ai_error_rate + jitter_y, 0, 100)
 
             plot_data.append({
-                'item': item_base,
+                'item': item_display,
+                'item_raw': item_base,
                 'most_common_human_rating': most_common_rating,
                 'human_error_rate': human_err_plot,
                 'ai_error_rate': ai_err_plot,
@@ -2312,8 +2314,9 @@ def create_publication_error_scatter_with_extreme_cases(
             
             # Labels and formatting
             label = f"{'A' if idx < 2 else 'B'}{(idx % 2) + 1}"
+            item_label = case['item'].replace('_final', '').replace('_', ' ')
             ax_bar.set_title(
-                f"{label}: {case['item'].replace('_final','')}",
+                f"{label}: {item_label}",
                 fontsize=10,
                 fontweight='bold'
             )
@@ -3454,18 +3457,13 @@ def plot_per_video_comparison(
             ax=ax
         )
         
-        # Mean markers
-        means = melted_data.groupby("Strategy", as_index=False)["Accuracy"].mean()
-        sns.scatterplot(
-            data=means,
-            x="Strategy",
-            y="Accuracy",
-            marker="D",
-            s=100,
-            color="green",
-            zorder=10,
-            ax=ax
-        )
+        # Mean markers as horizontal lines
+        order = ["human_only", "human_only_supervision", "ai_always"]
+        for i, strategy in enumerate(order):
+            mean_val = melted_data[melted_data['Strategy'] == strategy]['Accuracy'].mean()
+            ax.hlines(y=mean_val, xmin=i - 0.3, xmax=i + 0.3,
+                      color='black', linewidth=2, linestyle='-', zorder=10,
+                      label='Mean' if i == 0 else None)
         
         # Reference lines
         ax.axhline(y=human_mean, color='darkblue', linestyle='--', 
@@ -3509,6 +3507,161 @@ def plot_per_video_comparison(
         print(f"  Psychiatrist consultations: {details['psychiatrist_consulted'].sum():.0f}")
 
 
+def plot_per_video_comparison_disagreements_only(
+    video_results: dict,
+    master_df: pd.DataFrame = None,
+    reference_df: pd.DataFrame = None,
+    ai_site_key: str = None,
+    human_site_keys: list = None,
+    psy_cols: list = None,
+    vid_col: str = "video_id",
+    ref_vid_col: str = "ID_Video",
+    site_col: str = "site",
+    id_col: str = "id_code_v2",
+    exclude_value: int = 10000,
+    video_names: dict = {7: 'Mania', 8: 'Depression', 9: 'Schizophrenia'},
+    figsize: tuple = (10, 6),
+    save_path: str = None,
+    add_mean_lines: bool = False
+):
+    """
+    Like plot_per_video_comparison but only for pairs where clinicians disagreed.
+    Shows only the three strategies: Clinicians Only, BC-Supervision, AI-Supervision.
+    Adds reference lines for clinician and AI mean accuracy on the disagreement items.
+    """
+    for vid, sim_result in video_results.items():
+        vid_name = video_names.get(vid, f"Video {vid}")
+
+        # Use disagreement_data: per-item logs only for disagreement items
+        disag_data = sim_result['disagreement_data']
+        disag_vid = disag_data[disag_data['video_id'] == vid] if 'video_id' in disag_data.columns else disag_data
+
+        if disag_vid.empty:
+            print(f"Video {vid} ({vid_name}): No disagreement items found. Skipping.")
+            continue
+
+        # Compute per-pair accuracy on disagreement items only
+        order = ["human_only", "human_only_supervision", "ai_always"]
+        pair_accs = {}
+        for strategy in order:
+            strat_data = disag_vid[disag_vid['strategy_chosen'] == strategy]
+            pair_accs[strategy] = strat_data.groupby('pair_id')['is_correct'].mean().values
+
+        n_pairs = len(pair_accs[order[0]])
+
+        melted_data = pd.DataFrame({
+            'Strategy': sum([[s] * len(pair_accs[s]) for s in order], []),
+            'Accuracy': np.concatenate([pair_accs[s] for s in order])
+        })
+
+        # Create plot
+        fig, ax = plt.subplots(1, 1, figsize=figsize)
+
+        # Color palette: distinct colors for each strategy
+        palette = {
+            "human_only": "#7f7f7f",           # grey for clinicians only
+            "human_only_supervision": "#1f77b4", # blue for BC-Supervision
+            "ai_always": "#ff7f0e"               # orange for AI-Supervision
+        }
+
+        # Violin plot
+        sns.violinplot(
+            data=melted_data,
+            x="Strategy",
+            y="Accuracy",
+            order=order,
+            palette=palette,
+            ax=ax
+        )
+
+        # Mean as horizontal line per violin
+        if add_mean_lines== True:
+            for i, strategy in enumerate(order):
+                mean_val = melted_data[melted_data['Strategy'] == strategy]['Accuracy'].mean()
+                ax.hlines(y=mean_val, xmin=i - 0.3, xmax=i + 0.3,
+                        color='black', linewidth=2, linestyle='-', zorder=10,
+                        label='Mean' if i == 0 else None)
+
+        # Reference lines: clinician & AI accuracy on disagreement items only
+        if master_df is not None and reference_df is not None and psy_cols is not None:
+            # Get unique disagreement item IDs for this video
+            disag_items = disag_vid['item_id'].unique()
+
+            # Get reference values for these items
+            ref_vid = reference_df[reference_df[ref_vid_col] == vid]
+            if not ref_vid.empty:
+                ref_row = ref_vid.iloc[0]
+                ref_vals = {itm: float(ref_row[itm]) for itm in disag_items
+                            if itm in ref_row.index and pd.notna(ref_row[itm])
+                            and ref_row[itm] != exclude_value}
+
+                if ref_vals:
+                    df_vid = master_df[master_df[vid_col] == vid]
+
+                    # Clinician mean accuracy on disagreement items
+                    df_humans = df_vid[df_vid[site_col].isin(human_site_keys)]
+                    human_rater_accs = []
+                    for _, rater_row in df_humans.iterrows():
+                        correct = 0
+                        total = 0
+                        for itm, rv in ref_vals.items():
+                            val = rater_row.get(itm)
+                            if pd.notna(val) and val != exclude_value:
+                                total += 1
+                                correct += int(float(val) == rv)
+                        if total > 0:
+                            human_rater_accs.append(correct / total)
+
+                    if human_rater_accs:
+                        clinician_mean = np.mean(human_rater_accs)
+                        ax.axhline(y=clinician_mean, color='darkblue', linestyle='--',
+                                   label=f'Clinician Mean ({clinician_mean:.2f})', linewidth=2)
+
+                    # AI accuracy on disagreement items
+                    df_ai = df_vid[df_vid[site_col] == ai_site_key]
+                    if not df_ai.empty:
+                        ai_mode_row = df_ai[psy_cols].mode(axis=0).iloc[0]
+                        ai_correct = 0
+                        ai_total = 0
+                        for itm, rv in ref_vals.items():
+                            val = ai_mode_row.get(itm)
+                            if pd.notna(val) and val != exclude_value:
+                                ai_total += 1
+                                ai_correct += int(float(val) == rv)
+                        if ai_total > 0:
+                            ai_mean = ai_correct / ai_total
+                            ax.axhline(y=ai_mean, color='orange', linestyle='--',
+                                       label=f'AI Mean ({ai_mean:.2f})', linewidth=2)
+
+        # Styling
+        ax.set_title(f"{vid_name} — Disagreement Items Only "
+                     f"(n={n_pairs} pairs)",
+                     fontsize=10, fontweight='bold')
+        ax.set_ylabel("Accuracy", fontsize=12)
+        ax.set_xticklabels([
+            'Clinicians Only',
+            'Clinicians (BC-Supervision)',
+            'Clinicians (AI-Supervision)'
+        ], fontsize=8)
+        ax.grid(axis='y', alpha=0.3)
+        handles, labels = ax.get_legend_handles_labels()
+        if handles:
+            ax.legend(fontsize=12, loc='lower right')
+
+        plt.tight_layout()
+        if save_path:
+            plt.savefig(f"{save_path}/simulation_{vid}_disagreements_only.png", dpi=300)
+        plt.show()
+
+        # Print statistics
+        print(f"\n{'='*60}")
+        print(f"VIDEO {vid} - {vid_name.upper()} (DISAGREEMENT ITEMS ONLY)")
+        print(f"{'='*60}")
+        n_items = len(disag_vid[disag_vid['strategy_chosen'] == order[0]])
+        print(f"Total disagreement items: {n_items} (across {n_pairs} pairs)")
+        for strategy in order:
+            vals = pair_accs[strategy]
+            print(f"  {strategy}: {vals.mean():.4f} ± {vals.std():.4f}")
 
 
 def plot_human_vs_ai_violin(
