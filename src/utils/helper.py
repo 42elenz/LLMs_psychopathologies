@@ -1552,10 +1552,11 @@ def create_interactive_error_scatter_with_begruendung(
     base_title: str = "Error Rate Comparison: LLM vs. Humans",
     path_html: str = "../outputs/figs/",
     prefix: str = "",
-    color_by_rating: bool = True,  # NEW: color by reference rating type
-    show_threshold_lines: bool = True,  # NEW: show difficulty threshold lines
-    low_error_threshold: float = 30.0,  # NEW: threshold for low difficulty
-    high_error_threshold: float = 70.0,  # NEW: threshold for high difficulty
+    color_by_rating: bool = True,  
+    show_threshold_lines: bool = True,
+    low_error_threshold: float = 30.0, 
+    high_error_threshold: float = 70.0,
+    skip_plotting: bool = False
 ):
     """
     Create interactive scatter plots showing LLM vs Human error rates with LLM justifications.
@@ -1899,8 +1900,10 @@ def create_interactive_error_scatter_with_begruendung(
 
         # Save and show
         path_html_save = os.path.join(path_html, f"{prefix}_error_rate_scatter_video_{vid}.html")
-        fig.write_html(path_html_save)
-        fig.show()
+        
+        if not skip_plotting:
+            fig.write_html(path_html_save)
+            fig.show()
 
         print(f"\n{'='*60}")
         print(f"Video {vid} - {vid_name}")
@@ -4274,7 +4277,8 @@ def get_human_performance_table(
     psy_cols = [col for col in human_master.columns if re.match(psy_cols_regex, col)]
     
     rows = []
-    
+    all_accuracies_nr = []
+    all_accuracies_r = []
     for vid in video_ids:
         # Filter data for this video
         human_vid = human_master[human_master['video_id'] == vid].copy()
@@ -4330,7 +4334,10 @@ def get_human_performance_table(
         mean_acc_r = np.mean(accuracies_r) if accuracies_r else np.nan
         min_acc_r = np.min(accuracies_r) if accuracies_r else np.nan
         max_acc_r = np.max(accuracies_r) if accuracies_r else np.nan
-        
+        std_acc_nr = np.std(accuracies_nr, ddof=1) if len(accuracies_nr) > 1 else np.nan
+        std_acc_r = np.std(accuracies_r, ddof=1) if len(accuracies_r) > 1 else np.nan
+        all_accuracies_nr.extend(accuracies_nr)
+        all_accuracies_r.extend(accuracies_r)
         rows.append({
             'video_id': vid,
             'video_name': video_names.get(vid, f'Video {vid}'),
@@ -4341,6 +4348,8 @@ def get_human_performance_table(
             'accuracy_reduced_mean': mean_acc_r,
             'accuracy_reduced_min': min_acc_r,
             'accuracy_reduced_max': max_acc_r,
+            'accuracy_not_reduced_std': std_acc_nr,
+            'accuracy_reduced_std': std_acc_r,
         })
     
     df = pd.DataFrame(rows)
@@ -4366,6 +4375,8 @@ def get_human_performance_table(
         'accuracy_reduced_mean': overall_r,
         'accuracy_reduced_min': all_min_r,
         'accuracy_reduced_max': all_max_r,
+        'accuracy_not_reduced_std': np.std(all_accuracies_nr, ddof=1) if len(all_accuracies_nr) > 1 else np.nan,
+        'accuracy_reduced_std': np.std(all_accuracies_r, ddof=1) if len(all_accuracies_r) > 1 else np.nan,
     }])
     
     df = pd.concat([df, overall_row], ignore_index=True)
@@ -4382,7 +4393,9 @@ def get_human_performance_table(
         else f"{x['accuracy_reduced_mean']:.2f}", axis=1
     )
 
-    return df[['video_id', 'video_name', 'n_raters', 'accuracy_not_reduced', 'accuracy_reduced']]
+    df['std_not_reduced'] = df['accuracy_not_reduced_std'].apply(lambda x: f"{x:.2f}" if pd.notna(x) else "")
+    df['std_reduced'] = df['accuracy_reduced_std'].apply(lambda x: f"{x:.2f}" if pd.notna(x) else "")
+    return df[['video_id', 'video_name', 'n_raters', 'accuracy_not_reduced', 'accuracy_reduced', 'std_not_reduced', 'std_reduced']]
 
 def create_error_sankey_static(plot_data_df, video_id=None, video_name=None, save_path=None, ax=None, 
                                 rater_type="llm", prediction_col=None, print_summary=True):
