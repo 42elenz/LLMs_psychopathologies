@@ -1830,7 +1830,7 @@ def create_interactive_error_scatter_with_begruendung(
         
         fig.update_layout(
             title=dict(
-                text=f"{base_title}<br>Video {vid} - {vid_name}",
+                text=f"{base_title}<br>{vid_name}",
                 font=dict(size=16, color='#333333')
             ),
             xaxis=dict(
@@ -2358,6 +2358,7 @@ def create_publication_error_scatter_with_extreme_cases(
         
         if save:
             plt.savefig(f"figure_{vid}.png", dpi=600, bbox_inches='tight')
+            print(f"Saved figure for video {vid} as figure_{vid}.png")
         plt.show()
         
         # Print summary
@@ -3675,7 +3676,10 @@ def plot_human_vs_ai_violin(
     show_legend: bool = True,
     ax: plt.Axes = None,
     return_fig: bool = False,
-    title: bool = False
+    title: bool = False,
+    framealpha = 0.0,
+    place = "upper left"
+
 ) -> plt.Axes | tuple:
     """
     Create a violin plot comparing human rater accuracies with AI performance.
@@ -3740,18 +3744,18 @@ def plot_human_vs_ai_violin(
     ax.scatter(
         [0], [ai_accuracy],
         marker='D', s=100, color='#d62728',
-        label=f'LLM ({ai_accuracy:.2f})', zorder=5,
+        label=f'LLM: \n{ai_accuracy:.2f}', zorder=5,
         edgecolor='black', linewidth=1
     )
     
     # Add reference lines
     ax.axhline(
         human_accs.mean(), color='darkblue', linestyle='--',
-        linewidth=2, alpha=0.7, label=f'Clinician mean ({human_accs.mean():.2f})'
+        linewidth=2, alpha=0.7, label=f'Clinician mean: \n{human_accs.mean():.2f}'
     )
     ax.axhline(
         np.median(human_accs), color='orange', linestyle='--',
-        linewidth=2, alpha=0.7, label=f'Clinician median ({np.median(human_accs):.2f})'
+        linewidth=2, alpha=0.7, label=f'Clinician median: \n{np.median(human_accs):.2f}'
     )
     
     # Styling
@@ -3770,15 +3774,16 @@ def plot_human_vs_ai_violin(
     
     # Add legend with smaller marker sizes
     if show_legend:
-        legend = ax.legend(loc='lower right', fontsize=12,
-                          handlelength=1.5, scatterpoints=1)
+        legend = ax.legend(loc=place, fontsize=12,
+                          handlelength=1.5, scatterpoints=1, 
+                          framealpha=framealpha)
         
         # Scale down marker sizes in the legend
         for handle in legend.legend_handles:
             if hasattr(handle, 'set_markersize'):
                 handle.set_markersize(8)
             if hasattr(handle, 'set_sizes'):
-                handle.set_sizes([25])
+                handle.set_sizes([15])
     
     if return_fig:
         return fig, ax

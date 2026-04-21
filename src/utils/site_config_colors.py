@@ -169,6 +169,28 @@ SITE_CONFIG_KI_Vergleich = {
         "name": "Kimi-K2-Thinking Temp0+K",
         "color_individual": "#ca6f1e",  # Dark orange
         "color_majority": "#f9e79f"     # Light yellow
-    }
+    },
+
+    # ── Local vLLM models ──────────────────────────────────────────────
+    "Qwen_Qwen2.5-32B-Instruct_temp_0_0": {
+        "name": "Qwen2.5-32B Temp0",
+        "color_individual": "#1abc9c",  # Turquoise
+        "color_majority": "#a3e4d7"     # Light turquoise
+    },
+    "Qwen_Qwen2.5-32B-Instruct_temp_0_10": {
+        "name": "Qwen2.5-32B Temp0+K",
+        "color_individual": "#148f77",  # Dark turquoise
+        "color_majority": "#76d7c4"     # Medium turquoise
+    },
+    "Qwen_Qwen2.5-32B-Instruct_0": {
+        "name": "Qwen2.5-32B",
+        "color_individual": "#1abc9c",  # Turquoise
+        "color_majority": "#a3e4d7"     # Light turquoise
+    },
+    "Qwen_Qwen2.5-32B-Instruct_10": {
+        "name": "Qwen2.5-32B with Knowledge",
+        "color_individual": "#148f77",  # Dark turquoise
+        "color_majority": "#76d7c4"     # Medium turquoise
+    },
 }
 

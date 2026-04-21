@@ -15,17 +15,21 @@ def parse_args() -> argparse.Namespace:
 
     parser.add_argument('--prompt_dir', type=str, default="../data/01_prompts/", 
                         help='Directory containing prompt files')
-    parser.add_argument('--transcript_dir', type=str, default="../data/02_transcripts_example/",
+    parser.add_argument('--transcript_dir', type=str, default="../data/02_transcripts/",
                         help='Directory containing transcript files')
     parser.add_argument('--reference_file', type=str, default="../data/00_ratings/reference.csv",
                         help='Path to reference rating CSV file')
     parser.add_argument('--output_dir', type=str, default="../outputs/AI_ratings/",
                         help='Directory for output ratings')
+    parser.add_argument('--vllm_url', type=str, default="http://localhost:8000/v1",
+                        help='Base URL for local vLLM server (default: http://localhost:8000/v1)')
     
     return parser.parse_args()
 
 def start_inference(args: argparse.Namespace, models: list) -> pd.DataFrame:
     #PRERATATION STEPS
+    # Set vLLM base URL so helper_inference can pick it up
+    os.environ["VLLM_BASE_URL"] = args.vllm_url
     clients = helper_inference.initialize_clients(models)
     schema_instruction, psychopathologies_custom_schema, basic_psychopathologies = helper_inference.get_schema_instruction(args.prompt_language)
     prompt, basic_prompt, definitions = helper_inference.load_prompts(args.prompt_dir, args.prompt_language)

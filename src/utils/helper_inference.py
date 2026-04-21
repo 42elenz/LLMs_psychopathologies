@@ -134,6 +134,13 @@ def initialize_clients(models: list) -> dict:
     if "open_source" in api_families:
         clients["together"] = Together()
     
+    if "vllm" in api_families:
+        vllm_base_url = os.environ.get("VLLM_BASE_URL", "http://localhost:8000/v1")
+        clients["vllm"] = OpenAI(
+            base_url=vllm_base_url,
+            api_key="EMPTY",  # vLLM doesn't require a real key
+        )
+    
     return clients
 
 
@@ -498,6 +505,7 @@ def get_api_provider(api_family: str) -> str:
         "open_source": "together",
         "anthropic": "anthropic",
         "mistral": "mistral",
+        "vllm": "vllm",
     }
     return provider_map.get(api_family, api_family)
 
@@ -512,18 +520,31 @@ def call_api(api_family: str, model_name: str, chunk_prompt: str, transcript: st
     """
     if api_family == "openai":
         print(f"Run {run} {txt_name} {model_name} chunk {chunk_idx}")
-        reasoning_arg = {}
-        if model_name in ["gpt-5.1", "gpt-5.1-preview", "gpt-4o"]:
-            reasoning_arg = {"reasoning": {"effort": "medium"}}
-        
-        response = clients["openai"].responses.parse(
-            model=model_name,
-            instructions=chunk_prompt,
-            input=transcript,
-            text_format=Psychopathologies,
-            **reasoning_arg,
-        )
-        rating_text = response.output_text
+        # gpt-4-turbo does not support responses.parse with text_format
+        if model_name in ["gpt-4-turbo"]:
+            response = clients["openai"].chat.completions.create(
+                model=model_name,
+                temperature=temperature,
+                messages=[
+                    {"role": "system", "content": chunk_prompt + schema_instruction},
+                    {"role": "user", "content": transcript}
+                ],
+                response_format={"type": "json_object"},
+            )
+            rating_text = response.choices[0].message.content
+        else:
+            reasoning_arg = {}
+            if model_name in ["gpt-5.1", "gpt-5.1-preview", "gpt-4o"]:
+                reasoning_arg = {"reasoning": {"effort": "medium"}}
+            
+            response = clients["openai"].responses.parse(
+                model=model_name,
+                instructions=chunk_prompt,
+                input=transcript,
+                text_format=Psychopathologies,
+                **reasoning_arg,
+            )
+            rating_text = response.output_text
         if rating_text is None:
             raise ValueError(f"OpenAI returned None response")
     
@@ -600,6 +621,29 @@ def call_api(api_family: str, model_name: str, chunk_prompt: str, transcript: st
         if rating_text is None:
             raise ValueError(f"Together returned None response")
     
+    elif api_family == "vllm":
+        print(f"Calling local vLLM model {model_name} for run {run} on {txt_name} chunk {chunk_idx}")
+        json_schema = Psychopathologies.model_json_schema()
+        response = clients["vllm"].chat.completions.create(
+            model=model_name,
+            max_tokens=8192,
+            messages=[
+                {"role": "system", "content": chunk_prompt + schema_instruction},
+                {"role": "user", "content": transcript}
+            ],
+            temperature=temperature,
+            extra_body={"guided_json": json_schema},
+        )
+        rating_text = response.choices[0].message.content
+        if rating_text is None:
+            raise ValueError(f"vLLM returned None response")
+        
+        # Clean up markdown formatting if present
+        if "```json" in rating_text:
+            rating_text = rating_text.split("```json")[1].split("```")[0].strip()
+        elif "```" in rating_text:
+            rating_text = rating_text.split("```")[1].split("```")[0].strip()
+    
     else:
         raise ValueError(f"Unknown API family: {api_family}")
     
@@ -624,7 +668,8 @@ def process_chunk_with_retry(api_family: str, model_name: str, chunk_prompt: str
         except Exception as e:
             error_msg = str(e)
             is_retryable = any(x in error_msg.lower() for x in 
-                             ['503', 'overloaded', 'unavailable', 'timeout', '429', 'rate limit'])
+                             ['503', 'overloaded', 'unavailable', 'timeout', '429', 'rate limit',
+                              'connection refused', 'connection error'])
             
             if attempt < max_retries - 1 and is_retryable:
                 wait_time = retry_delay * (2 ** attempt)
