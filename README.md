@@ -23,7 +23,7 @@ These interactive plots show:
 - `src/00_call_models.py`: Main script for LLM inference and rating generation
 - `src/01_comparision_and_statistics.ipynb`: Analysis notebook containing all experiments and comparisons from the paper
 - `data/`: Contains prompts, transcripts, and reference ratings
-- `outputs/`: Generated model ratings and statistical analyses
+- `outputs/`: Generated model ratings and statistical analyses; under clinical_rating_sheets all ratings in a comprehensive way can be investigated
 - `docs/`: Interactive visualizations
 - `src/utils/model_config.py`: Model configuration and selection
 
@@ -194,4 +194,5 @@ The notebook contains:
 - To reproduce full paper-style runs, add the required models in `src/utils/model_config.py` and ensure corresponding API keys are set
 - The analysis notebook (`01_comparision_and_statistics.ipynb`) contains all statistical tests and visualizations from the paper
 - Raw outputs are preserved for full reproducibility and error analysis
+- in outputs/clinican_rating_sheets all ratings can be found in a comprehensive way to check rating behaviour of each clinician
 - Together AI API-Endpoints can vary due to time. You can check on their website which models can be inferenced at the moment (newest open source models https://www.together.ai/models). 

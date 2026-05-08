@@ -992,6 +992,75 @@ def _fmt_stats(series: pd.Series, range_option="sd"):
         raise ValueError(f"Unknown range_option: {range_option}")
 
 
+def bootstrap_mean_ci(values, ci: float = 0.95, n_boot: int = 5000, seed: int | None = None, rng=None):
+    """Return bootstrap mean confidence interval as (mean, lower, upper)."""
+    arr = np.asarray(values, dtype=float)
+    arr = arr[~np.isnan(arr)]
+    if arr.size == 0:
+        return np.nan, np.nan, np.nan
+    if arr.size == 1:
+        mean = float(arr[0])
+        return mean, mean, mean
+
+    if rng is None:
+        rng = np.random.default_rng(seed)
+    boot_means = np.empty(n_boot, dtype=float)
+    for i in range(n_boot):
+        sample = rng.choice(arr, size=arr.size, replace=True)
+        boot_means[i] = np.mean(sample)
+
+    alpha = (1.0 - ci) / 2.0
+    mean = float(np.mean(arr))
+    lower = float(np.quantile(boot_means, alpha))
+    upper = float(np.quantile(boot_means, 1.0 - alpha))
+    return mean, lower, upper
+
+
+def compute_disagreement_only_accuracy_with_ci(
+    disagreement_df: pd.DataFrame,
+    ci: float = 0.95,
+    seed: int | None = None,
+) -> dict:
+    """
+    Compute accuracy on disagreement items only, with bootstrap CI.
+    
+    Parameters:
+    -----------
+    disagreement_df : pd.DataFrame
+        DataFrame with columns: 'pair_id', 'strategy_chosen', 'is_correct'
+    ci : float
+        Confidence level for bootstrap intervals
+    seed : int, optional
+        Seed for reproducible bootstrap
+    
+    Returns:
+    --------
+    dict with per-strategy summaries: {strategy: {'mean': ..., 'ci_low': ..., 'ci_high': ...}}
+    """
+    result = {}
+    
+    for strategy in disagreement_df['strategy_chosen'].unique():
+        strat_data = disagreement_df[disagreement_df['strategy_chosen'] == strategy]
+        
+        # Compute per-pair accuracy on disagreement items
+        pair_accs = strat_data.groupby('pair_id')['is_correct'].apply(
+            lambda x: float(np.mean(x))
+        ).values
+        
+        # Bootstrap the mean
+        mean, ci_low, ci_high = bootstrap_mean_ci(pair_accs, ci=ci, seed=seed)
+        
+        result[strategy] = {
+            'mean': mean,
+            'ci_low': ci_low,
+            'ci_high': ci_high,
+            'n_pairs': len(set(strat_data['pair_id'])),
+            'n_items': len(strat_data),
+        }
+    
+    return result
+
+
 
 
 def build_performance_table(agg: dict, range_option="sd") -> pd.DataFrame:
@@ -2895,7 +2964,9 @@ def compute_paired_comparison_stats(
     group1: np.ndarray,
     group2: np.ndarray,
     group1_name: str = "Group1",
-    group2_name: str = "Group2"
+    group2_name: str = "Group2",
+    ci: float = 0.95,
+    bootstrap_seed: int | None = None,
 ) -> dict:
     """
     Compute comprehensive statistics and effect sizes for paired comparisons.
@@ -2937,7 +3008,11 @@ def compute_paired_comparison_stats(
     # Effect sizes
     # 1. Cohen's d for paired samples
     differences = arr1 - arr2
-    cohens_d = np.mean(differences) / np.std(differences, ddof=1)
+    diff_sd = np.std(differences, ddof=1)
+    cohens_d = np.mean(differences) / diff_sd if diff_sd > 0 else np.nan
+
+    # Bootstrap confidence interval for the paired mean difference
+    _, mean_diff_ci_low, mean_diff_ci_high = bootstrap_mean_ci(differences, ci=ci, seed=bootstrap_seed)
     
     # 2. Correlation-based effect size (for paired t-test)
     df = len(arr1) - 1
@@ -2945,8 +3020,9 @@ def compute_paired_comparison_stats(
     
     # 3. Common Language Effect Size (CLES)
     n_group1_better = np.sum(arr1 > arr2)
+    n_ties = np.sum(arr1 == arr2)
     n_total = len(arr1)
-    cles = n_group1_better / n_total
+    cles = (n_group1_better + 0.5 * n_ties) / n_total
     
     # 4. Cliff's Delta (non-parametric effect size)
     def cliffs_delta_paired(x, y):
@@ -2964,13 +3040,15 @@ def compute_paired_comparison_stats(
         'mean_group1': float(mean1),
         'mean_group2': float(mean2),
         'mean_diff': float(mean_diff),
+        'mean_diff_ci_low': float(mean_diff_ci_low),
+        'mean_diff_ci_high': float(mean_diff_ci_high),
         't_test_statistic': float(t_stat),
         't_test_p': float(t_p),
         'wilcoxon_statistic': float(w_stat),
         'wilcoxon_p': float(w_p),
         'group1_better_count': int(n_group1_better),
         'group2_better_count': int(np.sum(arr1 < arr2)),
-        'ties_count': int(np.sum(arr1 == arr2)),
+        'ties_count': int(n_ties),
         # Effect sizes
         'cohens_d': float(cohens_d),
         'r_effect_size': float(r_effect),
@@ -2981,7 +3059,9 @@ def compute_paired_comparison_stats(
 def compute_all_pairwise_comparisons(
     results: dict,
     summary: dict,
-    comparison_pairs: list[tuple[str, str]] = None
+    comparison_pairs: list[tuple[str, str]] = None,
+    ci: float = 0.95,
+    bootstrap_seed: int | None = None,
 ) -> dict:
     """
     Compute all pairwise comparisons with comprehensive statistics.
@@ -3027,7 +3107,9 @@ def compute_all_pairwise_comparisons(
             group1=results[strategy1],
             group2=results[strategy2],
             group1_name=strategy1,
-            group2_name=strategy2
+            group2_name=strategy2,
+            ci=ci,
+            bootstrap_seed=bootstrap_seed,
         )
         
         comp_name = f"{strategy1}_vs_{strategy2}"
@@ -3048,7 +3130,8 @@ def simulate_all_human_pairs_with_ai(
     exclude_value: int = 10000,
     videos_to_use: list[int] = None,
     haupttätigkeit_col: str = "haupttätigkeit_v2",
-    psychiatrist_codes: list[int] = [2, 3, 5]  # Trained psychiatrists
+    psychiatrist_codes: list[int] = [2, 3, 5],  # Trained psychiatrists
+    seed: int | None = None,
 ) -> dict:
     """
     Test ALL possible human pairs that rated the same video (exhaustive, not random sampling).
@@ -3075,6 +3158,8 @@ def simulate_all_human_pairs_with_ai(
         master_df = master_df[master_df[vid_col].isin(videos_to_use)]
         ref_long = ref_long[ref_long[vid_col].isin(videos_to_use)]
     
+    rng = np.random.default_rng(seed)
+
     disagreement_log = []
     results = {
         'ai_always': [],
@@ -3197,7 +3282,7 @@ def simulate_all_human_pairs_with_ai(
                     sim_ai_used += 1
                     
                     # Strategy 2: Random human choice
-                    random_human_val = np.random.choice([h1_val, h2_val])
+                    random_human_val = rng.choice([h1_val, h2_val])
                     human_is_correct = (random_human_val == ref_val)
                     sim_correct['human_only'] += int(random_human_val == ref_val)
                     
@@ -3210,14 +3295,12 @@ def simulate_all_human_pairs_with_ai(
                     
                     if available_psychiatrists:
                         # Randomly select one psychiatrist
-                        _, psychiatrist_val = available_psychiatrists[
-                            np.random.randint(len(available_psychiatrists))
-                        ]
+                        _, psychiatrist_val = available_psychiatrists[rng.integers(len(available_psychiatrists))]
                         final_val = psychiatrist_val
                         sim_psychiatrist_consulted += 1
                     else:
                         # Fallback: no psychiatrist available, random choice between h1 and h2
-                        final_val = np.random.choice([h1_val, h2_val])
+                        final_val = rng.choice([h1_val, h2_val])
                     
                     supervision_is_correct = (final_val == ref_val)
                     sim_correct['human_only_supervision'] += int(final_val == ref_val)
@@ -3277,8 +3360,11 @@ def simulate_all_human_pairs_with_ai(
     summary = {}
     for strategy, accuracies in results.items():
         arr = np.array(accuracies)
+        mean_acc, ci_low, ci_high = bootstrap_mean_ci(arr)
         summary[strategy] = {
-            'mean_accuracy': float(arr.mean()),
+            'mean_accuracy': float(mean_acc),
+            'mean_accuracy_ci_low': float(ci_low),
+            'mean_accuracy_ci_high': float(ci_high),
             'std_accuracy': float(arr.std()),
             'median_accuracy': float(np.median(arr)),
             'n_pairs': len(arr)
@@ -3288,7 +3374,12 @@ def simulate_all_human_pairs_with_ai(
             ('ai_always', 'human_only_supervision')]
 
     # Statistical comparisons
-    comparisons = compute_all_pairwise_comparisons(results, summary, comparison_pairs)
+    comparisons = compute_all_pairwise_comparisons(
+        results,
+        summary,
+        comparison_pairs,
+        bootstrap_seed=seed,
+    )
     df_disagreements = pd.DataFrame(disagreement_log)
     return {
         'summary': summary,
@@ -3324,6 +3415,11 @@ def print_comparison_results(comparisons: dict, alpha: float = 0.05):
         print(f"\nMean {stats['comparison'].split('_vs_')[0]}: {stats['mean_group1']:.4f}")
         print(f"Mean {stats['comparison'].split('_vs_')[1]}: {stats['mean_group2']:.4f}")
         print(f"Mean difference: {stats['mean_diff']:.4f}")
+        if 'mean_diff_ci_low' in stats and 'mean_diff_ci_high' in stats:
+            print(
+                f"95% bootstrap CI for mean difference: "
+                f"[{stats['mean_diff_ci_low']:.4f}, {stats['mean_diff_ci_high']:.4f}]"
+            )
         
         # Counts
         group1_name = stats['comparison'].split('_vs_')[0]
@@ -3378,11 +3474,17 @@ def run_simulation_per_video(
     exclude_value: int = 10000,
     haupttätigkeit_col: str = "haupttätigkeit_v2",
     psychiatrist_codes: list[int] = [2, 3, 5],
-    videos_to_analyze : list[int] | None = None
+    videos_to_analyze : list[int] | None = None,
+    seed: int | None = None,
 ) -> dict:
     """
     Run simulations separately for each video.
     Returns dict with video_id as key and simulation results as value.
+    
+    Parameters:
+    -----------
+    seed : int, optional
+        Base seed for reproducibility. Each video gets a deterministic child seed.
     """
     video_results = {}
     if videos_to_analyze is None:
@@ -3390,6 +3492,11 @@ def run_simulation_per_video(
     
     for vid in videos_to_analyze:
         print(f"\nProcessing Video {vid}...")
+        
+        # Derive a deterministic seed for this video if base seed is provided
+        video_seed = None
+        if seed is not None:
+            video_seed = seed + int(vid)  # Deterministic but different per video
         
         # Run simulation for this specific video
         sim_result = simulate_all_human_pairs_with_ai(
@@ -3405,7 +3512,8 @@ def run_simulation_per_video(
             exclude_value=exclude_value,
             videos_to_use=[vid],  # Only this video
             haupttätigkeit_col=haupttätigkeit_col,
-            psychiatrist_codes=psychiatrist_codes
+            psychiatrist_codes=psychiatrist_codes,
+            seed=video_seed,
         )
         
         video_results[vid] = sim_result
