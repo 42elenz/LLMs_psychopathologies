@@ -188,7 +188,7 @@ The notebook contains:
 - **Human Ratings** (`data/00_ratings/human_master.csv`): Individual clinician ratings for comparison
 - **R Analyses**: The R models and their code can be found in `src/R_analyses/`
 
-## Notes for Reviewers
+## Notes
 
 - The provided example runs inference on a single transcript (Mania) with one model for demonstration
 - To reproduce full paper-style runs, add the required models in `src/utils/model_config.py` and ensure corresponding API keys are set
